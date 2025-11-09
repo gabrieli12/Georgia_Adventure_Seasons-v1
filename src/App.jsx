@@ -4,7 +4,7 @@ import Footer from "./components/Footer.jsx"
 import AdventureActivities from './components/AdventureActivities.jsx'
 import FeaturedTours from './components/FeaturedTours'
 import AdventureMoments from './components/AdventureMoments'
-import Menu from './components/menu.jsx'
+import Menu from './components/Menu.jsx'
 import CustomerReviews from './components/CustomerReviews'
 import Embrance from './components/Embrance.jsx'
 
