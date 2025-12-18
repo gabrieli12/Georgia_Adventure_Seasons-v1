@@ -1,12 +1,31 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
+// function App() {
+
+//   return (
+//     <>
+//       <div className='w-full h-screen flex justify-center items-center bg-black'>
+//         <h1 className='text-5xl font-medium tracking-wider text-green-600'>Georgia Adventure Seasons</h1>
+//       </div>
+//     </>
+//   )
+// }
+
+// export default App
+import Reviews from "./aleksandre/Reviews/Reviews"
+import FAQ from "./aleksandre/FAQ/FAQ"
+import MAP from "./aleksandre/MAP/MAP"
+import Footer from "./aleksandre/Footer/Footer"
 function App() {
 
   return (
     <>
-      <div className='w-full h-screen flex justify-center items-center bg-black'>
-        <h1 className='text-5xl font-medium tracking-wider text-green-600'>Georgia Adventure Seasons</h1>
-      </div>
+      <main className="flex flex-col gap-[20px]">
+        <Reviews title={"What our visitors say"}/>
+        <FAQ/>
+        <MAP/>
+      </main>
+      <Footer/>
     </>
   )
 }
