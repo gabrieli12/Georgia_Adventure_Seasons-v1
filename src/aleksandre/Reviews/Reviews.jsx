@@ -57,25 +57,25 @@ function Reviews({ title }) {
 
   const scroll = (direction) => {
 
-    const { scrollLeft, scrollWidth, clientWidth, firstChild } = slider.current;
-    const cardWidth = firstChild.clientWidth + 20;
+    const { scrollLeft, scrollWidth, clientWidth, firstChild } = slider.current
+    const cardWidth = firstChild.clientWidth + 20
 
     if (direction === 'next') {
-      const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 5; 
+      const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 5
       
       if (isAtEnd) {
-        slider.current.scrollTo({ left: 0, behavior: 'smooth' });
+        slider.current.scrollTo({ left: 0, behavior: 'smooth' })
       } else {
-        slider.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        slider.current.scrollBy({ left: cardWidth, behavior: 'smooth' })
       }
     } else {
       if (scrollLeft <= 0) {
-        slider.current.scrollTo({ left: scrollWidth, behavior: 'smooth' });
+        slider.current.scrollTo({ left: scrollWidth, behavior: 'smooth' })
       } else {
-        slider.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        slider.current.scrollBy({ left: -cardWidth, behavior: 'smooth' })
       }
     }
-  };
+  }
 
   return (
     <section className='flex flex-col justify-center gap-[10px] items-center'>
