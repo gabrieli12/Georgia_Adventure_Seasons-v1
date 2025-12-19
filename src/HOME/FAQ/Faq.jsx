@@ -1,4 +1,4 @@
-function FAQ() {
+function Faq() {
     const generalQuestions = [
         {
             question: "Do I need experience to ski in Gudauri?",
@@ -128,12 +128,12 @@ function FAQ() {
 
 
     return (
-        <section className="w-[99%] flex flex-col pl-[30px]">
-            <h2 className="border-b w-[150px] text-[25px] h-[50px] text-[#193352] font-[700]">FAQ</h2>
-            <div className="pt-[15px]">
-                <section className="flex items-center gap-[10px] py-[15px]">
+        <section className="w-[99%] flex flex-col pl-7.5">
+            <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-[700]">FAQ</h2>
+            <div className="pt-3.75">
+                <section className="flex items-center gap-2.5 py-3.75">
                     <details>
-                        <summary  className="text-[30px] text-[#193352]">GENERAL</summary>
+                        <summary className="text-[30px] text-[#193352]">GENERAL</summary>
                         {
                             generalQuestions.map((question, index) => {
                                 return <details key={index} className="pl-[10px]">
@@ -178,4 +178,4 @@ function FAQ() {
     )
 }
 
-export default FAQ
+export default Faq
