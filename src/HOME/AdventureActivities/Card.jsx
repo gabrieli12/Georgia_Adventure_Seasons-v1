@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({ index, img, title, description, duration, groupSize, rightText, price}) {
+function Card({ index, img, title, description, evaluation,  rightText, price}) {
   return (
     <>
       <div
@@ -18,21 +18,16 @@ function Card({ index, img, title, description, duration, groupSize, rightText, 
             {description}
           </p>
           <div className="pt-3">
-            <p className="flex gap-1 items-center">
+            <p className="flex items-center font-semibold">
               <img
-                className="w-5 h-5"
-                src="src/assets/image 79.png"
-                alt="clock.logo"
+                className="w-7 h-7"
+                src="src/assets/bold star.png"
+                alt="star"
               />
-              {duration}
+              {evaluation}
             </p>
             <p className="flex gap-1 items-center">
-              <img
-                className="w-5 h-5"
-                src="src/assets/image 80.png"
-                alt="persons.logo"
-              />
-              {groupSize}
+             
             </p>
           </div>
           <div className="flex items-end justify-end flex-col gap-2">
@@ -43,7 +38,7 @@ function Card({ index, img, title, description, duration, groupSize, rightText, 
               <span className="text-green-600 font-bold">
                 {price}
               </span>
-              <button className="bg-green-600 text-white px-4 py-2 duration-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
+              <button className="bg-green-600 text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
                 View Details
               </button>
             </div>

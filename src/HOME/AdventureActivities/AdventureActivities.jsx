@@ -84,7 +84,7 @@ function AdventureActivities() {
                 <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                     {filteredCards.length > 0 ? (
                         filteredCards.map((item, index) => (
-                            <Card key={index} index={index} img={item.img} title={item.title} description={item.description} duratio={item.duration} groupSize={item.groupSize} rightText={item.rightText} price={item.price} />
+                            <Card key={index} index={index} img={item.img} title={item.title} description={item.description} evaluation={item.evaluation}  rightText={item.rightText} price={item.price} />
                         ))
                     ) : (
                         <p className="text-center text-gray-600 text-lg mt-10">

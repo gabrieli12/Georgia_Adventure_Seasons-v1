@@ -5,8 +5,8 @@ const adventureCards = [
     title: "ATV Mountain Adventure",
     description:
       "An exciting off-road ATV experience through mountain trails and wild landscapes.",
-    duration: "2–4 hours",
-    groupSize: "2–8 people",
+    evaluation: "4.8",
+    
     difficulty: "Medium",
     price: "From 100 GEL",
     img: "src/assets/Frame 1984077871.png",
@@ -21,8 +21,8 @@ const adventureCards = [
     title: "Horse Riding Tour",
     description:
       "Peaceful horse riding experience across open fields and scenic nature routes.",
-    duration: "1–3 hours",
-    groupSize: "4–8 people",
+    evaluation: "4.8",
+   
     difficulty: "Easy",
     price: "From 80 GEL",
     img: "src/assets/Frame 1984077871 (1).png",
@@ -36,8 +36,8 @@ const adventureCards = [
     title: "Paragliding Experience",
     description:
       "Feel absolute freedom while flying above mountains with professional instructors.",
-    duration: "30–60 minutes",
-    groupSize: "1–2 people",
+    evaluation: "4.9",
+    
     difficulty: "Easy",
     price: "From 150 GEL",
     img: "src/assets/Frame 1984077871 (2).png",
@@ -51,8 +51,8 @@ const adventureCards = [
     title: "White Water Rafting",
     description:
       "Adrenaline-filled rafting adventure on fast mountain rivers.",
-    duration: "1–3 hours",
-    groupSize: "4–12 people",
+    evaluation: "5.0",
+   
     difficulty: "Medium",
     price: "From 120 GEL",
     img: "src/assets/Frame 1984077871 (3).png",
@@ -66,8 +66,8 @@ const adventureCards = [
     title: "Ski & Snowboard Tour",
     description:
       "Winter adventure for ski and snowboard lovers in breathtaking mountain resorts.",
-    duration: "2–4 hours",
-    groupSize: "2–8 people",
+    evaluation: "5.0",
+    
     difficulty: "Medium",
     price: "From 150 GEL",
     img: "src/assets/Frame 1984077871 (4).png",
@@ -82,8 +82,8 @@ const adventureCards = [
     title: "Hiking Adventure",
     description:
       "Guided hiking tour through forests, valleys, and stunning mountain views.",
-    duration: "2–3 hours",
-    groupSize: "2–15 people",
+    evaluation: "4.7",
+    
     difficulty: "Easy",
     price: "From 80 GEL",
     img: "src/assets/Frame 1984077871 (5).png",
