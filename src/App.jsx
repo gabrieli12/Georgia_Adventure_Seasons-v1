@@ -15,8 +15,13 @@ import Reviews from './HOME/Reviews/Reviews'
 // Faqs, Question / answers
 import Faq from './HOME/FAQ/FAQ'
 
+// Grid and car services
+import GridandCarSevices from './HOME/GridCarservices/GridandCarSevices'
+
 // Footer
 import Footer from './components/Footer/Footer'
+
+
 
 function App() {
 
@@ -35,6 +40,9 @@ function App() {
 
         {/* Faqs, Question / answers */}
         <Faq />
+
+        {/* Grid and Car services */}
+        <GridandCarSevices/>
 
         {/* Footer */}
         <Footer />
