@@ -87,9 +87,9 @@ function Reviews({ title }) {
 
   const scrollPrev = () => {
     if (!slider.current) return
-    const cardWidth = slider.current.children[0].offsetWidth;
-    const gap = 35;
-    slider.current.scrollBy({ left: -(cardWidth + gap), behavior: "smooth" });
+    const cardWidth = slider.current.children[0].offsetWidth
+    const gap = 35
+    slider.current.scrollBy({ left: -(cardWidth + gap), behavior: "smooth" })
   }
 
 
