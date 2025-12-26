@@ -11,6 +11,7 @@ import AdventureActivities from './HOME/AdventureActivities/AdventureActivities'
 
 // Reviews
 import Reviews from './HOME/Hero/Reviews/Reviews'
+// import Reviews from './aleksandre/Reviews/Reviews'
 
 // Faqs, Question / answers
 import Faq from './HOME/FAQ/FAQ'

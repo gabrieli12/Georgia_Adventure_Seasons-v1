@@ -6,12 +6,13 @@ function Reviews({ title }) {
 
     const ReviewInfo = [
     {
-      text: "Incredible hiking experience! The trails were well-maintained and the views were absolutely spectacular. Our guide was very knowledgeable about the local flora and fauna. The traditional lunch they prepared was a perfect way to experience Georgian cuisine.",
+      text: "Incredible hiking experience! The trails were well-maintained and the views were absolutely spectacular. ",
       tag: "Mountain Hiking Adventure",
       loc: "Sydney, Australia",
       time: "3 weeks ago",
       img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-      name: "James Wilson"
+      name: "James Wilson",
+      rating: 5
     },
     {
       text: "One of the best outdoor experiences I’ve ever had. The hike was challenging but rewarding, and the panoramic mountain views were unforgettable.",
@@ -19,7 +20,8 @@ function Reviews({ title }) {
       loc: "Zurich, Switzerland",
       time: "1 month ago",
       img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-      name: "Emily Carter"
+      name: "Emily Carter",
+      rating: 5
     },
     {
       text: "Perfect mix of adventure and relaxation. The guide made everyone feel safe, and the scenery looked straight out of a postcard.",
@@ -27,7 +29,8 @@ function Reviews({ title }) {
       loc: "Gudauri, Georgia",
       time: "2 months ago",
       img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-      name: "Luka Beridze"
+      name: "Luka Beridze",
+      rating: 4
     },
     {
       text: "A must-do experience for nature lovers. Fresh mountain air, peaceful trails, and incredible photo opportunities throughout the hike.",
@@ -35,7 +38,8 @@ function Reviews({ title }) {
       loc: "Banff, Canada",
       time: "5 weeks ago",
       img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face",
-      name: "Daniel Thompson"
+      name: "Daniel Thompson",
+      rating: 5
     },
     {
       text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
@@ -43,7 +47,8 @@ function Reviews({ title }) {
       loc: "Queenstown, New Zealand",
       time: "4 days ago",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott"
+      name: "Oliver Scott",
+      rating: 5
     },
     {
       text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
@@ -51,7 +56,8 @@ function Reviews({ title }) {
       loc: "Queenstown, New Zealand",
       time: "4 days ago",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott"
+      name: "Oliver Scott",
+      rating: 5
     },
     {
       text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
@@ -59,7 +65,8 @@ function Reviews({ title }) {
       loc: "Queenstown, New Zealand",
       time: "4 days ago",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott"
+      name: "Oliver Scott",
+      rating: 4
     },
     {
       text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
@@ -67,7 +74,8 @@ function Reviews({ title }) {
       loc: "Queenstown, New Zealand",
       time: "4 days ago",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott"
+      name: "Oliver Scott",
+      rating: 5
     }
   ]
   const scrollNext = () => {
