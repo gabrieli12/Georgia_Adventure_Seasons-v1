@@ -14,7 +14,7 @@ function ReviewsComp({text, tag, loc, time, img, name, rating}) {
           </div>
           <h1 className='font-[300] mt-[10px]'>{text}</h1>
           <p className='border rounded-[100px] px-[10px] w-[max-content] border-gray-200 font-[500] mt-[10px] text-[12px]'>{tag}</p>
-          <div className='flex items-center gap-[20px] mt-[20px] relative bottom-[20px]'>
+          <div className='flex items-center gap-[20px] mt-[20px]'>
             <img src={img} react-lazyload className='w-[50px] h-[50px] rounded-[50%]' alt="name" loading="lazy" />
             <div>
               <div className='flex items-center gap-[10px]'>
