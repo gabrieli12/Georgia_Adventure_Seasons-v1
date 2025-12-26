@@ -10,7 +10,7 @@ import Hero from './HOME/Hero/Hero'
 import AdventureActivities from './HOME/AdventureActivities/AdventureActivities'
 
 // Reviews
-import Reviews from './HOME/Reviews/Reviews'
+import Reviews from './HOME/Hero/Reviews/Reviews'
 
 // Faqs, Question / answers
 import Faq from './HOME/FAQ/FAQ'
@@ -35,14 +35,16 @@ function App() {
         <Hero />
         <AdventureActivities />
 
+        {/* Grid and Car services */}
+        <GridandCarSevices />
+
+
         {/* Reviews Section */}
         <Reviews />
 
         {/* Faqs, Question / answers */}
         <Faq />
 
-        {/* Grid and Car services */}
-        <GridandCarSevices/>
 
         {/* Footer */}
         <Footer />

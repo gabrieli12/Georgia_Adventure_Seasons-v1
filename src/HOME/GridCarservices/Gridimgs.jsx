@@ -3,7 +3,7 @@ import React from 'react'
 function Gridimgs() {
     return (
         <>
-            <div className="w-full grid gap-5 p-50  grid-cols-[repeat(auto-fit,minmax(320px,1fr))]   ">
+            <div className="w-full grid gap-5 p-20  grid-cols-[repeat(auto-fit,minmax(320px,1fr))]   ">
                 <img src="cuadro.jpg" className="w-full h-full object-cover row-span-2 rounded-[5px]" />
                 <img src="hiking.png" className="w-full h-full object-cover col-span-2  rounded-[5px]" />
                 <img src="kater.png" className="w-full h-full object-cover row-span-2 rounded-[5px]" />

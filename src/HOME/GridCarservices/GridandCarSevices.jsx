@@ -6,7 +6,7 @@ import Restplaces from './Restplaces'
 function Gmysec() {
     return (
         <>
-            <section className='w-full py-50'>
+            <section className='w-full'>
                 <Gridimgs/>
                 <Carservice/>
                 {/* <Restplaces/> */}

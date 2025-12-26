@@ -86,7 +86,7 @@ function Reviews({ title }) {
 
 
   return (
-      <div className="h-screen bg-[#f1fdf5] flex items-center justify-center flex-col gap-[20px]">
+      <div className="py-32 bg-[#f1fdf5] flex items-center justify-center flex-col gap-[20px]">
             <p className="bg-[#dbfce7] px-[15px] py-[5px] rounded-[15px] w-[max-content] text-[12px] text-[#4e6f30] font-[700]">Customer Reviews</p>
             <h1 className='text-4xl md:text-5xl mb-6 text-gray-900 text-center'>What Our Adventurers Say</h1>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto text-center'>Don't just take our word for it. Here's what our guests have to say about their unforgettable Georgian adventure experiences.</p>
