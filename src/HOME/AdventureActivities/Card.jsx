@@ -1,6 +1,10 @@
 import React from 'react'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { ChosenActivity } from '../../App'
 
-function Card({ index, img, title, description, evaluation,  rightText, price}) {
+function Card({ index, img, title, description, evaluation,  rightText, price, rating, reviews, additionalServices}) {
+  const {chosenActivity, setChosenActivity} = useContext(ChosenActivity);
   return (
     <>
       <div
@@ -27,7 +31,6 @@ function Card({ index, img, title, description, evaluation,  rightText, price}) 
               {evaluation}
             </p>
             <p className="flex gap-1 items-center">
-             
             </p>
           </div>
           <div className="flex items-end justify-end flex-col gap-2">
@@ -38,9 +41,19 @@ function Card({ index, img, title, description, evaluation,  rightText, price}) 
               <span className="text-green-600 font-bold">
                 {price}
               </span>
-              <button className="bg-green-600 text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
+              <Link to={'/details'} onClick={()  => {
+                setChosenActivity({
+                  mainImage: img,
+                  imagesGallery: [img, img, img],
+                  title: title,
+                  description: description,
+                  rating: rating,
+                  reviews: reviews,
+                  additionalServices: additionalServices
+                })
+              }}><button className="bg-green-600 text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
                 View Details
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -48,5 +61,14 @@ function Card({ index, img, title, description, evaluation,  rightText, price}) 
     </>
   )
 }
-
+{/* <ActivitiesDetail mainImage={"/hero.png"} imagesGallery={['/thumb-1.png', '/thumb-2.png', '/thumb-3.png']} title={"პარაგლაიდინგი"} description={"ზანგი ზანგიზანგიზანგიზანგიზანგიზანგიზანგი"} rating={5.0} reviews={[
+  {
+    userName: 'Gabriel molodini',
+    rating: 5,
+    review: 'პარაგლაიდინგი ჩემთვის ერთ-ერთი ყველაზე ძლიერი და დაუვიწყარი გამოცდილება იყო. თავიდან ცოტა ვნერვიულობდი, მაგრამ როგორც კი მიწას მოვწყდით, შიში მთლიანად გაქრა'
+  }
+]} additionalServices={[{
+  price: 350,
+  title: "დრონით გადაღება"
+}]} location={"გუდაური"} time={"10-20 წუთი"}/> */}
 export default Card
