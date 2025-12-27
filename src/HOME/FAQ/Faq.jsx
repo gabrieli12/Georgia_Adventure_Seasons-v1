@@ -125,55 +125,226 @@ function Faq() {
             answer: "Paragliding can be done in mountains, hills, and coastal areas with proper launch sites."
         }
     ]
+    const quadBikeQuestions = [
+    {
+        question: "Do I need experience to ride a quad bike?",
+        answer: "No, beginners can start after a short safety briefing and practice session."
+    },
+    {
+        question: "What should I wear for quad biking?",
+        answer: "Comfortable clothing, closed shoes, and sometimes gloves. Helmets and safety gear are provided."
+    },
+    {
+        question: "Is quad biking dangerous?",
+        answer: "Like any off-road sport, it has risks, but with proper instruction and safety gear, it’s safe for most riders."
+    },
+    {
+        question: "Are children allowed to ride?",
+        answer: "Children can ride as passengers, usually from age 7–10 depending on size and the operator’s rules."
+    },
+    {
+        question: "How long are the quad bike tours?",
+        answer: "Tours usually last from 1 to 3 hours, depending on the route."
+    },
+    {
+        question: "Can I ride alone or only in groups?",
+        answer: "Both options are available; solo riding is allowed after instruction."
+    }
+];
+
+// HORSE RIDING
+const horseRidingQuestions = [
+    {
+        question: "Do I need experience to ride a horse?",
+        answer: "No, beginner lessons are available, and all rides are supervised by instructors."
+    },
+    {
+        question: "Is horse riding safe?",
+        answer: "Yes, with proper guidance, helmets, and safety instructions, riding is safe."
+    },
+    {
+        question: "How long do horse rides last?",
+        answer: "Rides can last from 30 minutes to 2 hours depending on the tour."
+    },
+    {
+        question: "Can children ride horses?",
+        answer: "Yes, with appropriate-sized horses and supervision, children can ride from age 4–5."
+    },
+    {
+        question: "What should I wear for horse riding?",
+        answer: "Comfortable clothing, long pants, and closed shoes. Helmets are provided."
+    },
+    {
+        question: "Are guided tours available?",
+        answer: "Yes, guided trail rides are available for all skill levels."
+    }
+];
+
+// WHITE WATER RAFTING
+const raftingQuestions = [
+    {
+        question: "Do I need experience to go rafting?",
+        answer: "No, beginners can join guided tours with experienced instructors."
+    },
+    {
+        question: "Is rafting safe?",
+        answer: "Yes, life jackets, helmets, and trained guides ensure safety."
+    },
+    {
+        question: "What age is suitable for rafting?",
+        answer: "Usually children over 8 can participate, depending on the river’s difficulty."
+    },
+    {
+        question: "How long does a rafting trip last?",
+        answer: "Trips typically last 2–4 hours, depending on the section of the river."
+    },
+    {
+        question: "What should I wear for rafting?",
+        answer: "Quick-dry clothes, water shoes, and a swimsuit. Safety gear is provided."
+    },
+    {
+        question: "Can I take photos during rafting?",
+        answer: "Yes, but keep devices waterproofed; some tours offer professional photography."
+    }
+];
+
+// WINTER SPORTS (OTHER THAN SKIING)
+const winterSportsQuestions = [
+    {
+        question: "What winter sports can I try in Gudauri?",
+        answer: "Snowboarding, tubing, snowshoeing, and ziplining, in addition to skiing and paragliding."
+    },
+    {
+        question: "Do I need experience?",
+        answer: "No, beginner lessons and guided activities are available."
+    },
+    {
+        question: "What clothing is required?",
+        answer: "Warm, waterproof layers, gloves, hats, and appropriate boots. Equipment is available for rent."
+    },
+    {
+        question: "Are there activities suitable for children?",
+        answer: "Yes, many winter sports have family-friendly options, including kids’ slopes and sledding areas."
+    },
+    {
+        question: "Is equipment rental available?",
+        answer: "Yes, snowboards, sleds, and other gear can be rented locally."
+    },
+    {
+        question: "Is it safe for non-skiers to try other winter activities?",
+        answer: "Yes, many activities are designed for beginners and non-skiers."
+    }
+]
 
 
     return (
-        <section className="w-[99%] flex flex-col pl-7.5">
-            <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-[700]">FAQ</h2>
-            <div className="pt-3.75">
-                <section className="flex items-center gap-2.5 py-3.75">
-                    <details>
-                        <summary className="text-[30px] text-[#193352]">GENERAL</summary>
-                        {
-                            generalQuestions.map((question, index) => {
-                                return <details key={index} className="pl-[10px]">
-                                    <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center"><i className="fa-solid fa-plus relative top-[2px]"></i><p>{question.question}</p></summary>
-                                    <p className="pl-[10px] text-[#193352]">{question.answer}</p>
-                                </details>
-                            })
-                        }
-                    </details>
-                </section>
-                <hr />
-                <section className="flex items-center gap-[10px] py-[15px]">
-                    <details>
-                        <summary className="text-[30px] text-[#193352]">SKI</summary>
-                        {
-                            skiQuestions.map((question, index) => {
-                                return <details key={index} className="pl-[10px]">
-                                    <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center"><i className="fa-solid fa-plus relative top-[2px]"></i><p>{question.question}</p></summary>
-                                    <p className="pl-[10px] text-[#193352]">{question.answer}</p>
-                                </details>
-                            })
-                        }
-                    </details>
-                </section>
-                <hr />
-                <section className="flex items-center gap-[10px] py-[15px]">
-                    <details>
-                        <summary className="text-[30px] text-[#193352]">PARAGLIDING</summary>
-                        {
-                            paraglidingQuestions.map((question, index) => {
-                                return <details key={index} className="pl-[10px]">
-                                    <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center"><i className="fa-solid fa-plus relative top-[2px]"></i><p>{question.question}</p></summary>
-                                    <p className="pl-[10px] text-[#193352]">{question.answer}</p>
-                                </details>
-                            })
-                        }
-                    </details>
-                </section>
+        <section className="w-full flex justify-center items-center bg-[#f1fdf5]">
+            <div className="w-[70%] flex pl-7.5">
+                <div className="w-full flex flex-col pl-7.5">
+                    <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-[700]">FAQ</h2>
+                    <div className="pt-3.75">
+                        <section className="flex items-center gap-2.5 py-3.75">
+                            <details open>
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">GENERAL</summary>
+                                {
+                                    generalQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-[10px]">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px] "></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        
+                        <section className="flex items-center gap-[10px] py-[15px]">
+                            <details >
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">SKI</summary>
+                                {
+                                    skiQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-[10px]">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px]"></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        
+                        <section className="flex items-center gap-2.5 py-3.75">
+                            <details>
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">PARAGLIDING</summary>
+                                {
+                                    paraglidingQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-[10px]">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px] "></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        {/* QUAD BIKE TOURS */}
+                        <section className="flex items-center gap-2.5 py-3.75">
+                            <details>
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">QUAD BIKE TOURS</summary>
+                                {
+                                    quadBikeQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center  cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        {/* HORSE RIDING */}
+                        <section className="flex items-center gap-2.5 py-3.75">
+                            <details>
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">HORSE RIDING</summary>
+                                {
+                                    horseRidingQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        {/* WHITE WATER RAFTING */}
+                        <section className="flex items-center gap-2.5 py-3.75 cursor-pointer">
+                            <details>
+                                <summary className="text-[30px] text-[#193352]">WHITE WATER RAFTING</summary>
+                                {
+                                    raftingQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                        {/* WINTER SPORTS (OTHER THAN SKIING) */}
+                        <section className="flex items-center gap-2.5 py-3.75">
+                            <details>
+                                <summary className="text-[30px] text-[#193352] cursor-pointer">WINTER SPORTS (OTHER THAN SKIING)</summary>
+                                {
+                                    winterSportsQuestions.map((question, index) => {
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
+                                            <p className="pl-15 text-[#193352]">{question.answer}</p>
+                                        </details>
+                                    })
+                                }
+                            </details>
+                        </section>
+                    </div>
+                    <hr />
+                </div>
+                <img className="" src="src/assets/men.png" alt="" />
             </div>
-            <hr />
         </section>
     )
 }

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import ReviewsComp from './ReviewsComp';
 
 function Reviews({ title }) {
@@ -69,7 +69,7 @@ function Reviews({ title }) {
       rating: 4
     },
     {
-      text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
+      text: "Absolutely (ჰჰჰჰჰჰჰ) worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
       tag: "Guided Hiking Tour",
       loc: "Queenstown, New Zealand",
       time: "4 days ago",
@@ -79,11 +79,32 @@ function Reviews({ title }) {
     }
   ]
   const scrollNext = () => {
-    if (!slider.current) return
-    const cardWidth = slider.current.children[0].offsetWidth
-    const gap = 35
-    slider.current.scrollBy({ left: cardWidth + gap, behavior: "smooth" })
+      if (!slider.current) return
+      // const cardWidth = slider.current.children[0].offsetWidth
+      // const gap = 35
+      // slider.current.scrollBy({ left: cardWidth + gap, behavior: "smooth"  } )
+    
+
+   
+  const sliderEl = slider.current
+  const cardWidth = sliderEl.children[0].offsetWidth
+  const gap = 35
+  const step = cardWidth + gap
+
+  sliderEl.scrollBy({ left: step, behavior: "smooth" })
+
+  const half = sliderEl.scrollWidth / 2
+
+
+  if (sliderEl.scrollLeft >= half) {
+    
+    setTimeout(() => {
+      sliderEl.scrollLeft -= (half+200)
+    }, 1)
+    
   }
+}
+  
 
   const scrollPrev = () => {
     if (!slider.current) return
