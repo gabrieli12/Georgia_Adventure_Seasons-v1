@@ -47,6 +47,7 @@ function Hero() {
           </div>
 
 
+
           <h1 className="text-4xl md:text-6xl font- flex justify-center items-center flex-col ">
             Embrace the <span className=" text-green-300 ">Adventure</span>
             

@@ -19,7 +19,7 @@ import Faq from './HOME/FAQ/FAQ'
 // Grid and car services
 import GridandCarSevices from './HOME/Carservices/GridandCarSevices'
 
-import Restplaces from './HOME/Hotels&cotages/Restplaces'
+import Cottagescard from './HOME/Hotels&cotages/Cottagescard'
 
 // Footer
 import Footer from './components/Footer/Footer'
@@ -37,7 +37,7 @@ function FullPage() {
             <Hero />
             <AdventureActivities />
             <GridandCarSevices />
-            {/* <Restplaces /> */}
+            <Cottagescard />
             <Reviews />
             <Faq />
         </main>
