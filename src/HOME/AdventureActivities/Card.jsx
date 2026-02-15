@@ -3,13 +3,13 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ChosenActivity } from '../../App'
 
-function Card({ index, img, title, description, evaluation,  rightText, price, rating, reviews, additionalServices}) {
-  const {chosenActivity, setChosenActivity} = useContext(ChosenActivity);
+function Card({ index, img, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices }) {
+  const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
   return (
     <>
       <div
         key={index}
-        className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
+        className="bg-white rounded-xl shadow hover:shadow-lg hover:shadow-[#ff6a0034] transition overflow-hidden"
       >
         <img
           src={img}
@@ -18,30 +18,35 @@ function Card({ index, img, title, description, evaluation,  rightText, price, r
         />
         <div className="p-5">
           <h3 className="font-semibold text-lg">{title}</h3>
+          <p className='text-md opacity-80 text-red-900'>{location}</p>
           <p className="text-sm text-gray-600 mt-2">
             {description}
           </p>
+
           <div className="pt-3">
-            <p className="flex items-center font-semibold">
-              <img
-                className="w-7 h-7"
-                src="src/assets/bold star.png"
-                alt="star"
-              />
+            <p className="items-center font-semibold flex gap-1 ">
+              <i className="fa-solid fa-star text-[#fdc700] relative"></i>
+
               {evaluation}
-            </p>
-            <p className="flex gap-1 items-center">
+              ({reviews.length} review)
             </p>
           </div>
-          <div className="flex items-end justify-end flex-col gap-2">
-            <p className="text-[12px] h-14 w-[65%] text-end">
-              {rightText}
-            </p>
-            <div className="w-full flex items-center justify-between">
-              <span className="text-green-600 font-bold">
-                {price}
-              </span>
-              <Link to={'/details'} onClick={()  => {
+
+          <ul className="text-[12px] h-14 flex flex-wrap items-start gap-2 my-2">
+            {rightText.map((item) => {
+              return <li key={item} className='bg-red-50 p-0.5 rounded-md pl-3'>{item}</li>
+            })}
+
+          </ul>
+
+            <hr className='my-5 ' />
+
+            <div className="w-full flex items-center justify-between ">
+              <p className="text-red-900 opacity-80 font-bold flex flex-col">
+                {price} 
+                <span className='opacity-60 text-black text-sm font-normal'>Price may vary</span>
+              </p>
+              <Link to={'/details'} onClick={() => {
                 setChosenActivity({
                   mainImage: img,
                   imagesGallery: [img, img, img],
@@ -51,11 +56,10 @@ function Card({ index, img, title, description, evaluation,  rightText, price, r
                   reviews: reviews,
                   additionalServices: additionalServices
                 })
-              }}><button className="bg-green-600 text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
-                View Details
-              </button></Link>
+              }}><button className="bg-[#FF6900]  text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
+                  View Details
+                </button></Link>
             </div>
-          </div>
         </div>
       </div>
     </>

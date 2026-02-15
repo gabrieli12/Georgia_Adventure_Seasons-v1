@@ -1,12 +1,12 @@
 import React from 'react'
 import Carservice from './Carservice'
-import Gridimgs from './Gridimgs'
-import Restplaces from './Restplaces'
+import Gridimgs from '../SmallGalery/Gridimgs'
+import Restplaces from '../Hotels&cotages/Restplaces'
 
 function Gmysec() {
     return (
         <>
-            <section className='w-full'>
+            <section  className='w-full'>
                 <Gridimgs/>
                 <Carservice/>
                 {/* <Restplaces/> */}

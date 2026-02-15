@@ -16,7 +16,7 @@ function BurgerMenu() {
                     setIsOpen(!isOpen)
                 }}
             >
-                <img className="w-8" src="src/assets/burger.png" alt="menu" />
+                <img className="w-8 bg-white rounded-full p-1" src="src/assets/burger.png" alt="menu" />
             </div>
 
             {/* Dropdown Menu */}

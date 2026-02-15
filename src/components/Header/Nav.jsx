@@ -2,23 +2,21 @@ import React from 'react'
 
 function Nav() {
     return (
-        <nav className="w-[30%] flex justify-between items-center text-[#707070] max-xl:w-[35%] max-lg:hidden">
+        <nav className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-poppins  max-2xl:gap-3 ">
             <a className="hover:underline " href="#">
                 Home
             </a>
-            <a className="hover:underline " href="#">
-                Tours
+            <a className="hover:underline " href="#activities">
+                Tours & Activities
             </a>
             <a className="hover:underline " href="#">
-                Activities
+                Accommodation
             </a>
-            <a className="hover:underline " href="#">
-                Gallery
+
+            <a className="hover:underline " href="#transportation">
+                Transportation
             </a>
-            <a className="hover:underline " href="#">
-                About
-            </a>
-            <a className="hover:underline " href="#">
+            <a className="hover:underline max-xl:hidden " href="#">
                 Contact
             </a>
         </nav>

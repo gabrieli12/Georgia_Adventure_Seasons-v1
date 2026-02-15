@@ -3,7 +3,7 @@ import React from 'react'
 function Carcard({img , heading , description , tall }) {
 
   return (
-    <div className={`w-75 bg-white ${tall ? 'h-130' : 'h-110'} flex flex-col justify-start items-start gap-3`}>
+    <div  className={`w-75 bg-white ${tall ? 'h-130' : 'h-110'} flex flex-col justify-start items-start gap-3`}>
       <img src={img} alt="Car image" className='w-full h-50 object-cover' />
       <div className='w-full h-full flex flex-col justify-start items-start gap-3 px-5 py-3'>
         <p className='text-2xl'>{heading}</p>
