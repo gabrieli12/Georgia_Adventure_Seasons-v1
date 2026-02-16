@@ -238,9 +238,9 @@ const winterSportsQuestions = [
 
 
     return (
-        <section className="w-full flex justify-center items-center bg-[#f1fdf5]">
-            <div className="w-[80%] flex pl-7.5">
-                <div className="w-full flex flex-col pl-7.5">
+        <section className="w-full flex justify-center items-center bg-[#f1fdf5] pt-40">
+            <div className="w-[80%] flex pl-7.5 ">
+                <div className="w-full flex flex-col pl-7.5 ">
                     <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-[700]">FAQ</h2>
                     <div className="pt-3.75">
                         <section className="flex items-center gap-2.5 py-3.75">

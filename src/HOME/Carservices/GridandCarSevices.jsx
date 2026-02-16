@@ -7,7 +7,7 @@ function Gmysec() {
     return (
         <>
             <section  className='w-full'>
-                <Gridimgs/>
+                {/* <Gridimgs/> */}
                 <Carservice/>
                 {/* <Restplaces/> */}
             </section>

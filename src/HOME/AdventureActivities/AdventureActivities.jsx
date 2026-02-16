@@ -19,7 +19,7 @@ function AdventureActivities() {
     return (
         <div>
             {/* ACTIVITIES */}
-            <section id="activities" className="flex justify-center items-center flex-col p-6">
+            <section id="activities" className="flex justify-center items-center flex-col p-6 ">
                 <div className="flex justify-center items-center flex-col text-center gap-3 bg-gray-50 w-[50%] relative pt-3 max-md:w-full">
                     <h2 className="text-4xl max-md:text-2xl">Adventure Activities</h2>
                     <p className="text-gray-600 w-[80%] pb-9 max-md:text-1xl">

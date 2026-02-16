@@ -28,6 +28,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import ActivitiesDetail from './HOME/ActivitiesDetailPage/ActivitiesDetail'
 
+import Gridimgs from './HOME/SmallGalery/Gridimgs'
+
 function FullPage() {
 
     return (
@@ -36,9 +38,10 @@ function FullPage() {
         <main>
             <Hero />
             <AdventureActivities />
-            <GridandCarSevices />
             <Cottagescard />
+            <Gridimgs />
             <Reviews />
+            <GridandCarSevices />
             <Faq />
         </main>
         <Footer />

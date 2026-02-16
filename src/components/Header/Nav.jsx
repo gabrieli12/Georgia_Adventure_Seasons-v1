@@ -9,7 +9,7 @@ function Nav() {
             <a className="hover:underline " href="#activities">
                 Tours & Activities
             </a>
-            <a className="hover:underline " href="#">
+            <a className="hover:underline " href="#accommodation">
                 Accommodation
             </a>
 

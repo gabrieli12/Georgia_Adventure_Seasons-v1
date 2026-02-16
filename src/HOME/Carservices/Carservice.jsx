@@ -3,7 +3,7 @@ import Carcard from './Carcard'
 function Carservice() {
     return (
         <>
-            <div id='transportation' className='w-full bg-[#08523e] py-25 px-15 flex justify-center items-center flex-wrap'>
+            <div id='transportation' className='w-full bg-[#08523e] py-25 px-15 flex justify-center items-center flex-wrap bg-[url("https://lh3.googleusercontent.com/proxy/oBSzxWbk5l_kUI7N14PFrJTC7_nCXOgH1Jyz5YyvgnCDratC1X8WwU8-0R2dgJ0Rzts0qkfSQw0niBgGurZw7gNZJiOEPB-00ZP-d0dpN-rOUiuDbueB-yffU08IG70jycmbMCx6QG4OOCKo0g")]    '>
                 <div className='flex gap-10 flex-wrap justify-center items-start scroll-mt-32'>
                     <div className='flex flex-col gap-8'>
                         <div className='w-20 h-1 bg-[#34ccff] rounded-xs'></div>
