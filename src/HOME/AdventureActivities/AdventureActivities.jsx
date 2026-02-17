@@ -94,7 +94,7 @@ function AdventureActivities() {
                     
                     {filteredCards.length > 0 ? (
                         filteredCards.map((item, index) => (
-                            <Card key={index} index={index} img={item.img} title={item.title} description={item.description} evaluation={item.evaluation} rightText={item.rightText} price={item.price} rating={item.rating} reviews={item.reviews} additionalServices={item.additionalServices} location={item.location} />
+                            <Card key={index} index={index} img={item.img} fullDescription={item.fullDescription} detaleImg={item.images} title={item.title} description={item.description} evaluation={item.evaluation} rightText={item.rightText} price={item.price} rating={item.rating} reviews={item.reviews} additionalServices={item.additionalServices} location={item.location} features={item.features} recommendations={item.recommendations} />
                         ))
                     ) : (
                         <p className="text-center text-gray-600 text-lg mt-10">

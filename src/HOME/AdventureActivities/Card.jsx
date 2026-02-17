@@ -3,8 +3,10 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ChosenActivity } from '../../App'
 
-function Card({ index, img, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices }) {
+function Card({ index, img, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations}) {
   const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
+  
+  
   return (
     <>
       <div
@@ -49,12 +51,15 @@ function Card({ index, img, title, location, description, evaluation, rightText,
               <Link to={'/details'} onClick={() => {
                 setChosenActivity({
                   mainImage: img,
-                  imagesGallery: [img, img, img],
+                  imagesGallery: [detaleImg[0], detaleImg[1], detaleImg[2]],
                   title: title,
                   description: description,
                   rating: rating,
                   reviews: reviews,
-                  additionalServices: additionalServices
+                  additionalServices: additionalServices,
+                  fullDescription: fullDescription,
+                  features: features,
+                  recommendations: recommendations,
                 })
               }}><button className="bg-[#FF6900]  text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
                   View Details

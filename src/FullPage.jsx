@@ -26,7 +26,9 @@ import Footer from './components/Footer/Footer'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
-import ActivitiesDetail from './HOME/ActivitiesDetailPage/ActivitiesDetail'
+
+
+
 
 import Gridimgs from './HOME/SmallGalery/Gridimgs'
 
@@ -45,6 +47,7 @@ function FullPage() {
             <Faq />
         </main>
         <Footer />
+        
         </>
     )
 }
