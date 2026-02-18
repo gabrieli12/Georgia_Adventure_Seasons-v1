@@ -19,12 +19,19 @@ import Faq from './HOME/FAQ/FAQ'
 // Grid and car services
 import GridandCarSevices from './HOME/Carservices/GridandCarSevices'
 
+//cottage card
 import Cottagescard from './HOME/Hotels&cotages/Cottagescard'
+
+//map
+import Map from './HOME/MAP/Map'
 
 // Footer
 import Footer from './components/Footer/Footer'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+
+//contact page
+import ContactPage from './HOME/contact us/ContactPage'
 
 
 
@@ -36,7 +43,7 @@ function FullPage() {
 
     return (
         <>
-        <Header />
+         <Header /> 
         <main>
             <Hero />
             <AdventureActivities />
@@ -45,8 +52,10 @@ function FullPage() {
             <Reviews />
             <GridandCarSevices />
             <Faq />
+            <Map/>
         </main>
-        <Footer />
+        <Footer /> 
+        
         
         </>
     )

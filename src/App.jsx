@@ -22,6 +22,9 @@ import GridandCarSevices from './HOME/Carservices/GridandCarSevices'
 // Footer
 import Footer from './components/Footer/Footer'
 
+// contact page 
+import ContactPage from './HOME/contact us/ContactPage'
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import ActivitiesDetail from './HOME/ActivitiesDetailPage/ActivitiesDetail'
@@ -36,9 +39,15 @@ function App() {
           <Routes>
             <Route path={'/'} index element={<FullPage/>}/>
             <Route path={'/details'} index element={<>
+            
             <Header/>
             <ActivitiesDetail/>
-
+            
+            </>}/>
+            <Route path='/contact'  element={<> 
+              <Header/>
+              <ContactPage /> 
+              <Footer />
             </>}/>
           </Routes>
         </BrowserRouter>
