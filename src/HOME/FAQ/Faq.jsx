@@ -238,18 +238,18 @@ const winterSportsQuestions = [
 
 
     return (
-        <section className="w-full flex justify-center items-center bg-[#f1fdf5] pt-40">
+        <section className="w-full flex justify-center items-center bg-[#f1fdf5] pt-40 relative" id="faq-section">
             <div className="w-[80%] flex pl-7.5 ">
                 <div className="w-full flex flex-col pl-7.5 ">
-                    <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-[700]">FAQ</h2>
+                    <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-bold">FAQ</h2>
                     <div className="pt-3.75">
                         <section className="flex items-center gap-2.5 py-3.75">
                             <details open>
                                 <summary className="text-[30px] text-[#193352] cursor-pointer">GENERAL</summary>
                                 {
                                     generalQuestions.map((question, index) => {
-                                        return <details key={index} className="pl-[10px]">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px] "></i><p>{question.question}</p></summary>
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -257,7 +257,7 @@ const winterSportsQuestions = [
                             </details>
                         </section>
                         
-                        <section className="flex items-center gap-[10px] py-[15px]">
+                        <section className="flex items-center gap-2.5 py-3.75">
                             <details >
                                 <summary className="text-[30px] text-[#193352] cursor-pointer">SKI</summary>
                                 {
