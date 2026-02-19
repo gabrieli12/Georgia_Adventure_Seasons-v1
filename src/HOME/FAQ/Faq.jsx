@@ -238,18 +238,18 @@ const winterSportsQuestions = [
 
 
     return (
-        <section className="w-full flex justify-center items-center bg-[#f1fdf5] pt-40 relative" id="faq-section">
-            <div className="w-[80%] flex pl-7.5 ">
+        <section className="w-full flex justify-center items-center bg-[#f1fdf5] pt-40 pb-20 relative" id="faq-section">
+            <div className="w-[60%] flex justify-between pl-7.5 ">
                 <div className="w-full flex flex-col pl-7.5 ">
                     <h2 className="border-b w-37.5 text-[25px] h-12.5 text-[#193352] font-bold">FAQ</h2>
                     <div className="pt-3.75">
-                        <section className="flex items-center gap-2.5 py-3.75">
+                        <section className="flex items-center gap-2.5 ">
                             <details open>
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">GENERAL</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">GENERAL</summary>
                                 {
                                     generalQuestions.map((question, index) => {
                                         return <details key={index} className="pl-2.5">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -259,11 +259,11 @@ const winterSportsQuestions = [
                         
                         <section className="flex items-center gap-2.5 py-3.75">
                             <details >
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">SKI</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">SKI</summary>
                                 {
                                     skiQuestions.map((question, index) => {
-                                        return <details key={index} className="pl-[10px]">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px]"></i><p>{question.question}</p></summary>
+                                        return <details key={index} className="pl-2.5">
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -271,13 +271,13 @@ const winterSportsQuestions = [
                             </details>
                         </section>
                         
-                        <section className="flex items-center gap-2.5 py-3.75">
+                        <section className="flex items-center gap-2.5">
                             <details>
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">PARAGLIDING</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">PARAGLIDING</summary>
                                 {
                                     paraglidingQuestions.map((question, index) => {
                                         return <details key={index} className="pl-[10px]">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px] "></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-[10px] items-center cursor-pointer"><i className="fa-solid fa-plus relative top-[2px] "></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -287,11 +287,11 @@ const winterSportsQuestions = [
                         {/* QUAD BIKE TOURS */}
                         <section className="flex items-center gap-2.5 py-3.75">
                             <details>
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">QUAD BIKE TOURS</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">QUAD BIKE TOURS</summary>
                                 {
                                     quadBikeQuestions.map((question, index) => {
                                         return <details key={index} className="pl-2.5">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center  cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center  cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -299,13 +299,13 @@ const winterSportsQuestions = [
                             </details>
                         </section>
                         {/* HORSE RIDING */}
-                        <section className="flex items-center gap-2.5 py-3.75">
+                        <section className="flex items-center gap-2.5 ">
                             <details>
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">HORSE RIDING</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">HORSE RIDING</summary>
                                 {
                                     horseRidingQuestions.map((question, index) => {
                                         return <details key={index} className="pl-2.5">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -315,11 +315,11 @@ const winterSportsQuestions = [
                         {/* WHITE WATER RAFTING */}
                         <section className="flex items-center gap-2.5 py-3.75 cursor-pointer">
                             <details>
-                                <summary className="text-[30px] text-[#193352]">WHITE WATER RAFTING</summary>
+                                <summary className="text-[20px] text-[#193352]">WHITE WATER RAFTING</summary>
                                 {
                                     raftingQuestions.map((question, index) => {
                                         return <details key={index} className="pl-2.5">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5"></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -327,13 +327,13 @@ const winterSportsQuestions = [
                             </details>
                         </section>
                         {/* WINTER SPORTS (OTHER THAN SKIING) */}
-                        <section className="flex items-center gap-2.5 py-3.75">
+                        <section className="flex items-center gap-2.5 ">
                             <details>
-                                <summary className="text-[30px] text-[#193352] cursor-pointer">WINTER SPORTS (OTHER THAN SKIING)</summary>
+                                <summary className="text-[20px] text-[#193352] cursor-pointer">WINTER SPORTS (OTHER THAN SKIING)</summary>
                                 {
                                     winterSportsQuestions.map((question, index) => {
                                         return <details key={index} className="pl-2.5">
-                                            <summary className="text-[25px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
+                                            <summary className="text-[15px] text-[#193352] list-none flex gap-2.5 items-center cursor-pointer"><i className="fa-solid fa-plus relative top-0.5 "></i><p>{question.question}</p></summary>
                                             <p className="pl-15 text-[#193352]">{question.answer}</p>
                                         </details>
                                     })
@@ -343,7 +343,7 @@ const winterSportsQuestions = [
                     </div>
                     <hr />
                 </div>
-                <img className="" src="src/assets/men.png" alt="" />
+                <img className="w-40 duration-1000 hover:rotate-x-50 hover:rotate-z-360" src="src/assets/men.png" alt="" />
             </div>
         </section>
     )
