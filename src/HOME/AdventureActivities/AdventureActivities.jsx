@@ -8,7 +8,7 @@ import Card from "./Card";
 
 
 function AdventureActivities() {
-    const [activeSeason, setActiveSeason] = useState("All"); //cards filter state
+    const [activeSeason, setActiveSeason] = useState("Winter"); //cards filter state
 
     //cards filter
     const filteredCards = adventureCards.filter((card) => {

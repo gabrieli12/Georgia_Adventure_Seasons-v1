@@ -3,52 +3,68 @@ import { useState, createContext } from 'react'
 // header
 import Header from './components/Header/Header'
 
-// hero section 
-import Hero from './HOME/Hero/Hero'
-
-// adventure activities
-import AdventureActivities from './HOME/AdventureActivities/AdventureActivities'
-
-// Reviews
-import Reviews from './HOME/Reviews/Reviews'
-// import Reviews from './aleksandre/Reviews/Reviews'
-
-// Faqs, Question / answers
-import Faq from './HOME/FAQ/FAQ'
-
-// Grid and car services
-import GridandCarSevices from './HOME/Carservices/GridandCarSevices'
-
 // Footer
 import Footer from './components/Footer/Footer'
+
 
 // contact page 
 import ContactPage from './HOME/contact us/ContactPage'
 
+
+import Transport from './Pages/Transport/Transport'
+
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
-import ActivitiesDetail from './HOME/ActivitiesDetailPage/ActivitiesDetail'
+import ActivitiesDetail from './Pages/ActivitiesDetailPage/ActivitiesDetail'
 import FullPage from './FullPage'
+
 export const ChosenActivity = createContext()
+
 function App() {
   const [chosenActivity, setChosenActivity] = useState([])
   return (
     <>
-      <ChosenActivity.Provider value={{chosenActivity, setChosenActivity}}>
+      <ChosenActivity.Provider value={{ chosenActivity, setChosenActivity }}>
         <BrowserRouter>
           <Routes>
-            <Route path={'/'} index element={<FullPage/>}/>
-            <Route path={'/details'} index element={<>
-            
-            <Header/>
-            <ActivitiesDetail/>
-            
-            </>}/>
-            <Route path='/contact'  element={<> 
-              <Header/>
-              <ContactPage /> 
-              <Footer />
-            </>}/>
+            {/* მთავარი გვერდი */}
+            <Route path="/" element={<FullPage />} />
+
+            {/* დეტალების გვერდი */}
+            <Route
+              path="/details"
+              element={
+                <>
+                  <Header />
+                  <ActivitiesDetail />
+                  {/* ალბათ აქაც გინდა Footer? თუ არა, ასე დარჩეს */}
+                </>
+              }
+            />
+
+            {/* კონტაქტის გვერდი */}
+            <Route
+              path="/contact"
+              element={
+                <>
+                  <Header />
+                  <ContactPage />
+                  <Footer />
+                </>
+              }
+            />
+
+            <Route
+              path="/transport"
+              element={
+                <>
+                  <Header />
+                  <Transport />
+                  <Footer />
+                </>
+              }
+            />
           </Routes>
         </BrowserRouter>
       </ChosenActivity.Provider>

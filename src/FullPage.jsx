@@ -14,7 +14,7 @@ import Reviews from './HOME/Reviews/Reviews'
 // import Reviews from './aleksandre/Reviews/Reviews'
 
 // Faqs, Question / answers
-import Faq from './HOME/FAQ/FAQ'
+import Faq from './HOME/FAQ/Faq'
 
 // Grid and car services
 import GridandCarSevices from './HOME/Carservices/GridandCarSevices'
@@ -38,25 +38,32 @@ import ContactPage from './HOME/contact us/ContactPage'
 
 
 import Gridimgs from './HOME/SmallGalery/Gridimgs'
+import StringRunner from './HOME/Hero/StringRunner/StringRunner'
 
 function FullPage() {
 
     return (
         <>
-         <Header /> 
-        <main>
-            <Hero />
-            <AdventureActivities />
-            <Cottagescard />
-            <Gridimgs />
-            <Reviews />
-            <GridandCarSevices />
-            <Faq />
-            <Map/>
-        </main>
-        <Footer /> 
-        
-        
+            <Header />
+            <main>
+                <Hero />
+                <AdventureActivities />
+                <Cottagescard />
+                <Gridimgs />
+                <Reviews />
+                <GridandCarSevices />
+                <Faq />
+                <div className="relative bg-[#0B1220] py-7">
+                    <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="" />
+                    <StringRunner animationName={'marquee'} />
+                    <StringRunner animationName={'marquee2'} />
+                </div>
+
+                <Map />
+            </main>
+            <Footer />
+
+
         </>
     )
 }

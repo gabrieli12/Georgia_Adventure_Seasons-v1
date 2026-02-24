@@ -218,150 +218,6 @@
 
 const adventureCards = [
   {
-    id: 1,
-    season: ['Spring', 'Summer', 'Autumn', 'Winter'],
-    title: "ATV Mountain Adventure",
-    description:
-      "An exciting off-road ATV experience through mountain trails and wild landscapes.",
-    evaluation: "4.8",
-    difficulty: "Medium",
-    price: "From 100 GEL",
-    location: '📍Gudauri • Pasanauri • Ananuri',
-    img: "src/assets/Frame 1984077871.png",
-    buttonText: "Book Adventure",
-    rightText: [
-      "🧑‍🏫 Professional Guide",
-      "🛡 Safety Briefing",
-      "🚁 Drone Footage"
-    ],
-    rating: 4.8,
-    reviews: [
-      { rating: 5, username: "Alice", review: "Amazing experience, highly recommend!" },
-      { rating: 4.5, username: "John", review: "Thrilling ride, good safety measures." }
-    ],
-    additionalServices: [
-      { name: "Drone filming", price: "50 GEL" },
-      { name: "Professional photos", price: "30 GEL" },
-      { name: "Safety gear included", price: "Free" }
-    ],
-  
-    fullDescription:
-      "Join us for an unforgettable ATV mountain adventure across the breathtaking landscapes of Gudauri, Pasanauri and Ananuri. Ride powerful quad bikes through rugged off-road trails, river crossings and panoramic mountain routes. This experience is perfect for adrenaline seekers who want to explore Georgia’s wild beauty in an active way.",
-    features: [
-      "Professional Guide",
-      "Safety Briefing",
-      "Drone Footage Included",
-      "Protective Equipment"
-    ],
-    images: [
-      "src/assets/Frame 1984077871.png",
-      "src/assets/Frame 1984077871 (1).png",
-      "src/assets/Frame 1984077871 (2).png"
-    ],
-    recommendations: [
-      "Follow the guide’s instructions at all times",
-      "Wear protective equipment provided",
-      "Not recommended for people with serious back problems",
-      "Tours may be rescheduled in extreme weather conditions"
-    ]
-  },
-  {
-    id: 2,
-    season: ['Spring', 'Summer', 'Autumn'],
-    title: "Horse Riding Tour",
-    description:
-      "Peaceful horse riding experience across open fields and scenic nature routes.",
-    evaluation: "4.8",
-    difficulty: "Easy",
-    price: "From 80 GEL",
-    location: '📍Gudauri • Pasanauri • Ananuri',
-    img: "src/assets/Frame 1984077871 (1).png",
-    buttonText: "Book Adventure",
-    rightText: [
-      "⛰️ Mountain views",
-      "🐴 Experienced horses",
-      "⭐ Traditional Georgian style"
-    ],
-    rating: 4.7,
-    reviews: [
-      { rating: 5, username: "Emma", review: "So relaxing and enjoyable!" },
-      { rating: 4.5, username: "Liam", review: "Great horses and beautiful scenery." }
-    ],
-    additionalServices: [
-      { name: "Photo session", price: "20 GEL" },
-      { name: "Guided trail maps", price: "Free" },
-      { name: "Traditional snacks", price: "15 GEL" }
-    ],
-    
-    fullDescription:
-      "Enjoy a calm and authentic horse riding tour through the scenic valleys and open mountain landscapes of Gudauri and surrounding areas. Our experienced horses and local guides ensure a safe and memorable journey in traditional Georgian style.",
-    features: [
-      "Mountain Views",
-      "Experienced Horses",
-      "Professional Guide",
-      "Traditional Georgian Style"
-    ],
-    images: [
-      "src/assets/Frame 1984077871.png",
-      "src/assets/Frame 1984077871 (1).png",
-      "src/assets/Frame 1984077871 (2).png"
-    ], 
-     recommendations: [
-      "Listen carefully to the horse riding instructor",
-      "Wear comfortable clothing and closed shoes",
-      "Inform staff about any allergies or medical conditions",
-      "Tours may be canceled in severe weather"
-    ]
-  },
-  {
-    id: 3,
-    season: ['Spring', 'Summer', 'Autumn', 'Winter'],
-    title: "Paragliding Experience",
-    description:
-      "Feel absolute freedom while flying above mountains with professional instructors.",
-    evaluation: "4.9",
-    difficulty: "Easy",
-    price: "From 350 GEL",
-    location: '📍Gudauri • Ananuri',
-    img: "src/assets/Frame 1984077871 (2).png",
-    buttonText: "Book Adventure",
-    rightText: [
-      "✅ Tandem flight with certified instructor",
-      "💯 Full equipment",
-      "💥 Video recording"
-    ],
-    rating: 4.9,
-    reviews: [
-      { rating: 5, username: "Sophia", review: "Incredible views, unforgettable experience!" },
-      { rating: 4.8, username: "Noah", review: "Well organized and safe flight." }
-    ],
-    additionalServices: [
-      { name: "HD video recording", price: "40 GEL" },
-      { name: "Drone photos", price: "50 GEL" },
-      { name: "Equipment rental", price: "Free" }
-    ],
-    
-    fullDescription:
-      "Experience the ultimate freedom as you soar above the mountains of Gudauri. Our certified tandem instructors ensure maximum safety while you enjoy breathtaking aerial views. A once-in-a-lifetime adventure with full video recording included.",
-    features: [
-      "Tandem Flight with Certified Instructor",
-      "Full Equipment Included",
-      "HD Video Recording",
-      "Safety Certified"
-    ],
-    images: [
-      "src/assets/Frame 1984077871.png",
-      "src/assets/Frame 1984077871 (1).png",
-      "src/assets/Frame 1984077871 (2).png"
-    ],
-    recommendations: [
-      "Receive full instructor briefing before flight",
-      "Follow all safety instructions carefully",
-      "Not recommended for people with heart conditions",
-      "Flights are not operated in bad weather conditions"
-    ]
-  },
-  {
     id: 4,
     season: ['Summer'],
     title: "White Water Rafting",
@@ -410,7 +266,7 @@ const adventureCards = [
       "Activity depends on river and weather conditions"
     ]
   },
-  {
+   {
     id: 5,
     season: ['Winter'],
     title: "Ski & Snowboard Lessons",
@@ -486,7 +342,7 @@ const adventureCards = [
       { name: "Instructor guidance", price: "Included" },
       { name: "Video recording", price: "40 GEL" }
     ],
-    
+
     fullDescription:
       "Rent high-quality ski or snowboard equipment in Gudauri. Our full set includes skis or snowboard, boots, bindings, poles (for skiers), helmet and goggles. All equipment is professionally maintained and available in all sizes.",
     features: [
@@ -500,13 +356,211 @@ const adventureCards = [
       "src/assets/Frame 1984077871 (1).png",
       "src/assets/Frame 1984077871 (2).png"
     ],
-     recommendations: [
+    recommendations: [
       "Provide correct shoe size for proper fitting",
       "Inspect equipment before use",
       "Return equipment on time to avoid extra charges",
       "Inform staff about your riding level"
     ]
   },
+  {
+    id: 3,
+    season: ['Spring', 'Summer', 'Autumn', 'Winter'],
+    title: "Paragliding Experience",
+    description:
+      "Feel absolute freedom while flying above mountains with professional instructors.",
+    evaluation: "4.9",
+    difficulty: "Easy",
+    price: "From 350 GEL",
+    location: '📍Gudauri • Ananuri',
+    img: "src/assets/Frame 1984077871 (2).png",
+    buttonText: "Book Adventure",
+    rightText: [
+      "✅ Tandem flight with certified instructor",
+      "💯 Full equipment",
+      "💥 Video recording"
+    ],
+    rating: 4.9,
+    reviews: [
+      { rating: 5, username: "Sophia", review: "Incredible views, unforgettable experience!" },
+      { rating: 4.8, username: "Noah", review: "Well organized and safe flight." }
+    ],
+    additionalServices: [
+      { name: "HD video recording", price: "40 GEL" },
+      { name: "Drone photos", price: "50 GEL" },
+      { name: "Equipment rental", price: "Free" }
+    ],
+
+    fullDescription:
+      "Experience the ultimate freedom as you soar above the mountains of Gudauri. Our certified tandem instructors ensure maximum safety while you enjoy breathtaking aerial views. A once-in-a-lifetime adventure with full video recording included.",
+    features: [
+      "Tandem Flight with Certified Instructor",
+      "Full Equipment Included",
+      "HD Video Recording",
+      "Safety Certified"
+    ],
+    images: [
+      "src/assets/Frame 1984077871.png",
+      "src/assets/Frame 1984077871 (1).png",
+      "src/assets/Frame 1984077871 (2).png"
+    ],
+    recommendations: [
+      "Receive full instructor briefing before flight",
+      "Follow all safety instructions carefully",
+      "Not recommended for people with heart conditions",
+      "Flights are not operated in bad weather conditions"
+    ]
+  },
+  {
+    id: 9,
+    season: ['Summer'],
+    title: "Jetski Adventure",
+    description:
+      "Adrenaline-filled rafting adventure on fast mountain rivers.",
+    evaluation: "5.0",
+    difficulty: "Medium",
+    price: "From 120 GEL",
+    location: '📍Around Pasanauri',
+    img: "წყლის-სკუტერი1.png",
+    buttonText: "Book Adventure",
+    rightText: [
+      "✅ Professional guide",
+      "💯 Full safety equipment",
+      "🚗 Transportation to the river",
+      "📷 Video recording"
+    ],
+    rating: 5.0,
+    reviews: [
+      { rating: 5, username: "Mia", review: "Heart-pumping fun! Excellent guides." },
+      { rating: 5, username: "Ethan", review: "Perfect combination of adventure and safety." }
+    ],
+    additionalServices: [
+      { name: "Safety equipment", price: "Free" },
+      { name: "Transport to river", price: "Included" },
+      { name: "Drone filming", price: "60 GEL" }
+    ],
+
+    fullDescription:
+      "Take on the thrilling rapids of mountain rivers near Pasanauri. Guided by professional rafting experts, this adventure combines teamwork, adrenaline and stunning natural scenery. All safety equipment and transportation are included.",
+    features: [
+      "Professional Guide",
+      "Full Safety Equipment",
+      "River Transportation",
+      "Video Recording Included"
+    ],
+    images: [
+      "src/assets/Frame 1984077871.png",
+      "src/assets/Frame 1984077871 (1).png",
+      "src/assets/Frame 1984077871 (2).png"
+    ],
+    recommendations: [
+      "Attend the mandatory safety briefing before rafting",
+      "Wear life jacket and helmet at all times",
+      "Not recommended for non-swimmers or people with serious medical conditions",
+      "Activity depends on river and weather conditions"
+    ]
+  },
+  {
+    id: 10,
+    season: ['Summer'],
+    title: "MotorBoat Adventure",
+    description:
+      "Adrenaline-filled motorboat adventure on fast mountain rivers.",
+    evaluation: "5.0",
+    difficulty: "Medium",
+    price: "From 120 GEL",
+    location: '📍Around Pasanauri',
+    img: "ნავით გასეირნება ანანურში_1.2.13.png",
+    buttonText: "Book Adventure",
+    rightText: [
+      "✅ Professional guide",
+      "💯 Full safety equipment",
+      "🚗 Transportation to the river",
+      "📷 Video recording"
+    ],
+    rating: 5.0,
+    reviews: [
+      { rating: 5, username: "Mia", review: "Heart-pumping fun! Excellent guides." },
+      { rating: 5, username: "Ethan", review: "Perfect combination of adventure and safety." }
+    ],
+    additionalServices: [
+      { name: "Safety equipment", price: "Free" },
+      { name: "Transport to river", price: "Included" },
+      { name: "Drone filming", price: "60 GEL" }
+    ],
+
+    fullDescription:
+      "Take on the thrilling rapids of mountain rivers near Pasanauri. Guided by professional rafting experts, this adventure combines teamwork, adrenaline and stunning natural scenery. All safety equipment and transportation are included.",
+    features: [
+      "Professional Guide",
+      "Full Safety Equipment",
+      "River Transportation",
+      "Video Recording Included"
+    ],
+    images: [
+      "src/assets/Frame 1984077871.png",
+      "src/assets/Frame 1984077871 (1).png",
+      "src/assets/Frame 1984077871 (2).png"
+    ],
+    recommendations: [
+      "Attend the mandatory safety briefing before rafting",
+      "Wear life jacket and helmet at all times",
+      "Not recommended for non-swimmers or people with serious medical conditions",
+      "Activity depends on river and weather conditions"
+    ]
+  },
+  
+  {
+    id: 2,
+    season: ['Spring', 'Summer', 'Autumn'],
+    title: "Horse Riding Tour",
+    description:
+      "Peaceful horse riding experience across open fields and scenic nature routes.",
+    evaluation: "4.8",
+    difficulty: "Easy",
+    price: "From 80 GEL",
+    location: '📍Gudauri • Pasanauri • Ananuri',
+    img: "ცხენოსნობა2-Recovered.png",
+    buttonText: "Book Adventure",
+    rightText: [
+      "⛰️ Mountain views",
+      "🐴 Experienced horses",
+      "⭐ Traditional Georgian style"
+    ],
+    rating: 4.7,
+    reviews: [
+      { rating: 5, username: "Emma", review: "So relaxing and enjoyable!" },
+      { rating: 4.5, username: "Liam", review: "Great horses and beautiful scenery." }
+    ],
+    additionalServices: [
+      { name: "Photo session", price: "20 GEL" },
+      { name: "Guided trail maps", price: "Free" },
+      { name: "Traditional snacks", price: "15 GEL" }
+    ],
+
+    fullDescription:
+      "Enjoy a calm and authentic horse riding tour through the scenic valleys and open mountain landscapes of Gudauri and surrounding areas. Our experienced horses and local guides ensure a safe and memorable journey in traditional Georgian style.",
+    features: [
+      "Mountain Views",
+      "Experienced Horses",
+      "Professional Guide",
+      "Traditional Georgian Style"
+    ],
+    images: [
+      "src/assets/Frame 1984077871.png",
+      "src/assets/Frame 1984077871 (1).png",
+      "src/assets/Frame 1984077871 (2).png"
+    ],
+    recommendations: [
+      "Listen carefully to the horse riding instructor",
+      "Wear comfortable clothing and closed shoes",
+      "Inform staff about any allergies or medical conditions",
+      "Tours may be canceled in severe weather"
+    ]
+  },
+
+  
+ 
   {
     id: 7,
     season: ['Winter'],
@@ -554,7 +608,55 @@ const adventureCards = [
       "Not recommended for pregnant women or people with back problems",
       "Tours are weather dependent"
     ]
-  }
+  },
+  {
+    id: 1,
+    season: ['Spring', 'Summer', 'Autumn', 'Winter'],
+    title: "ATV Mountain Adventure",
+    description:
+      "An exciting off-road ATV experience through mountain trails and wild landscapes.",
+    evaluation: "4.8",
+    difficulty: "Medium",
+    price: "From 100 GEL",
+    location: '📍Gudauri • Pasanauri • Ananuri',
+    img: "src/assets/Frame 1984077871.png",
+    buttonText: "Book Adventure",
+    rightText: [
+      "🧑‍🏫 Professional Guide",
+      "🛡 Safety Briefing",
+      "🚁 Drone Footage"
+    ],
+    rating: 4.8,
+    reviews: [
+      { rating: 5, username: "Alice", review: "Amazing experience, highly recommend!" },
+      { rating: 4.5, username: "John", review: "Thrilling ride, good safety measures." }
+    ],
+    additionalServices: [
+      { name: "Drone filming", price: "50 GEL" },
+      { name: "Professional photos", price: "30 GEL" },
+      { name: "Safety gear included", price: "Free" }
+    ],
+
+    fullDescription:
+      "Join us for an unforgettable ATV mountain adventure across the breathtaking landscapes of Gudauri, Pasanauri and Ananuri. Ride powerful quad bikes through rugged off-road trails, river crossings and panoramic mountain routes. This experience is perfect for adrenaline seekers who want to explore Georgia’s wild beauty in an active way.",
+    features: [
+      "Professional Guide",
+      "Safety Briefing",
+      "Drone Footage Included",
+      "Protective Equipment"
+    ],
+    images: [
+      "src/assets/Frame 1984077871.png",
+      "src/assets/Frame 1984077871 (1).png",
+      "src/assets/Frame 1984077871 (2).png"
+    ],
+    recommendations: [
+      "Follow the guide’s instructions at all times",
+      "Wear protective equipment provided",
+      "Not recommended for people with serious back problems",
+      "Tours may be rescheduled in extreme weather conditions"
+    ]
+  },
 ];
 
 export default adventureCards;

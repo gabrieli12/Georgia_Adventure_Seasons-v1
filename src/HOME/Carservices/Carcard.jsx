@@ -1,4 +1,6 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
+
 
 function Carcard({img , heading , description , tall }) {
 
@@ -9,7 +11,9 @@ function Carcard({img , heading , description , tall }) {
         <p className='text-2xl'>{heading}</p>
         <p>{description}</p>
         <div className='flex items-center justify-center gap-2 cursor-pointer'>
-          <p className='text-[#08523e] font-medium'>Read more</p>
+          <HashLink to="/transport#">
+            <p className='text-[#08523e] font-medium'>Read more</p>
+          </HashLink>
           <img src="public\arrow_forward_24dp_08523E_FILL0_wght400_GRAD0_opsz24.png" alt="arrow" className='w-5 '/>
         </div>
       </div>
