@@ -10,7 +10,6 @@ import Footer from './components/Footer/Footer'
 // contact page 
 import ContactPage from './HOME/contact us/ContactPage'
 
-
 import Transport from './Pages/Transport/Transport'
 
 
@@ -18,6 +17,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import ActivitiesDetail from './Pages/ActivitiesDetailPage/ActivitiesDetail'
 import FullPage from './FullPage'
+import Accommodation from './Pages/Accommodation/Accommodation'
 
 export const ChosenActivity = createContext()
 
@@ -61,6 +61,17 @@ function App() {
                 <>
                   <Header />
                   <Transport />
+                  <Footer />
+                </>
+              }
+            />
+
+            <Route
+              path="/accommodation"
+              element={
+                <>
+                  <Header />
+                  <Accommodation />
                   <Footer />
                 </>
               }

@@ -1,5 +1,6 @@
 
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 function Cottagescard() {
 
@@ -18,9 +19,13 @@ function Cottagescard() {
         </div>
         <div className=" flex flex-col justify-center items-center w-48 p-7 h-32 gap-3 absolute bottom-24 bg-[#0B1220] border-blue-200 border rounded-lg">
           <h2 className="font-bold text-2xl  text-white p-2 font-merienda">{cottage}</h2>
-          <button className="bg-transparent border-[2px] rounded-2xl text-lg border-blue-400 text-blue-300 px-4 py-2 cursor-pointer hover:bg-blue-400 hover:text-white duration-200">
-            learn more
-          </button>
+          <HashLink to="/accommodation#">
+
+            <button className="bg-transparent border-2 rounded-2xl text-lg border-blue-400 text-blue-300 px-4 py-2 cursor-pointer hover:bg-blue-400 hover:text-white duration-200">
+              learn more
+            </button>
+          </HashLink>
+
         </div>
       </>
     );

@@ -5,13 +5,13 @@ import Carcard from '../../HOME/Carservices/Carcard'
 
 function TransportCard({ img, heading, description, tall }) {
   return (
-    <div className={`w-81 relative  flex flex-col justify-start bg-gray-50 items-start gap-3 ${tall ? ' -top-15' : ''}`}>
+    <div className={`w-81 relative  flex flex-col justify-start bg-orange-50 pb-5 items-start gap-3 ${tall ? ' -top-15' : ''}`}>
       <img src={img} alt="Car image" className='w-full h-50 object-cover' />
       <div className='w-full h-full flex flex-col justify-start items-start gap-3 px-5 py-3'>
         <p className='text-2xl'>{heading}</p>
         <p>{description}</p>
-        <div className='flex items-center justify-center gap-2 cursor-pointer'>
-          <button className='text-[#08523e] font-medium'>Book Now</button>
+        <div className='flex items-center justify-center gap-2 cursor-pointer mt-7 '>
+          <button className='text-[#08523e] font-medium cursor-pointer'>Book Now</button>
         </div>
       </div>
     </div>
@@ -85,8 +85,8 @@ function Transport() {
 
       </section>
 
-      <section className='w-full p-5 flex flex-col bg-[#0B1220] justify-center items-center '>
-        <div className='w-full p-5 flex justify-center gap-15 text-yellow-500  text-lg font-medium '>
+      <section className='w-full p-5 flex flex-col pb-20 bg-[#0B1220] justify-center items-center  '>
+        <div className='w-full p-5 flex justify-center gap-15 text-yellow-500 flex-wrap text-lg font-medium '>
           <p className="">✔ Airport pickup & drop-off</p>
           <p className="">✔ Hotel transfers</p>
           <p className="">✔ Point-to-point transportation</p>
@@ -99,19 +99,42 @@ function Transport() {
         <p className='text-white text-lg font-medium'>Use our transportation service and get
           <span className='text-yellow-500 font-bold'> special discounts</span> on our activities!</p>
 
-          <div className='flex flex-col justify-center items-center gap-5 mt-5'>
-            <p className='text-white text-lg font-medium'>Ready to Travel?</p>
-            <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591]  ">
-              Book Now
-            </button>
-          </div>
+        <div className='flex flex-col justify-center items-center gap-5 mt-5'>
+          <p className='text-white text-lg font-medium'>Ready to Travel?</p>
+          <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591]  ">
+            Book Now
+          </button>
+        </div>
       </section>
 
 
+      <section >
+        {/* <video src="videos/2025-11-18-131947470.mp4" controls className="w-full h-170 rounded-xl "></video> */}
+        <div className="relative w-full justify-center p-15 bg-[#032003] items-center flex ">
+
+          {/* <video src='videos/2025-11-18-131947470.mp4'
+            class="absolute inset-0 w-full h-full object-cover blur-xl scale-110"
+            autoplay muted loop 
+          ></video> */}
+
+          <img className="absolute inset-0 w-full h-full object-cover  blur-xl scale-100 -top-5 left-0" src="car_images/tbilisi_gudauri_map.png" alt="" />
+
+          {/* <video src='videos/2025-11-18-131947470.mp4'
+            class="relative mx-auto h-full object-contain"
+            autoplay muted loop controls
+          ></video> */}
+
+          {/* <img className='relative  w-150 rotate-90 object-cover' src="car_images/kutaisi_gudauri_map.png" alt="" /> */}
+          <img className='relative  object-cover' src="car_images/tbilisi_gudauri_map.png" alt="" />
+          {/* <img className='relative  w-150 h-screen rotate-90 object-cover' src="car_images/batumi_gudauri_map.png" alt="" /> */}
+
+
+        </div>
+      </section>
 
 
       <section>
-        <div className="relative bg-[#0B1220] py-7 mt-40">
+        <div className="relative bg-[#0B1220] py-7 ">
           <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="" />
           <StringRunner animationName={'marquee'} />
           <StringRunner animationName={'marquee2'} />

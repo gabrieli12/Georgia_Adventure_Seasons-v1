@@ -15,11 +15,11 @@ function Nav({ scrolled }) {
             <HashLink className="hover:underline " to="/#activities">
                 Tours & Activities
             </HashLink>
-            <HashLink className="hover:underline " to="/#accommodation">
+            <HashLink className="hover:underline " to="/accommodation#">
                 Accommodation
             </HashLink>
 
-            <HashLink className="hover:underline " to="/#transportation">
+            <HashLink className="hover:underline " to="/transport#">
                 Transportation
             </HashLink>
 

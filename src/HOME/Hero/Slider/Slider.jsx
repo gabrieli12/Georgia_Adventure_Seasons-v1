@@ -4,8 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 function Slider() {
 
     const heroImages = [
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
+        "hero_slider_images/image.png",
+        "hero_slider_images/პარაპლანი2.png",
         "src/assets/Frame 1984077871 (3).png",
         "src/assets/Frame 1984077871 (4).png",
         "src/assets/Frame 1984077871 (5).png",
@@ -77,7 +77,7 @@ function Slider() {
                                 <img
                                     src={src}
                                     alt={`Hero slide ${index + 1}`}
-                                    className="w-full h-32 md:h-48 object-cover rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
+                                    className="w-full h-32 md:h-48 object-cover object-center rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
                                 />
                             </div>
                         ))}
