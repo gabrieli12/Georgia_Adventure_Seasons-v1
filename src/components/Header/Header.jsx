@@ -145,13 +145,13 @@ function Header() {
 
                 {/* Georgia Adventures logo */}
                 <a href="/">
-                    <div className="flex justify-center items-center">
-                        <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex' src="main_logo/Georgia Adventure Logo for images.png" alt="logo" />
+                    <div className="flex justify-center items-center ">
+                        <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex max-sm:w-14' src="main_logo/Georgia Adventure Logo for images.png" alt="logo" />
                         <div className="cursor-pointer p-2 flex justify-start items-start flex-col relative top-2">
-                            <h2 className="font-bebas text-[1.7rem] tracking-wider max-2xl:text-[1.5rem] max-xl:text-[1.3rem]">
-                                Georgia <span className='text-green-200 '>Adventure</span>
+                            <h2 className="font-bebas text-[1.7rem] tracking-wider max-2xl:text-[1.5rem] max-xl:text-[1.3rem] max-sm:text-[1rem]">
+                                Georgia <span className='text-green-200 max-sm:text-[0.9rem]'>Adventure</span>
                             </h2>
-                            <p className="font-bebas text-[1.5rem] tracking-wider bottom-2 relative max-2xl:text-[1.4rem] max-xl:text-[1.2rem]">Seasons</p>
+                            <p className="font-bebas text-[1.5rem] tracking-wider bottom-2 relative max-2xl:text-[1.4rem] max-xl:text-[1.2rem] max-sm:text-[0.9rem]">Seasons</p>
                         </div>
                     </div>
                 </a>
@@ -162,7 +162,7 @@ function Header() {
 
                 <a href="tel:+995 592 43 66 51" className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer">
                     <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
-                    <p className="max-2xl:text-sm">+995 595 706 585</p>
+                    <p className="max-2xl:text-sm max-sm:hidden">+995 595 706 585</p>
                 </a>
 
                 {/* number, language, btn*/}

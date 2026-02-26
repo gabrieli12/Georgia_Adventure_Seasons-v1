@@ -8,8 +8,8 @@ function Nav({ scrolled }) {
 
 
     return (
-        <nav scrolled={scrolled} className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-poppins  max-2xl:gap-3 max-xl:text-[15px]   ">
-            <HashLink className="hover:underline  " to="/#">
+        <nav scrolled={scrolled} className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-poppins  max-2xl:gap-3 max-xl:text-[15px]   text-[14px] ">
+            <HashLink className="hover:underline " to="/#">
                 Home
             </HashLink>
             <HashLink className="hover:underline " to="/#activities">
@@ -30,7 +30,7 @@ function Nav({ scrolled }) {
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
             >
-                <button className="flex items-center gap-1.5 outline-none font-medium text-[15px] tracking-wide uppercase transition-all group-hover:opacity-70">
+                <button className="flex items-center gap-1.5 outline-none font-medium text-[14px] tracking-wide uppercase transition-all group-hover:opacity-70 ">
                     Company
                     <svg
                         className={`w-3.5 h-3.5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}

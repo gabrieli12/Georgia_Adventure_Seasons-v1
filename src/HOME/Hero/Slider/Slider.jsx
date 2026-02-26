@@ -59,7 +59,7 @@ function Slider() {
 
 
     return (
-                <div className="absolute bottom-0 left-[50%] -translate-x-[50%]  w-full max-w-7xl pb-5 mx-auto overflow-hidden">
+                <div className="absolute -bottom-5 left-[50%] -translate-x-[50%]  w-full max-w-7xl pb-5 mx-auto overflow-hidden">
                     {/* hero slider*/}
                     <div
                         className="flex transition-transform duration-800 ease-in-out"
@@ -77,7 +77,7 @@ function Slider() {
                                 <img
                                     src={src}
                                     alt={`Hero slide ${index + 1}`}
-                                    className="w-full h-32 md:h-48 object-cover object-center rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
+                                    className="w-full h-28 md:h-44 object-cover object-center rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
                                 />
                             </div>
                         ))}

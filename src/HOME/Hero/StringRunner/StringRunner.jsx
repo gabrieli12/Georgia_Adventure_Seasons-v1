@@ -1,8 +1,8 @@
 
 function StringRunner({ animationName }) {
     return (
-        <div className="w-full overflow-hidden  py-3">
-            <div className={`${animationName} text-white font-semibold text-4xl flex gap-12 h-20 justify-center items-center `}>
+        <div className="w-full overflow-hidden  py-3 max-sm:py-1">
+            <div className={`${animationName} text-white font-semibold text-4xl flex gap-12 h-20 justify-center items-center max-sm:text-xl max-sm:gap-4`}>
                 {/* <span>🏔️ Four Seasons Adventures in Georgia</span> */}
                 <span>🚙 ATV & Quad Tours</span>
                 <span>🐎 Horse Riding Experiences</span>

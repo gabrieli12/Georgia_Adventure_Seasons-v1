@@ -124,7 +124,7 @@ function Reviews({ title }) {
                 onClick={scrollPrev}>
                     <i className="fa-solid fa-arrow-left"></i>
                 </div>
-                <div className={`${'w-[79%] flex justify-between overflow-hidden gap-[35px]'} max-md:w-full`} id='main-div' ref={slider}>
+                <div className={`${'w-[79%] flex justify-between overflow-hidden gap-[35px]'} max-md:w-full `} id='main-div' ref={slider}>
                     {
                       ReviewInfo.map((review, index) => (
                         <ReviewsComp {...review} key={index}/>

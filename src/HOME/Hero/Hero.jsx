@@ -20,11 +20,11 @@ function Hero() {
             "url('src/assets/photo-1709506530108-4951e792208f 4.png')",
         }}
       >
-        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative  ">
+        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative -mt-18 max-sm:-mt-18">
 
           {/* ზედა სამი მნიშვნელოვანი სიტყვა */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-[12px] text-white  font-semibold  ">
-            <p className="bg-[#a79e9ec5] px-3 py-0.5 rounded-lg flex justify-center items-center gap-0.5  bg-white/15 backdrop-blur-md">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-[12px] text-white  font-semibold  max-sm:hidden">
+            <p className="bg-[#a79e9ec5] px-3 py-0.5 rounded-lg flex justify-center items-center gap-0.5  bg-white/15 backdrop-blur-md ">
               <img
                 className="w-5"
                 src="src/assets/sheild.png"
@@ -48,11 +48,11 @@ function Hero() {
 
 
 
-          <h1 className="text-4xl md:text-6xl font- flex justify-center items-center flex-col ">
+          <h1 className="text-3xl md:text-4xl font- flex justify-center items-center flex-col max-sm:text-3xl">
             Embrace the <span className=" text-green-300 ">Adventure</span>
             
           </h1>
-          <p className=" max-w-3xl font-medium text-sm md:text-xl text-gray-200">
+          <p className=" max-w-3xl font-medium text-sm md:text-xl text-gray-200 ">
             Four Seasons, Endless Adventures in <span className="text-[#ffc481]">Georgia Mountains</span> <br /> 
           </p>
           <p className="text-gray-200 flex justify-center items-center gap-1 relative bottom-4 text-lg">
@@ -83,7 +83,7 @@ function Hero() {
 
         {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
-        <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="" />
+        <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="" />
         <StringRunner animationName={'marquee'} />
         <StringRunner animationName={'marquee2'} />
       </div>
