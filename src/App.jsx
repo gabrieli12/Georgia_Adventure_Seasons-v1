@@ -24,7 +24,7 @@ import Terms from './Pages/important/Terms'
 import Cancellation from './Pages/important/Cancellation'
 import Safety from './Pages/important/Safety'
 import LiabilityWaiver from './Pages/important/LiabilityWaiver'
-import LegalConsent from './Pages/important/LegalConsent'
+// import LegalConsent from './Pages/important/LegalConsent'
 
 export const ChosenActivity = createContext()
 
