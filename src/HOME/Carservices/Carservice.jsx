@@ -43,12 +43,12 @@ function Carservice() {
 
 
                     <Carcard
-                        img={"public/Rectangle 142.png"}
+                        img={"car_images/sedan.png"}
                         heading="SEDAN"
                         description="Experience a smooth and comfortable ride with our stylish sedans. Perfect for city driving and daily commutes, offering both economy and elegance." />
 
                     <Carcard
-                        img={"public/image 110.png"}
+                        img={"car_images/minivan.png"}
                         heading="MINIVAN"
                         description="ravel together in our spacious and practical minivans. Ideal for family trips, group travel, or carrying extra luggage without compromising comfort. Equipped with modern features, these vehicles ensure a safe and convenient."
                         tall={true} />

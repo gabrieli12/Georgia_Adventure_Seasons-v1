@@ -39,12 +39,16 @@ import ContactPage from './HOME/contact us/ContactPage'
 
 import Gridimgs from './HOME/SmallGalery/Gridimgs'
 import StringRunner from './HOME/Hero/StringRunner/StringRunner'
+import LegalConsent from './Pages/important/LegalConsent'
 
 function FullPage() {
 
     return (
         <>
+
+
             <Header />
+            <LegalConsent />
             <main>
                 <Hero />
                 <AdventureActivities />

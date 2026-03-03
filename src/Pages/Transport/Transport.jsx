@@ -21,6 +21,7 @@ function TransportCard({ img, heading, description, tall }) {
 function Transport() {
   return (
     <div>
+      <LegalConsent />
       <div className="bg-[#000000] py-15 w-full h-24 absolute top-0 left-0"></div>
       <section >
         <video className='w-full ' src="car_images/transport_video.mp4" autoPlay loop muted ></video>

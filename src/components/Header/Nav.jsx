@@ -49,7 +49,7 @@ function Nav({ scrolled }) {
                     ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2 '}
                 `}>
                     <Link
-                        to="/about"
+                        to="/aboutUs"
                         className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium "
                     >
                         About Us
@@ -78,6 +78,8 @@ function Nav({ scrolled }) {
                     >
                         FAQ
                     </HashLink>
+
+                    
 
                 </div>
             </div>

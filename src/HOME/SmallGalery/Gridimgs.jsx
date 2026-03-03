@@ -78,10 +78,10 @@ import React from 'react'
 
 function Gridimgs() {
     return (
-        <div className="relative mt-40 px-4 md:px-20 mb-20">
+        <div className="relative py-40 px-4 md:px-20  bg-[#f2f1fd]">
 
             {/* 🪂 პარაპლანი */}
-            <div className='absolute -top-32 md:-top-72 flex flex-col justify-center items-center left-1/2 -translate-x-1/2 z-10 pointer-events-none'>
+            <div className='absolute -top-32 md:-top- flex flex-col justify-center items-center left-1/2 -translate-x-1/2 z-10 pointer-events-none'>
                 <img 
                     src="paraglider/paraglider.png" 
                     className='-rotate-12 w-32 md:w-64' 
@@ -103,42 +103,42 @@ function Gridimgs() {
 
                 {/* 1 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="cuadro.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="cuadro" />
+                    <img src="activities_images/cuadro.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="cuadro" />
                 </div>
 
                 {/* 2 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="kater.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="kater" />
+                    <img src="activities_images/kater.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="kater" />
                 </div>
 
                 {/* 3 - mobile full */}
                 <div className="col-span-2 md:col-span-2 overflow-hidden rounded-2xl shadow-lg">
-                    <img src="hiking.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="hiking" />
+                    <img src="activities_images/hiking.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="hiking" />
                 </div>
 
                 {/* 4 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="skiing.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="skiing" />
+                    <img src="activities_images/skiing.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="skiing" />
                 </div>
 
                 {/* 5 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="parashuti.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="parashuti" />
+                    <img src="activities_images/parashuti.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="parashuti" />
                 </div>
 
                 {/* 6 - mobile full */}
                 <div className="col-span-2 md:col-span-1 overflow-hidden rounded-2xl shadow-lg">
-                    <img src="jomardoba.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
+                    <img src="activities_images/jomardoba.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
                 </div>
 
                 {/* 7 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="horse.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="horse" />
+                    <img src="activities_images/horse.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="horse" />
                 </div>
 
                 {/* 8 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="lakewalk.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="lakewalk" />
+                    <img src="activities_images/lakewalk.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="lakewalk" />
                 </div>
 
             </div>

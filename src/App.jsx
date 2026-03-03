@@ -18,6 +18,13 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ActivitiesDetail from './Pages/ActivitiesDetailPage/ActivitiesDetail'
 import FullPage from './FullPage'
 import Accommodation from './Pages/Accommodation/Accommodation'
+import AboutUs from './Pages/AboutUs/AboutUs'
+import PrivacyPolicy from './Pages/important/PrivacyPolicy'
+import Terms from './Pages/important/Terms'
+import Cancellation from './Pages/important/Cancellation'
+import Safety from './Pages/important/Safety'
+import LiabilityWaiver from './Pages/important/LiabilityWaiver'
+import LegalConsent from './Pages/important/LegalConsent'
 
 export const ChosenActivity = createContext()
 
@@ -38,6 +45,7 @@ function App() {
                 <>
                   <Header />
                   <ActivitiesDetail />
+                  <Footer />
                   {/* ალბათ აქაც გინდა Footer? თუ არა, ასე დარჩეს */}
                 </>
               }
@@ -76,6 +84,58 @@ function App() {
                 </>
               }
             />
+
+            <Route
+              path="/aboutUs"
+              element={
+                <>
+                  <Header />
+                  <AboutUs />
+                  <Footer />
+                </>
+              }
+            />
+
+            <Route path="/privacy-policy" element={
+              <>
+                <Header />
+                <PrivacyPolicy />
+                <Footer />
+              </>
+            }
+            />
+            <Route path="/terms" element={
+              <>
+                <Header />
+                <Terms />
+                <Footer />
+              </>
+            } />
+            <Route path="/cancellation" element={
+              <>
+                <Header />
+                <Cancellation />
+                <Footer />
+              </>
+            } />
+            <Route path="/safety" element={
+              <>
+                <Header />
+                <Safety />
+                <Footer />
+              </>
+            } />
+
+            <Route path="/LiabilityWaiver" element={
+              <>
+                <Header />
+                <LiabilityWaiver />
+                <Footer />
+              </>
+            } />
+
+
+            
           </Routes>
         </BrowserRouter>
       </ChosenActivity.Provider>

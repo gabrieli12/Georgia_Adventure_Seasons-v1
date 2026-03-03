@@ -4,18 +4,26 @@ import { useState, useRef, useEffect } from 'react';
 function Slider() {
 
     const heroImages = [
-        "hero_slider_images/image.png",
-        "hero_slider_images/პარაპლანი2.png",
-        "src/assets/Frame 1984077871 (3).png",
-        "src/assets/Frame 1984077871 (4).png",
-        "src/assets/Frame 1984077871 (5).png",
+        "activities_images/skiSnowboard_lessons/თხილამურები222.png",
+        "activities_images/პარაპლანი2.png",
+        "activities_images/ბურანი.png",
+        "activities_images/კვადროები3.png",
+        "activities_images/გაქირავება_თხილამურების.png",
+        "activities_images/ჯომარჯობა2.png",
+        "activities_images/წყლის-სკუტერი1.png",
+        "activities_images/ცხენოსნობა.png",
+        "activities_images/ნავით გასეირნება ანანურში_1.2.13.png",
+
         "src/assets/image 03.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (3).png",
-        "src/assets/Frame 1984077871 (4).png",
-        "src/assets/Frame 1984077871 (5).png",
-        "src/assets/image 03.png",
+        "activities_images/თხილამურები222.png",
+        "activities_images/პარაპლანი2.png",
+        "activities_images/ბურანი.png",
+        "activities_images/კვადროები3.png",
+        "activities_images/გაქირავება_თხილამურების.png",
+        "activities_images/ჯომარჯობა2.png",
+        "activities_images/წყლის-სკუტერი1.png",
+        "activities_images/ცხენოსნობა.png",
+        "activities_images/ნავით გასეირნება ანანურში_1.2.13.png",
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,32 +67,32 @@ function Slider() {
 
 
     return (
-                <div className="absolute -bottom-5 left-[50%] -translate-x-[50%]  w-full max-w-7xl pb-5 mx-auto overflow-hidden">
-                    {/* hero slider*/}
+        <div className="absolute -bottom-5 left-[50%] -translate-x-[50%]  w-full max-w-7xl pb-5 mx-auto overflow-hidden">
+            {/* hero slider*/}
+            <div
+                className="flex transition-transform duration-800 ease-in-out"
+                style={{
+                    transform: `translateX(-${currentIndex * (150 / visibleSlides)
+                        }%)`,
+                }}
+            >
+                {heroImages.map((src, index) => (
                     <div
-                        className="flex transition-transform duration-800 ease-in-out"
-                        style={{
-                            transform: `translateX(-${currentIndex * (150 / visibleSlides)
-                                }%)`,
-                        }}
+                        key={index}
+                        className="shrink-0 px-2"
+                        style={{ width: `${130 / visibleSlides}%` }}
                     >
-                        {heroImages.map((src, index) => (
-                            <div
-                                key={index}
-                                className="shrink-0 px-2"
-                                style={{ width: `${130 / visibleSlides}%` }}
-                            >
-                                <img
-                                    src={src}
-                                    alt={`Hero slide ${index + 1}`}
-                                    className="w-full h-28 md:h-44 object-cover object-center rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
-                                />
-                            </div>
-                        ))}
+                        <img
+                            src={src}
+                            alt={`Hero slide ${index + 1}`}
+                            className="w-full h-28 md:h-44 object-cover object-center rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
+                        />
                     </div>
+                ))}
+            </div>
 
 
-                </div>
+        </div>
 
     )
 }

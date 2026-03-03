@@ -2,11 +2,13 @@ import React from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { ChosenActivity } from '../../App'
+import { HashLink } from 'react-router-hash-link';
+import AdventureCards from './AdventureCards';
 
-function Card({ index, img, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations}) {
+function Card({ index, img, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations, priceDetails }) {
   const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
-  
-  
+
+
   return (
     <>
       <div
@@ -41,30 +43,42 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
 
           </ul>
 
-            <hr className='my-5 ' />
+          <hr className='my-5 ' />
 
-            <div className="w-full flex items-center justify-between ">
-              <p className="text-red-900 opacity-80 font-bold flex flex-col">
-                {price} 
-                <span className='opacity-60 text-black text-sm font-normal'>Price may vary</span>
-              </p>
-              <Link to={'/details'} onClick={() => {
-                setChosenActivity({
-                  mainImage: img,
-                  imagesGallery: [detaleImg[0], detaleImg[1], detaleImg[2]],
-                  title: title,
-                  description: description,
-                  rating: rating,
-                  reviews: reviews,
-                  additionalServices: additionalServices,
-                  fullDescription: fullDescription,
-                  features: features,
-                  recommendations: recommendations,
-                })
-              }}><button className="bg-[#FF6900]  text-white px-4 py-2 evaluation-300 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
-                  View Details
-                </button></Link>
-            </div>
+          <div className="w-full flex items-center justify-between ">
+            <p className="text-red-900 opacity-80 font-bold flex flex-col">
+              {price}
+              <span className='opacity-60 text-black text-sm font-normal'>Price may vary</span>
+            </p>
+            <HashLink
+              to={'/details#'}
+              onClick={() => {
+                // const activityData = {
+                //   mainImage: img,
+                //   imagesGallery: detaleImg.slice(0, 6),
+                //   title: title,
+                //   description: description,
+                //   rating: rating,
+                //   reviews: reviews,
+                //   additionalServices: additionalServices,
+
+                //   fullDescription: fullDescription,
+                //   features: features,
+                //   recommendations: recommendations,
+                //   priceDetails: priceDetails,
+                // };
+                
+
+                setChosenActivity(AdventureCards.find(activity => activity.title === title));
+                // ვინახავთ ობიექტს ტექსტურ ფორმატში
+                localStorage.setItem('chosenActivity', JSON.stringify(AdventureCards.find(activity => activity.title === title)));
+              }}
+            >
+              <button className="bg-[#FF6900] text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
+                View Details
+              </button>
+            </HashLink>
+          </div>
         </div>
       </div>
     </>

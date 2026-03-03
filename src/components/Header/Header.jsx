@@ -141,90 +141,96 @@ function Header() {
         <>
             <div id="scroll-anchor" className="absolute top-0 left-0 h-1 w-1 pointer-events-none opacity-0"></div>
 
-            <header className={`flex justify-around fixed items-center text-[16px] w-full text-white max-lg:px-10 max-lg:justify-between z-50 transition-all duration-500 ease-out ${scrolled ? "bg-[#0B1220]/80 backdrop-blur-lg shadow-lg py-1" : "bg-transparent py-3"} px-10 max-2xl:px-5`}>
+            <header className={`flex justify-around fixed items-center text-[16px] w-full text-white  z-50 transition-all duration-500 ease-out ${scrolled ? "bg-[#0B1220]/80 backdrop-blur-lg shadow-lg " : "bg-transparent "}   flex-col`}>
+                <section className="w-full bg-white py-3 flex  justify-around sm:hidden">
+
+                    <div className="flex gap-10 relative">
+                        <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer relative top-1.5" target="__blank">
+                            <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
+                            <p className="max-2xl:text-sm text-black">+995 595 706 585</p>
+                        </a>
+
+                    </div>
+
+                    <button className="border shadow-2xl shadow-green-300  px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 bg-[#0B1220] max-sm:px-5 max-sm:py-2 ">
+                        Book Now
+                    </button>
+
+
+                </section>
 
                 {/* Georgia Adventures logo */}
-                <a href="/">
-                    <div className="flex justify-center items-center ">
-                        <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex max-sm:w-14' src="main_logo/Georgia Adventure Logo for images.png" alt="logo" />
-                        <div className="cursor-pointer p-2 flex justify-start items-start flex-col relative top-2">
-                            <h2 className="font-bebas text-[1.7rem] tracking-wider max-2xl:text-[1.5rem] max-xl:text-[1.3rem] max-sm:text-[1rem]">
-                                Georgia <span className='text-green-200 max-sm:text-[0.9rem]'>Adventure</span>
-                            </h2>
-                            <p className="font-bebas text-[1.5rem] tracking-wider bottom-2 relative max-2xl:text-[1.4rem] max-xl:text-[1.2rem] max-sm:text-[0.9rem]">Seasons</p>
+                <section className={`w-full justify-around items-center flex max-lg:justify-between duration-500 ease-out max-2xl:px-5 px-10 ${scrolled ? 'py-1' : 'py-3'}`}>
+                    <a href="/">
+                        <div className="flex justify-center items-center ">
+                            <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex ' src="main_logo/Georgia Adventure Logo for images.png" alt="logo" />
+                            <div className="cursor-pointer p-2 flex justify-start items-start flex-col relative top-2">
+                                <h2 className="font-bebas text-[1.7rem] tracking-wider max-2xl:text-[1.5rem] max-xl:text-[1.3rem] ">
+                                    Georgia <span className='text-green-200 '>Adventure</span>
+                                </h2>
+                                <p className="font-bebas text-[1.5rem] tracking-wider bottom-2 relative max-2xl:text-[1.4rem] max-xl:text-[1.2rem] ">Seasons</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                {/* navigation */}
+                    {/* navigation */}
 
-                <Nav />
+                    <Nav />
 
-                <a href="tel:+995 592 43 66 51" className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer">
-                    <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
-                    <p className="max-2xl:text-sm max-sm:hidden">+995 595 706 585</p>
-                </a>
+                    <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer max-sm:hidden" target="__blank">
+                        <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
+                        <p className="max-2xl:text-sm ">+995 595 706 585</p>
+                    </a>
 
-                {/* number, language, btn*/}
-                <div className="flex justify-center items-center gap-2 max-xl:flex-col-reverse max-lg:flex-row max-xl:top-1 relative">
+                    {/* number, language, btn*/}
+                    <div className="flex justify-center items-center gap-2 max-xl:flex-col-reverse max-lg:flex-row  relative">
 
-                    {/* Language Selector */}
-                    <div
-                        className="relative py-3 group"
-                        onMouseEnter={() => setIsOpen(true)}
-                        onMouseLeave={() => setIsOpen(false)}
-                    >
-                        <button className="flex items-center gap-1.5 outline-none font-medium text-[15px] tracking-wide uppercase transition-all group-hover:opacity-70">
-                            <img className='w-6' src={flagUrls[language]} alt="flag" />
+                        {/* Language Selector */}
+                        {/* <div
+                            className="relative py-3 group"
+                            onMouseEnter={() => setIsOpen(true)}
+                            onMouseLeave={() => setIsOpen(false)}
+                        >
+                            <button className="flex items-center gap-1.5 outline-none font-medium text-[15px] tracking-wide uppercase transition-all group-hover:opacity-70">
+                                <img className='w-6' src={flagUrls[language]} alt="flag" />
                                 {language}
-                            <svg
-                                className={`w-3.5 h-3.5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
+                                <svg
+                                    className={`w-3.5 h-3.5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
 
-                        {/* Dropdown Menu - მინიმალისტური და სუფთა */}
-                        <div className={`
+                            Dropdown Menu - მინიმალისტური და სუფთა
+                            <div className={`
                     absolute right-0 mt-1 w-20 bg-white rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.15)] py-2 text-gray-800
                     transition-all duration-300 border border-gray-100 z-50
                     ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2 '}
                 `}>
-                            <p onClick={(e) => setLanguage('en')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="en">EN</p>
-                            <p onClick={(e) => setLanguage('ka')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ka">KA</p>
-                            <p onClick={(e) => setLanguage('ru')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ru">RU</p>
-                            <p onClick={(e) => setLanguage('ar')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ar">AR</p>
+                                <p onClick={(e) => setLanguage('en')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="en">EN</p>
+                                <p onClick={(e) => setLanguage('ka')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ka">KA</p>
+                                <p onClick={(e) => setLanguage('ru')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ru">RU</p>
+                                <p onClick={(e) => setLanguage('ar')} className="text-black block px-6 py-2 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium cursor-pointer" value="ar">AR</p>
 
+                            </div>
                         </div>
+ */}
+
+
+
+
+                        <button className="bg-transparent border shadow-2xl shadow-green-300 border-green-400 px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 max-sm:hidden ">
+                            Book Now
+                        </button>
+
+                        {/* burger menu */}
+                        <BurgerMenu />
                     </div>
 
-
-
-
-                    {/* <div className="flex justify-center items-center gap-2 rounded-lg cursor-pointer text-white">
-                        <img className='w-6' src={flagUrls[language]} alt="flag" />
-                        <select
-                            value={language}
-                            onChange={(e) => setLanguage(e.target.value)}
-                            className="bg-transparent border-none outline-none text-white cursor-pointer"
-                        >
-                            <option className="text-black" value="en">EN</option>
-                            <option className="text-black" value="ka">KA</option>
-                            <option className="text-black" value="ru">RU</option>
-                            <option className="text-black" value="ar">AR</option>
-                        </select>
-                    </div> */}
-
-                    <button className="bg-[#74ff743f] bg-transparent border shadow-2xl shadow-green-300 border-green-400 px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 ">
-                        Book Now
-                    </button>
-
-                    {/* burger menu */}
-                    <BurgerMenu />
-                </div>
+                </section>
 
             </header>
         </>
