@@ -32,7 +32,6 @@ const AdventureCards = [
       additionalServices: [
         { name: "Insta360 camera", price: "29 Usd" },
         { name: "4K Drone footage ", price: "60 Usd" },
-        { name: "Drone filming", price: "60 GEL" }
       ],
 
       priceDetails: [
@@ -48,7 +47,7 @@ const AdventureCards = [
             "Exciting river rafting experience",
             "Amazing views of the surrounding nature",
           ],
-          priceDetail: "Per Raft",
+          priceDetail: "Per Raft (Up to 6 People)",
         },
       ],
 
@@ -570,25 +569,51 @@ const AdventureCards = [
     detail: {
 
       additionalServices: [
-        { name: "Safety equipment", price: "Free" },
-        { name: "Transport", price: "Included" },
-        { name: "Drone filming", price: "60 GEL" }
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "Drone footage", price: "60 Usd" },
       ],
 
       priceDetails: [
         {
-          name: "30-Minute Ride",
-          price: "120 GEL",
+          name: "Free Jet Ski Ride / 10 minutes",
+          price: "35 Usd",
           serviceDetails: [
-            "Up to 6 people per raft",
-            "Rafting route approximately 7 km long",
-            "River Transportation",
-            "Safety briefing before the adventure",
-            "Helmet and life jacket provided",
-            "Exciting river rafting experience",
-            "Amazing views of the surrounding nature",
+            "Passengers: 1–2 per Jet Ski",
+            "High-performance jet ski included",
+            "Life jacket and safety briefing provided",
+            "Suitable for beginners and experienced riders",
+            "Exciting speed and water adventure",
+            "Stunning views of surrounding nature and mountains",
           ],
-          priceDetail: "Per Raft",
+          priceDetail: "Per Jet Ski (1–2 People)",
+        },
+        {
+          name: "Free Jet Ski Ride / 20 minutes",
+          price: "70 Usd",
+          serviceDetails: [
+            "Passengers: 1–2 per Jet Ski",
+            "High-performance jet ski included",
+            "Life jacket and safety briefing provided",
+            "Suitable for beginners and experienced riders",
+            "Exciting speed and water adventure",
+            "Stunning views of surrounding nature and mountains",
+          ],
+          priceDetail: "Per Jet Ski (1–2 People)",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+
+        },
+        {
+          name: "Free Jet Ski Ride / 60 minutes",
+          price: "190 Usd",
+          serviceDetails: [
+            "Passengers: 1–2 per Jet Ski",
+            "High-performance jet ski included",
+            "Life jacket and safety briefing provided",
+            "Suitable for beginners and experienced riders",
+            "Exciting speed and water adventure",
+            "Stunning views of surrounding nature and mountains",
+          ],
+          priceDetail: "Per Jet Ski (1–2 People)",
         },
         {
           name: "Custom Duration Ride",
@@ -602,28 +627,20 @@ const AdventureCards = [
             "Exciting river rafting experience",
             "Amazing views of the surrounding nature",
           ],
-          priceDetail: "Per Raft",
+          priceDetail: "Per Jet Ski (1–2 People)",
         },
 
       ],
 
       importantInfo: [
         {
-          label: "Note",
-          value: "Life jacket is <span class='font-bold text-red-800'>mandatory</span> for all participants."
+          label: "Experience",
+          value: "No previous experience is <span class='font-bold text-red-800'>required</span>. Our instructors provide a briefing before the ride."
         },
-        {
-          label: "Safety",
-          value: "Not recommended for <span class='font-bold text-red-800'>non-swimmers</span> or people with serious medical conditions."
-        },
-        {
-          label: "Weather Policy",
-          value: "Activity may be <span class='font-bold text-red-800'>rescheduled</span> due to unsafe weather or water conditions."
-        }
       ],
 
       fullDescription:
-        "Experience high-speed excitement on a powerful jetski around Pasanauri. Guided by professional instructors, this adventure combines adrenaline, safety and breathtaking river landscapes. Perfect for thrill-seekers looking for a fun summer escape.",
+        "Experience high-speed excitement on a powerful jetski around Ananuri. Guided by professional instructors, this adventure combines adrenaline, safety and breathtaking river landscapes. Perfect for thrill-seekers looking for a fun summer escape.",
 
 
       video: "videos/2025-11-18-131947470.mp4",
@@ -636,9 +653,12 @@ const AdventureCards = [
       ],
 
       recommendations: [
+        "Wear comfortable, quick-drying clothing",
+        "Bring sunglasses and sunscreen",
+        "Secure your belongings before riding",
+        "Expect to get slightly wet during the ride",
         "Arrive 15 minutes before activity start time",
         "Bring spare clothes and towel",
-        "Follow instructor’s safety rules at all times",
         "Activity depends on water and weather conditions"
       ],
 
@@ -652,6 +672,9 @@ const AdventureCards = [
     }
   },
 
+
+
+  // ================= MotorBoat Adventure =================
   {
     id: 10,
     season: ['Summer'],
@@ -678,31 +701,32 @@ const AdventureCards = [
     detail: {
 
       additionalServices: [
-        { name: "Safety equipment", price: "Free" },
-        { name: "Drone filming", price: "60 GEL" },
-        { name: "GoPro video recording", price: "40 GEL" }
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "Drone footage", price: "60 Usd" },
       ],
 
       priceDetails: [
-        { name: "30-Minute MotorBoat Ride", price: "120 GEL" },
-        { name: "1-Hour MotorBoat Ride", price: "200 GEL" },
-        { name: "Private 2-Hour Tour", price: "350 GEL" },
-        { name: "Custom Duration Tour", price: "Price on Request" },
+        {
+          name: "30-Minute MotorBoat Ride",
+          price: "60 Usd",
+          serviceDetails: [
+            "Duration: approximately 20–30 minutes",
+            "Passengers: max 20 per MotorBoat",
+            "High-performance motorboat",
+            "Professional guide/driver provided",
+            "Life jackets and safety briefing included",
+            "Exciting ride along the lake",
+            "Amazing views of the surrounding nature and mountains",
+          ],
+          priceDetail: "Per MotorBoat (1-20 People)",
+        },
 
-        { name: "30-Minute MotorBoat Ride", price: "120 GEL" },
-        { name: "1-Hour MotorBoat Ride", price: "200 GEL" },
-        { name: "Private 2-Hour Tour", price: "350 GEL" },
-        { name: "Custom Duration Tour", price: "Price on Request" }
       ],
 
       importantInfo: [
         {
           label: "Note",
           value: "Life jackets are <span class='font-bold text-red-800'>mandatory</span> for all participants."
-        },
-        {
-          label: "Safety",
-          value: "Activity is <span class='font-bold text-red-800'>not recommended</span> for non-swimmers."
         },
         {
           label: "Weather Policy",
@@ -714,12 +738,7 @@ const AdventureCards = [
         "Enjoy a scenic and thrilling motorboat ride near Pasanauri. Guided by experienced professionals, this adventure combines speed, safety and breathtaking river landscapes. Perfect for families, friends and adrenaline lovers.",
 
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/motorBoat/motorboat1.png",
       ],
 
       recommendations: [
@@ -860,15 +879,47 @@ const AdventureCards = [
       ],
 
       priceDetails: [
-        { name: "30-Minute Snowmobile Ride", price: "150 GEL" },
-        { name: "1-Hour Snowmobile Tour", price: "250 GEL" },
-        { name: "2-Hour Mountain Adventure", price: "400 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" },
-
-        { name: "30-Minute Snowmobile Ride", price: "150 GEL" },
-        { name: "1-Hour Snowmobile Tour", price: "250 GEL" },
-        { name: "2-Hour Mountain Adventure", price: "400 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" }
+        {
+          name: "20-Minute Snowmobile Ride",
+          price: "60 Usd",
+          serviceDetails: [
+            "Duration: approximately 20–30 minutes",
+            "Passengers: max 20 per MotorBoat",
+            "High-performance motorboat",
+            "Professional guide/driver provided",
+            "Life jackets and safety briefing included",
+            "Exciting ride along the lake",
+            "Amazing views of the surrounding nature and mountains",
+          ],
+          priceDetail: "Per Snowmobile (1-2 People)",
+        },
+        {
+          name: "1-Hour Snowmobile Tour",
+          price: "250 GEL", serviceDetails: [
+            "Duration: approximately 20–30 minutes",
+            "Passengers: max 20 per MotorBoat",
+            "High-performance motorboat",
+            "Professional guide/driver provided",
+            "Life jackets and safety briefing included",
+            "Exciting ride along the lake",
+            "Amazing views of the surrounding nature and mountains",
+          ],
+          priceDetail: "Per Snowmobile (1-2 People)",
+        },
+        {
+          name: "2-Hour Mountain Adventure",
+          price: "400 GEL",
+          serviceDetails: [
+            "Duration: approximately 20–30 minutes",
+            "Passengers: max 20 per MotorBoat",
+            "High-performance motorboat",
+            "Professional guide/driver provided",
+            "Life jackets and safety briefing included",
+            "Exciting ride along the lake",
+            "Amazing views of the surrounding nature and mountains",
+          ],
+          priceDetail: "Per Snowmobile (1-2 People)",
+        },
       ],
 
       importantInfo: [

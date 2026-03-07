@@ -191,7 +191,7 @@ function ActivitiesDetail() {
         {/* Hero Section */}
         <Hero chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
 
-        
+
 
         {/* Main Info */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
@@ -220,7 +220,7 @@ function ActivitiesDetail() {
                 ))}
               </div>
 
-              <ImportantInfo chosenActivity={chosenActivity} setChosenActivity={setChosenActivity}  />
+              <ImportantInfo chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
 
               <div className={`flex flex-col gap-2 border-l-0 pb-10 md:border-l md:pl-6 border-orange-200 ${chosenActivity?.id === 5 ? "block" : "hidden"}`}>
                 <span className="text-orange-600 font-bold text-xs uppercase tracking-widest">Multi-Day Offer</span>
@@ -228,7 +228,7 @@ function ActivitiesDetail() {
                   Plan ahead! Book for multiple days and enjoy <span className="font-bold text-red-900 text-base">exclusive lower rates</span> on consecutive sessions.
                 </p>
               </div>
-              
+
 
 
 
@@ -236,7 +236,7 @@ function ActivitiesDetail() {
                 <h2 className="text-center text-5xl font-bebas tracking-widest">snowboard</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                   {chosenActivity?.detail?.priceDetails?.slice(4, 8).map((service, i) => (
-                    <PriceCard key={i} service={service} i={i} />
+                    <PriceCard className="bg-white p-6 rounded-xl shadow-md"  key={i} chosenActivity={chosenActivity} service={service} i={i} />
                   ))}
                 </div>
 
