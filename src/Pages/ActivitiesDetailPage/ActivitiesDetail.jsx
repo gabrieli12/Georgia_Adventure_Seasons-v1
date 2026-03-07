@@ -183,13 +183,15 @@ function ActivitiesDetail() {
 
   return (
     <div>
-      <section className="max-w-7xl w-full mx-auto px-6  space-y-12 font-merienda mb-20 ">
+      <section className="max-w-7xl w-full mx-auto px-6 max-sm:px-4  space-y-12 font-merienda mb-20 ">
 
         {/* black background for header */}
-        <div className="bg-black py-16 w-full h-24 absolute top-0 left-0"></div>
+        <div className="bg-black py-16 w-full h-24 absolute top-0 left-0 max-xl:py-13 max-sm:py-21 "></div>
 
         {/* Hero Section */}
         <Hero chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
+
+        
 
         {/* Main Info */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
@@ -211,10 +213,10 @@ function ActivitiesDetail() {
 
 
               <h2 className={`text-center text-5xl font-bebas tracking-widest ${chosenActivity?.id === 5 ? "block" : "hidden"}`}>ski</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+              <div className="grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2   gap-8">
 
                 {chosenActivity?.detail?.priceDetails?.slice(0, 4).map((service, i) => (
-                  <PriceCard key={i} chosenActivity={chosenActivity} service={service} i={i} />
+                  <PriceCard className="bg-white p-6 rounded-xl shadow-md" key={i} chosenActivity={chosenActivity} service={service} i={i} />
                 ))}
               </div>
 

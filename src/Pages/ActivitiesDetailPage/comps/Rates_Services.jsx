@@ -10,7 +10,7 @@ function Rates_Services({chosenActivity}) {
                 <h3 className="text-xl font-bold text-gray-800">{service.name}</h3>
                 <p className="text-4xl font-black text-orange-600 text-left">
                   <span className='text-sm text-gray-400'>From</span> <br />
-                  {service.price} <span className="text-sm text-gray-400">GEL</span>
+                  {service.price} <span className="text-sm text-gray-400">USD</span>
                 </p>
                 <a className='w-full' href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity.`} target='__blank'>
                 <button className="w-full py-4 rounded-2xl bg-black text-white font-bold hover:bg-orange-600 transition-colors cursor-pointer">

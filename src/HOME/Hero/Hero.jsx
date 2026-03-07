@@ -48,7 +48,7 @@ function Hero() {
 
 
 
-          <h1 className="text-3xl md:text-4xl font- flex justify-center items-center flex-col max-sm:text-3xl">
+          <h1 className="text-3xl md:text-4xl 2xl:text-5xl font- flex justify-center items-center flex-col max-sm:text-3xl">
             Embrace the <span className=" text-green-300 ">Adventure</span>
             
           </h1>
@@ -83,7 +83,7 @@ function Hero() {
 
         {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
-        <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="" />
+        <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" />
         <StringRunner animationName={'marquee'} />
         <StringRunner animationName={'marquee2'} />
       </div>

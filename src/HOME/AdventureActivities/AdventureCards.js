@@ -1,5 +1,8 @@
 
 const AdventureCards = [
+
+  // ================= Rafting =================
+
   {
     id: 4,
     season: ['Summer'],
@@ -10,7 +13,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 120 GEL",
     location: '📍Around Pasanauri',
-    img: "src/assets/Frame 1984077871 (3).png",
+    img: "activities_images/rafting/rafting1.png",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -27,21 +30,26 @@ const AdventureCards = [
     detail: {
 
       additionalServices: [
-        { name: "Safety equipment", price: "Free" },
-        { name: "Transportation", price: "Included" },
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "4K Drone footage ", price: "60 Usd" },
         { name: "Drone filming", price: "60 GEL" }
       ],
 
       priceDetails: [
-        { name: "Standard Rafting Experience", price: "120 GEL" },
-        { name: "Extended River Route", price: "180 GEL" },
-        { name: "Private Group Rafting", price: "350 GEL" },
-        { name: "Custom Adventure Package", price: "Price on Request" },
-
-        { name: "Standard Rafting Experience", price: "120 GEL" },
-        { name: "Extended River Route", price: "180 GEL" },
-        { name: "Private Group Rafting", price: "350 GEL" },
-        { name: "Custom Adventure Package", price: "Price on Request" }
+        {
+          name: "Standard Rafting Experience",
+          price: "120 Usd",
+          serviceDetails: [
+            "Up to 6 people per raft",
+            "Rafting route approximately 7 km long",
+            "River Transportation",
+            "Safety briefing before the adventure",
+            "Helmet and life jacket provided",
+            "Exciting river rafting experience",
+            "Amazing views of the surrounding nature",
+          ],
+          priceDetail: "Per Raft",
+        },
       ],
 
       importantInfo: [
@@ -50,8 +58,8 @@ const AdventureCards = [
           value: "Life jackets and helmets are <span class='font-bold text-red-800'>mandatory</span>."
         },
         {
-          label: "Safety",
-          value: "Not recommended for <span class='font-bold text-red-800'>non-swimmers or people with serious medical conditions</span>."
+          label: "Experience",
+          value: "No previous experience is <span class='font-bold text-red-800'>required</span>. Our guides will explain everything before the tour."
         },
         {
           label: "Weather Policy",
@@ -63,19 +71,22 @@ const AdventureCards = [
         "Take on the thrilling rapids of mountain rivers near Pasanauri. Guided by professional rafting experts, this adventure combines teamwork, adrenaline and stunning natural scenery. All safety equipment and transportation are included for a safe and exciting experience.",
 
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/rafting/rafting1.png",
+        "activities_images/rafting/rafting2.png",
+        "activities_images/rafting/rafting3.png",
+        "activities_images/rafting/rafting4.png",
+
       ],
 
       recommendations: [
+        "Wear comfortable sports clothing",
+        "Bring a change of clothes as you may get wet",
+        "Wear secure water shoes or sports shoes",
         "Attend the mandatory safety briefing",
         "Wear life jacket and helmet at all times",
         "Arrive 15 minutes before activity start time",
-        "Bring extra clothes and towel"
+        "Bring extra clothes and towel",
+        "Follow the guide's instructions during the rafting trip"
       ],
 
       features: [
@@ -138,6 +149,7 @@ const AdventureCards = [
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
         {
           name: "3-Hours Ski Lesson",
@@ -147,6 +159,7 @@ const AdventureCards = [
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
         {
           name: "Full Day Private Ski Lesson",
@@ -156,6 +169,9 @@ const AdventureCards = [
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+
         },
         {
           name: "Custom Duration Ski Lesson",
@@ -165,34 +181,39 @@ const AdventureCards = [
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
 
         {
-          name: "2-Hours Snowboard Lesson",
+          name: "1-Hours Snowboard Lesson",
           price: "70 Usd",
           serviceDetails: [
             "Certified & Experienced Instructor",
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
+
         {
-          name: "Full Day Private Ski Lesson",
+          name: "3-Hours Ski Lesson",
           price: "180 Usd",
           serviceDetails: [
             "Certified & Experienced Instructor",
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
         {
-          name: "3-Hours Ski Lesson",
+          name: "Full Day Private Ski Lesson",
           price: "280 Usd",
           serviceDetails: [
             "Certified & Experienced Instructor",
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         },
         {
           name: "Custom Duration Ski Lesson",
@@ -202,6 +223,7 @@ const AdventureCards = [
             "Personalized Learning Approach",
             "Safe & Beginner-Friendly Environment"
           ],
+          priceDetail: "Per Person",
         }
       ],
 
@@ -234,6 +256,8 @@ const AdventureCards = [
         "activities_images/skiSnowboard_lessons/ski2.png",
         "activities_images/skiSnowboard_lessons/ski3.png",
       ],
+
+      // მთავარი ვიდეო
       video: "videos/2025-11-18-131947470.mp4",
 
       // რეკომენდაციები დეტალების გვერდისთვის
@@ -271,7 +295,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 70 GEL",
     location: '📍Gudauri',
-    img: "https://www.redlodgemountain.com/wp-content/uploads/header.img-rossignol-rental-shop-skis-red-lodge-mountain-montana.jpg",
+    img: "activities_images/skiSnowboard_rental/rent1.png",
     buttonText: "Book Adventure",
     rightText: [
       "💎 Premium Gear",
@@ -290,38 +314,62 @@ const AdventureCards = [
     detail: {
       // დამატებითი სერვისები და ფასები 
       additionalServices: [
-        { name: "Equipment rental", price: "Free",  },
-        { name: "Instructor guidance", price: "Included" },
-        { name: "Video recording", price: "40 GEL" }
+        { name: "GoPro rental", price: "35 Usd" },
+        { name: "Professional instructor", price: "60 USD / hour" },
+        { name: "Drone video", price: "60 Usd" },
       ],
 
       // ფასების დეტალური ინფორმაცია სხვადასხვა პაკეტებისთვის
       priceDetails: [
-        { name: "Full Ski Equipment Rental", price: "70 GEL" },
-        { name: "Full Snowboard Equipment Rental", price: "70 GEL" },
-        { name: "Helmet & Goggles Rental", price: "20 GEL" },
-        { name: "Poles Rental (for skiers)", price: "10 GEL" },
+        {
+          name: "Full Snowboard Equipment Rental",
+          price: "40 Usd",
+          serviceDetails: [
+            "Snowboard, Boots & Bindings Included",
+            "Googles, Helmet & Gloves Included",
+            "High-Quality, Well-Maintained Equipment",
+            "Sizes Available for Adults & Kids"
+          ],
+          priceDetail: "Per Day",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+        },
+        {
+          name: "Full Ski Equipment Rental",
+          price: "40 Usd",
+          serviceDetails: [
+            "Skis, Boots & Poles Included",
+            "Googles, Helmet & Gloves Included",
+            "High-Quality, Well-Maintained Equipment",
+            "Sizes Available for Adults & Kids"
+          ],
+          priceDetail: "Per Day",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+        },
+
       ],
 
       // მნიშვნელოვანი ინფორმაცია
       importantInfo: [
         {
-          label: "Note",
-          value: "Lift tickets and Rental Equipment are <span class='font-bold text-red-800'>not included</span> in the lesson price."
+          label: "Duration",
+          value: "Standard rental duration is <span class='font-bold text-red-800'>one full day</span>. Longer rentals are available on request."
         },
         {
           label: "Bundle Deal",
-          value: "Get a <span class='font-bold text-red-800'>10% discount</span> on equipment rental when booked together with a lesson.",
+          value: "Book equipment together with a <span class='font-bold text-red-800'>ski or snowboard lesson</span> and receive a discount.",
           isLink: true // ეს დაგვეხმარება ლოგიკაში, თუ გვინდა კლიკზე სხვაგან გადავიდეს
         },
         {
-          label: "Group Savings",
-          value: "Groups of 2+ receive a progressive discount starting from <span class='font-bold text-red-800'>10% up to 45%</span>."
+          label: "Responsibility",
+          value: "Customers are responsible for the <span class='font-bold text-red-800'>equipment during the rental period</span>."
         }
       ],
 
       // სრული აღწერა დეტალების გვერდისთვის
       fullDescription: "Rent high-quality ski or snowboard equipment in Gudauri. Our full set includes skis or snowboard, boots, bindings, poles (for skiers), helmet and goggles. All equipment is professionally maintained and available in all sizes.",
+
+      // მთავარი ვიდეო
+      video: "videos/2025-11-18-131947470.mp4",
 
       // 
       features: [
@@ -333,9 +381,10 @@ const AdventureCards = [
 
       // დეტალებისთვის საჭირო დამატებითი სურათები და რეკომენდაციები
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/skiSnowboard_rental/rent1.png",
+        "activities_images/skiSnowboard_rental/rent2.png",
+        "activities_images/skiSnowboard_rental/rent3.png",
+        "activities_images/skiSnowboard_rental/rent4.png"
       ],
 
       // რეკომენდაციები დეტალების გვერდისთვის
@@ -343,10 +392,14 @@ const AdventureCards = [
         "Provide correct shoe size for proper fitting",
         "Inspect equipment before use",
         "Return equipment on time to avoid extra charges",
-        "Inform staff about your riding level"
+        "Inform staff about your riding level",
+        "Store equipment safely when not in use"
       ]
     },
   },
+
+
+  // ================= Paragliding =================
 
   {
     id: 3,
@@ -375,46 +428,84 @@ const AdventureCards = [
 
       // დამატებითი სერვისები და ფასები 
       additionalServices: [
-        { name: "HD video recording", price: "40 GEL" },
-        { name: "Drone photos", price: "50 GEL" },
-        { name: "Equipment rental", price: "Free" }
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "Drone Footage", price: "60 Usd" },
       ],
+
+      // მთავარი ვიდეო
+
 
 
       // ფასების დეტალური ინფორმაცია სხვადასხვა პაკეტებისთვის
       priceDetails: [
-        { name: "2-Hours Ski Lesson", price: "290 GEL" },
-        { name: "Full Day Private Ski Lesson", price: "730 GEL" },
-        { name: "3-Hours Ski Lesson", price: "440 GEL" },
-        { name: "Custom Duration Ski Lesson", price: "Price on Request" },
+        {
+          name: "Standart flight",
+          price: "150 Usd",
+          serviceDetails: [
+            "Breathtaking views of the Caucasus Mountains",
+            "certified professional pilot",
+            "Full equipment included (harness, helmet, reserve parachute)",
+            "GoPro video recording included",
+            "Flight duration 15–20 minutes ",
+            "Safety briefing before the flight",
+            "Included transportation within the Gudauri area"
+          ],
+          priceDetail: "Per Person",
+        },
+        {
+          name: "Premium Paragliding Flight",
+          price: "200 USD",
+          serviceDetails: [
+            "Extended tandem flight with a certified professional pilot",
+            "Flight duration 25–30 minutes depending on weather conditions",
+            "GoPro video and photos included",
+            "Breathtaking panoramic views of the Caucasus Mountains",
+            "Safety briefing and professional equipment provided",
+            "Included transportation within the Gudauri area"
 
-        { name: "2-Hours Ski Lesson", price: "290 GEL" },
-        { name: "Full Day Private Ski Lesson", price: "730 GEL" },
-        { name: "3-Hours Ski Lesson", price: "440 GEL" },
-        { name: "Custom Duration Ski Lesson", price: "Price on Request" }
+          ],
+          priceDetail: "Per Person",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+
+        },
+        {
+          name: "VIP Paragliding Experience",
+          price: "250 USD",
+          serviceDetails: [
+            "Longest available flight time",
+            "Professional GoPro video & photos",
+            "Priority flight scheduling",
+            "Spectacular aerial views of Gudauri and the Caucasus",
+            "Premium paragliding equipment",
+            "Included transportation within the Gudauri area"
+
+          ],
+          priceDetail: "Per Person"
+        }
 
       ],
 
       // მნიშვნელოვანი ინფორმაცია
       importantInfo: [
         {
-          label: "Note",
-          value: "Lift tickets and Rental Equipment are <span class='font-bold text-red-800'>not included</span> in the lesson price."
+          label: "Weather Conditions",
+          value: "Flights are <span class='font-bold text-red-800'>weather dependent</span> and may be rescheduled for safety reasons."
         },
         {
-          label: "Bundle Deal",
-          value: "Get a <span class='font-bold text-red-800'>10% discount</span> on equipment rental when booked together with a lesson.",
+          label: "Weight Limit",
+          value: "Recommended passenger weight is between <span class='font-bold text-red-800'>30 kg and 120 kg</span>.",
           isLink: true // ეს დაგვეხმარება ლოგიკაში, თუ გვინდა კლიკზე სხვაგან გადავიდეს
         },
         {
-          label: "Group Savings",
-          value: "Groups of 2+ receive a progressive discount starting from <span class='font-bold text-red-800'>10% up to 45%</span>."
+          label: "Experience",
+          value: "No previous experience is <span class='font-bold text-red-800'>required</span>. The flight is performed with a professional pilot."
         }
       ],
 
 
       fullDescription:
         "Experience the ultimate freedom as you soar above the mountains of Gudauri. Our certified tandem instructors ensure maximum safety while you enjoy breathtaking aerial views. A once-in-a-lifetime adventure with full video recording included.",
+
 
       features: [
         "Tandem Flight with Certified Instructor",
@@ -425,22 +516,33 @@ const AdventureCards = [
 
 
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
+        "activities_images/paragliding/paragliding1.png",
+        "activities_images/paragliding/paragliding2.png",
         "src/assets/Frame 1984077871 (2).png"
       ],
 
+      video: "videos/2025-11-18-131947470.mp4",
+
+
 
       recommendations: [
-        "Receive full instructor briefing before flight",
-        "Follow all safety instructions carefully",
+        "Wear comfortable clothing and sports shoes",
+        "Bring sunglasses to protect your eyes during the flight",
+        "Avoid heavy meals right before the flight",
+        "Follow the pilot’s instructions for a safe takeoff and landing",
         "Not recommended for people with heart conditions",
-        "Flights are not operated in bad weather conditions"
+        "Flights are not operated in bad weather conditions",
+        "Bring a jacket as it may be colder in the air"
       ]
 
     },
 
   },
+
+
+
+  // ================= Jetski adventure =================
+
   {
     id: 9,
     season: ['Summer'],
@@ -451,7 +553,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 120 GEL",
     location: '📍Around Pasanauri',
-    img: "activities_images/წყლის-სკუტერი1.png",
+    img: "activities_images/jetski/jetski1.png",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -474,10 +576,35 @@ const AdventureCards = [
       ],
 
       priceDetails: [
-        { name: "30-Minute Ride", price: "120 GEL" },
-        { name: "1-Hour Ride", price: "200 GEL" },
-        { name: "2-Hour Adventure Package", price: "350 GEL" },
-        { name: "Custom Duration Ride", price: "Price on Request" }
+        {
+          name: "30-Minute Ride",
+          price: "120 GEL",
+          serviceDetails: [
+            "Up to 6 people per raft",
+            "Rafting route approximately 7 km long",
+            "River Transportation",
+            "Safety briefing before the adventure",
+            "Helmet and life jacket provided",
+            "Exciting river rafting experience",
+            "Amazing views of the surrounding nature",
+          ],
+          priceDetail: "Per Raft",
+        },
+        {
+          name: "Custom Duration Ride",
+          price: "Price on Request",
+          serviceDetails: [
+            "Up to 6 people per raft",
+            "Rafting route approximately 7 km long",
+            "River Transportation",
+            "Safety briefing before the adventure",
+            "Helmet and life jacket provided",
+            "Exciting river rafting experience",
+            "Amazing views of the surrounding nature",
+          ],
+          priceDetail: "Per Raft",
+        },
+
       ],
 
       importantInfo: [
@@ -498,10 +625,14 @@ const AdventureCards = [
       fullDescription:
         "Experience high-speed excitement on a powerful jetski around Pasanauri. Guided by professional instructors, this adventure combines adrenaline, safety and breathtaking river landscapes. Perfect for thrill-seekers looking for a fun summer escape.",
 
+
+      video: "videos/2025-11-18-131947470.mp4",
+
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/jetski/jetski1.png",
+        "activities_images/jetski/jetski2.png",
+        "activities_images/jetski/jetski3.png",
+        "activities_images/jetski/jetski4.png",
       ],
 
       recommendations: [
@@ -520,6 +651,7 @@ const AdventureCards = [
 
     }
   },
+
   {
     id: 10,
     season: ['Summer'],

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 function Slider() {
 
     const heroImages = [
-        "activities_images/skiSnowboard_lessons/თხილამურები222.png",
+        "activities_images/skiSnowboard_lessons/ski1.png",
         "activities_images/პარაპლანი2.png",
         "activities_images/ბურანი.png",
         "activities_images/კვადროები3.png",
@@ -14,8 +14,8 @@ function Slider() {
         "activities_images/ცხენოსნობა.png",
         "activities_images/ნავით გასეირნება ანანურში_1.2.13.png",
 
-        "src/assets/image 03.png",
-        "activities_images/თხილამურები222.png",
+        "activities_images/skiSnowboard_lessons/image 03.png",
+        "activities_images/skiSnowboard_lessons/ski1.png",
         "activities_images/პარაპლანი2.png",
         "activities_images/ბურანი.png",
         "activities_images/კვადროები3.png",

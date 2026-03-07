@@ -13,7 +13,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
     <>
       <div
         key={index}
-        className="bg-white rounded-xl shadow hover:shadow-lg hover:shadow-[#ff6a0034] transition overflow-hidden"
+        className="bg-white rounded-xl shadow hover:shadow-lg hover:shadow-[#ff6a0034] transition overflow-hidden "
       >
         <img
           src={img}
@@ -70,6 +70,8 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
                 
 
                 setChosenActivity(AdventureCards.find(activity => activity.title === title));
+
+                console.log(AdventureCards.find(activity => activity.title === title))
                 // ვინახავთ ობიექტს ტექსტურ ფორმატში
                 localStorage.setItem('chosenActivity', JSON.stringify(AdventureCards.find(activity => activity.title === title)));
               }}

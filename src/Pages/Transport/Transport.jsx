@@ -20,15 +20,15 @@ function TransportCard({ img, heading, description, tall }) {
 
 function Transport() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
       <LegalConsent />
-      <div className="bg-[#000000] py-15 w-full h-24 absolute top-0 left-0"></div>
+      <div className="bg-[#000000] py-15 w-full z-20 h-24 absolute top-0 left-0 max-xl:py-13 max-sm:py-21"></div>
       
-      <section className="relative">
-        <video className='w-full h-[50vh] md:h-auto object-cover' src="car_images/transport_video.mp4" autoPlay loop muted ></video>
-        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-1/2 left-0 -translate-y-1/2 flex flex-col items-center gap-4 md:gap-7'>
+      <section className="relative  ">
+        <video className='w-full  h-screen  object-cover z-0' src="car_images/transport_video.mp4" autoPlay loop muted ></video>
+        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-1/2 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
           {/* ტექსტის ზომა მობილურზე შემცირებულია (text-4xl), დესკტოპზე იგივეა (md:text-8xl) */}
-          <h1 className="text-white text-4xl md:text-8xl w-full text-center font-bebas tracking-widest font-bold">
+          <h1 className="text-white text-8xl w-full text-center font-bebas tracking-widest font-bold max-lg:text-6xl">
             PRIVATE TRANSFERS
           </h1>
           <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591]">
@@ -45,8 +45,8 @@ function Transport() {
       </section>
 
       {/* სექცია მობილურზე ხდება ვერტიკალური (flex-col) */}
-      <section className='w-full h-auto py-10 md:py-20 flex flex-col md:flex-row justify-center items-center gap-10 px-5'>
-        <div className='w-full md:w-147 p-0 md:p-10 flex flex-col gap-5'>
+      <section className='w-full h-auto py-10 md:py-20 flex  flex-wrap md:flex-row justify-center items-center gap-10 px-5'>
+        <div className='w-147 p-0 md:p-10 flex flex-col gap-5'>
           <h2 className="text-3xl md:text-5xl font-bebas tracking-wider font-bold">
             Airport <span className='text-[#ea8512]'>Transfers & Private</span> Transportation
           </h2>

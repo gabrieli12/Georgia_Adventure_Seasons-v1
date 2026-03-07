@@ -4,10 +4,10 @@ function PriceCard({ chosenActivity, service, i }) {
     return (
         <div
             key={i}
-            className="relative group bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+            className={`relative group bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col ${chosenActivity.detail.priceDetails.length === 1 ? "col-span-2" : ""}`}
         >
             {/* პოპულარულობის თეგისთვის (სურვილისამებრ) */}
-            {i === 2 && (
+            {service.popular === true && (
                 <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">
                     Most Popular
                 </span>
@@ -19,7 +19,7 @@ function PriceCard({ chosenActivity, service, i }) {
                     <span className="text-4xl font-black text-orange-600">{service.price}</span>
                     <span className="text-gray-400 font-medium  ">USD</span>
                 </div>
-                <p className="text-gray-400 font-medium">Per Person</p>
+                <p className="text-gray-400 font-medium">{service.priceDetail}</p>
             </div>
 
             {/* სერვისის დეტალები - შეგიძლია აქ სტატიკური პუნქტები დაამატო ან ობიექტში ჩაწერო */}

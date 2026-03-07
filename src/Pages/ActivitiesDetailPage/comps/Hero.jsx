@@ -59,10 +59,10 @@ function Hero({ chosenActivity, setChosenActivity }) {
 
 
     return (
-        <div className="flex flex-col  relative group">
+        <div className="flex flex-col  relative group ">
 
             {/* Main Display Area */}
-            <div className="w-full h-75 md:h-137.5 overflow-hidden rounded-3xl shadow-2xl bg-gray-100 transition-all duration-500 mt-40">
+            <div className="w-full h-80 md:h-137.5 overflow-hidden rounded-3xl shadow-2xl bg-gray-100 transition-all duration-500 mt-40 max-sm:mt-50">
                 {mainMedia.type === "video" ? (
                     <video
                         src={mainMedia.url}
@@ -92,7 +92,7 @@ function Hero({ chosenActivity, setChosenActivity }) {
 
                 <div
                     ref={scrollRef}
-                    className="flex gap-4 items-center  no-scrollbar scroll-smooth overflow-hidden"
+                    className="flex gap-4 items-center  no-scrollbar scroll-smooth overflow-x-auto overflow-y-hidden py-2"
                 >
                     {/* ვიდეოს პრევიუ (სტატიკურია თქვენს კოდში) */}
                     <div
