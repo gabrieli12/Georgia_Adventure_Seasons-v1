@@ -11,8 +11,8 @@ function Cottagescard() {
         <div className="group relative w-full h-full duration-500  ">
           <img className="border-2 shadow-2xl h-full border-blue-200 rounded-lg" src={img} alt="" />
           <div className="absolute w-full justify-start items-st gap-10 top-0 hover:bg-[#00000082]  rounded-lg h-full hidden group-hover:flex flex-col text-center text-white font-bold text-lg border-blue-200 border duration-200 p-10 pt-20 cursor-pointer  " >
-            <p className="font-bold text-4xl tracking-[15px]  font-inspiration">COTTAGE</p>
-            <p className="font-bold text-4xl tracking-[10px]  font-inspiration">HOTEL</p>
+            <p className="font-bold text-4xl tracking-[8px] text-center font-inspiration">COTTAGE</p>
+            <p className="font-bold text-4xl tracking-[10px] text-center font-inspiration">HOTEL</p>
 
           </div>
 

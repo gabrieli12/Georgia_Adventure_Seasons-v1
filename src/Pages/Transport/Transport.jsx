@@ -26,7 +26,7 @@ function Transport() {
       
       <section className="relative  ">
         <video className='w-full  h-screen  object-cover z-0' src="car_images/transport_video.mp4" autoPlay loop muted ></video>
-        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-1/2 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
+        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-84 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
           {/* ტექსტის ზომა მობილურზე შემცირებულია (text-4xl), დესკტოპზე იგივეა (md:text-8xl) */}
           <h1 className="text-white text-8xl w-full text-center font-bebas tracking-widest font-bold max-lg:text-6xl">
             PRIVATE TRANSFERS

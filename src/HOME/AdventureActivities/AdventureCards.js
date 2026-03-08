@@ -23,9 +23,27 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Mia", review: "Heart-pumping fun! Excellent guides." },
-      { rating: 5, username: "Ethan", review: "Perfect combination of adventure and safety." }
-    ],
+      { rating: 5, username: "Oliver", review: "Absolutely amazing rafting experience! The guides were professional and fun." },
+      { rating: 5, username: "Emma", review: "One of the best adventures I’ve ever had. Highly recommended!" },
+      { rating: 5, username: "Ahmed", review: "تجربة مذهلة ومليئة بالإثارة. الطاقم كان محترفاً جداً." },
+      { rating: 5, username: "Li Wei", review: "非常刺激的漂流体验，风景也非常美丽！" },
+      { rating: 5, username: "Иван", review: "Отличная организация и незабываемые эмоции!" },
+      { rating: 5, username: "Sandro", review: "ძალიან მაგარი გამოცდილება იყო, ადრენალინი მაქსიმუმზე!" },
+      { rating: 5, username: "Maria", review: "Experiencia increíble, muy bien organizado y seguro." },
+      { rating: 5, username: "Luca", review: "Avventura fantastica! Guide molto professionali." },
+      { rating: 5, username: "Anna", review: "Tolles Abenteuer! Die Natur und das Team waren großartig." },
+      { rating: 5, username: "Mehmet", review: "Gerçekten harika bir deneyimdi, çok eğlendik!" },
+      { rating: 5, username: "Yuki", review: "とても楽しいラフティング体験でした！" },
+      { rating: 5, username: "Pierre", review: "Une expérience incroyable avec des paysages magnifiques." },
+      { rating: 5, username: "Nino", review: "ძალიან კარგად ორგანიზებული და უსაფრთხო აქტივობა." },
+      { rating: 5, username: "David", review: "Great adventure and breathtaking river views!" },
+      { rating: 5, username: "Fatima", review: "كانت تجربة رائعة وممتعة للغاية." },
+      { rating: 5, username: "Chen", review: "非常棒的团队和难忘的体验！" },
+      { rating: 5, username: "Dmitry", review: "Потрясающее приключение, обязательно попробуйте!" },
+      { rating: 5, username: "Elena", review: "Muy emocionante y seguro. Me encantó." },
+      { rating: 5, username: "Giorgi", review: "საოცარი გამოცდილება და ძალიან მეგობრული გუნდი." },
+      { rating: 5, username: "James", review: "Pure adrenaline and stunning scenery. Loved every minute!" }
+    ], 
 
     detail: {
 
@@ -123,8 +141,26 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Oliver", review: "Excellent instructors and equipment." },
-      { rating: 4.9, username: "Ava", review: "Amazing slopes and very safe." }
+      { rating: 5, username: "Emily", review: "Fantastic instructors! I learned skiing much faster than I expected." },
+      { rating: 5, username: "Lucas", review: "Very patient teacher and great atmosphere on the slopes." },
+      { rating: 5, username: "Omar", review: "مدربون رائعون وتجربة تعليمية ممتعة للغاية." },
+      { rating: 5, username: "Chen Hao", review: "教练非常专业，我第一次滑雪就学会了基本技巧。" },
+      { rating: 5, username: "Andrei", review: "Очень профессиональные инструкторы и отличное обучение." },
+      { rating: 5, username: "Nino", review: "ინსტრუქტორი ძალიან პროფესიონალი იყო და ყველაფერი მარტივად ამიხსნა." },
+      { rating: 5, username: "Carlos", review: "Clases increíbles, ahora tengo mucha más confianza en las pistas." },
+      { rating: 5, username: "Matteo", review: "Lezioni perfette per principianti e molto divertenti." },
+      { rating: 5, username: "Hanna", review: "Super freundlicher Lehrer und tolle Lernerfahrung." },
+      { rating: 5, username: "Burak", review: "Çok iyi bir eğitimdi, snowboard öğrenmek çok kolay oldu." },
+      { rating: 5, username: "Yamada", review: "とても分かりやすいレッスンで楽しく学べました。" },
+      { rating: 5, username: "Pierre", review: "Excellente leçon de ski avec un instructeur très professionnel." },
+      { rating: 5, username: "Lasha", review: "ძალიან კარგი გაკვეთილი იყო, ახლა უკვე ბევრად უკეთ ვსრიალებ." },
+      { rating: 5, username: "David", review: "Professional instructors and a very safe learning environment." },
+      { rating: 5, username: "Fatima", review: "كانت تجربة تعليمية رائعة وممتعة للغاية." },
+      { rating: 5, username: "Wang Lei", review: "教练非常耐心，我学到了很多技巧。" },
+      { rating: 5, username: "Dmitri", review: "Лучшие уроки сноуборда, которые я когда-либо брал." },
+      { rating: 5, username: "Sofia", review: "Muy buen instructor y lecciones muy claras." },
+      { rating: 5, username: "Irakli", review: "ინსტრუქტორი ძალიან ყურადღებიანი იყო და სწავლა სასიამოვნო გახდა." },
+      { rating: 5, username: "James", review: "Great lesson structure and amazing instructor." }
     ],
 
 
@@ -304,9 +340,27 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Oliver", review: "Excellent instructors and equipment." },
-      { rating: 4.9, username: "Ava", review: "Amazing slopes and very safe." }
-    ],
+      { rating: 5, username: "Daniel", review: "Perfect equipment and very friendly staff. Everything was ready and in great condition." },
+      { rating: 5, username: "Sophie", review: "Great quality gear and very helpful team. Made our ski day perfect!" },
+      { rating: 5, username: "Karim", review: "معدات ممتازة وخدمة احترافية. أنصح بها بشدة." },
+      { rating: 5, username: "Zhang Wei", review: "设备质量很好，工作人员也非常专业。" },
+      { rating: 5, username: "Sergey", review: "Отличное снаряжение и быстрый сервис." },
+      { rating: 5, username: "Giorgi", review: "ძალიან კარგი ინვენტარი და სწრაფი მომსახურება." },
+      { rating: 5, username: "Isabella", review: "Amazing rental service. The equipment felt brand new." },
+      { rating: 5, username: "Marco", review: "Servizio eccellente e attrezzatura di alta qualità." },
+      { rating: 5, username: "Hannah", review: "Very professional rental shop with great gear." },
+      { rating: 5, username: "Mustafa", review: "Harika ekipman ve çok yardımcı personel." },
+      { rating: 5, username: "Takumi", review: "とても良い装備でスキーがもっと楽しくなりました。" },
+      { rating: 5, username: "Lucas", review: "Super service and excellent ski equipment." },
+      { rating: 5, username: "Nika", review: "ინვენტარი ძალიან ხარისხიანი იყო და ყველაფერი იდეალურად მოერგო." },
+      { rating: 5, username: "Michael", review: "Smooth rental process and top-notch gear." },
+      { rating: 5, username: "Amina", review: "كانت تجربة رائعة والمعدات كانت ممتازة." },
+      { rating: 5, username: "Chen Li", review: "设备维护得很好，使用体验非常棒。" },
+      { rating: 5, username: "Alexei", review: "Очень хорошее оборудование и профессиональная команда." },
+      { rating: 5, username: "Carlos", review: "Equipo de esquí perfecto y muy cómodo." },
+      { rating: 5, username: "Levan", review: "ძალიან კმაყოფილი დავრჩი ინვენტარით და მომსახურებით." },
+      { rating: 5, username: "Thomas", review: "Everything was clean, safe and ready to use. Excellent experience." }
+  ],
 
 
     // დეტალისთვის საჭირო ინფორმაცია ერთ ობიექტში, რომელიც შემდეგ დეტალების გვერდზე გადაეცემა
@@ -417,10 +471,28 @@ const AdventureCards = [
       "💯 Full equipment",
       "💥 Video recording"
     ],
-    rating: 4.9,
+    rating: 5,
     reviews: [
-      { rating: 5, username: "Sophia", review: "Incredible views, unforgettable experience!" },
-      { rating: 4.8, username: "Noah", review: "Well organized and safe flight." }
+      { rating: 5, username: "Michael", review: "Absolutely unforgettable! The views of the mountains were breathtaking." },
+      { rating: 5, username: "Sophie", review: "My first paragliding flight and it was perfect. The instructor was amazing." },
+      { rating: 5, username: "Ahmed", review: "تجربة لا تصدق! الطيران فوق الجبال كان مذهلاً." },
+      { rating: 5, username: "Li Jun", review: "非常棒的滑翔伞体验，风景令人惊叹！" },
+      { rating: 5, username: "Sergey", review: "Невероятные виды и очень профессиональный пилот." },
+      { rating: 5, username: "Giorgi", review: "საოცარი გამოცდილება იყო, ხედები დაუვიწყარია." },
+      { rating: 5, username: "Carlos", review: "Una experiencia increíble. Me sentí totalmente seguro durante el vuelo." },
+      { rating: 5, username: "Marco", review: "Volo fantastico sopra le montagne, esperienza indimenticabile." },
+      { rating: 5, username: "Anna", review: "Amazing adventure! The pilot made me feel very safe." },
+      { rating: 5, username: "Mustafa", review: "Manzara muhteşemdi ve uçuş çok keyifliydi." },
+      { rating: 5, username: "Yuki", review: "とても安全で楽しいフライトでした！" },
+      { rating: 5, username: "Pierre", review: "Vue spectaculaire et équipe très professionnelle." },
+      { rating: 5, username: "Nika", review: "ძალიან უსაფრთხო და საინტერესო ფრენა იყო." },
+      { rating: 5, username: "Daniel", review: "The best adventure I had in Georgia. Highly recommended!" },
+      { rating: 5, username: "Fatima", review: "كانت تجربة مذهلة والمناظر الطبيعية رائعة." },
+      { rating: 5, username: "Chen Wei", review: "飞行非常平稳，景色令人难忘。" },
+      { rating: 5, username: "Dmitry", review: "Потрясающий полет и отличная организация." },
+      { rating: 5, username: "Elena", review: "Experiencia increíble y muy segura." },
+      { rating: 5, username: "Levan", review: "ძალიან კარგი გუნდი და დაუვიწყარი გამოცდილება." },
+      { rating: 5, username: "Thomas", review: "Pure freedom in the sky. One of the best experiences ever." }
     ],
 
     detail: {
@@ -562,8 +634,26 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Mia", review: "Heart-pumping fun! Excellent guides." },
-      { rating: 5, username: "Ethan", review: "Perfect combination of adventure and safety." }
+      { rating: 5, username: "Ryan", review: "Super fun experience! The jetskis were powerful and easy to control." },
+      { rating: 5, username: "Olivia", review: "Amazing adventure on the water. Highly recommended!" },
+      { rating: 5, username: "Hassan", review: "تجربة ممتعة وسريعة فوق الماء. كانت رائعة!" },
+      { rating: 5, username: "Wang Jun", review: "非常刺激的水上摩托体验！" },
+      { rating: 5, username: "Alexey", review: "Отличные гидроциклы и очень веселая поездка." },
+      { rating: 5, username: "Dato", review: "ძალიან სწრაფი და მაგარი გამოცდილება იყო." },
+      { rating: 5, username: "Miguel", review: "Muy emocionante y muy bien organizado." },
+      { rating: 5, username: "Lorenzo", review: "Esperienza fantastica sull'acqua!" },
+      { rating: 5, username: "Julia", review: "Great adventure and beautiful scenery." },
+      { rating: 5, username: "Kemal", review: "Çok eğlenceli ve güvenli bir jetski turuydu." },
+      { rating: 5, username: "Takashi", review: "とても楽しいウォーターアクティビティでした。" },
+      { rating: 5, username: "Louis", review: "Super expérience, très amusante." },
+      { rating: 5, username: "Irakli", review: "ძალიან კარგი ატმოსფერო და ძლიერი ჯეტსკები." },
+      { rating: 5, username: "Kevin", review: "Perfect mix of speed and fun!" },
+      { rating: 5, username: "Aisha", review: "كانت تجربة مليئة بالإثارة." },
+      { rating: 5, username: "Liang", review: "非常有趣，下次还会再来。" },
+      { rating: 5, username: "Vladimir", review: "Отличное развлечение и прекрасная природа." },
+      { rating: 5, username: "Sofia", review: "Muy divertido y seguro." },
+      { rating: 5, username: "Gela", review: "ძალიან კარგი საზაფხულო აქტივობაა." },
+      { rating: 5, username: "Robert", review: "Fast, fun and unforgettable experience!" }
     ],
 
     detail: {
@@ -694,8 +784,26 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Mia", review: "Heart-pumping fun! Excellent guides." },
-      { rating: 5, username: "Ethan", review: "Perfect combination of adventure and safety." }
+      { rating: 5, username: "Andrew", review: "Fantastic boat ride with amazing mountain views!" },
+      { rating: 5, username: "Charlotte", review: "Very relaxing and fun experience on the water." },
+      { rating: 5, username: "Yusuf", review: "تجربة رائعة بالقارب والمناظر كانت مذهلة." },
+      { rating: 5, username: "Zhao Ming", review: "非常棒的游船体验，风景很美。" },
+      { rating: 5, username: "Nikolai", review: "Отличная прогулка на лодке и прекрасная природа." },
+      { rating: 5, username: "Levan", review: "ძალიან სასიამოვნო გასეირნება იყო ნავით." },
+      { rating: 5, username: "Alejandro", review: "Una experiencia muy agradable y bien organizada." },
+      { rating: 5, username: "Francesco", review: "Giro in barca fantastico con viste incredibili." },
+      { rating: 5, username: "Laura", review: "Great trip and very professional captain." },
+      { rating: 5, username: "Emre", review: "Harika bir tekne turuydu, çok keyif aldık." },
+      { rating: 5, username: "Kenji", review: "とても楽しいボートツアーでした。" },
+      { rating: 5, username: "Antoine", review: "Super balade en bateau avec de très belles vues." },
+      { rating: 5, username: "Guram", review: "ძალიან ლამაზი ხედები და კარგი ორგანიზება." },
+      { rating: 5, username: "Steven", review: "Peaceful ride and beautiful scenery all around." },
+      { rating: 5, username: "Layla", review: "كانت رحلة جميلة وممتعة للغاية." },
+      { rating: 5, username: "Lin Tao", review: "风景优美，非常放松的体验。" },
+      { rating: 5, username: "Oleg", review: "Очень приятная прогулка по воде." },
+      { rating: 5, username: "Valeria", review: "Muy bonito paseo en barco." },
+      { rating: 5, username: "Beka", review: "ძალიან კარგი აქტივობა მეგობრებთან ერთად." },
+      { rating: 5, username: "George", review: "Relaxing, scenic and perfectly organized tour." }
     ],
 
     detail: {
@@ -778,8 +886,26 @@ const AdventureCards = [
     ],
     rating: 4.7,
     reviews: [
-      { rating: 5, username: "Emma", review: "So relaxing and enjoyable!" },
-      { rating: 4.5, username: "Liam", review: "Great horses and beautiful scenery." }
+      { rating: 5, username: "William", review: "Beautiful horse riding experience with stunning mountain views." },
+      { rating: 5, username: "Sofia", review: "Very calm and relaxing ride. The horses were well trained." },
+      { rating: 5, username: "Khalid", review: "تجربة ركوب خيل رائعة والطبيعة كانت جميلة جداً." },
+      { rating: 5, username: "Liang Chen", review: "骑马体验非常棒，风景非常美。" },
+      { rating: 5, username: "Viktor", review: "Отличная прогулка на лошадях и прекрасная природа." },
+      { rating: 5, username: "Nika", review: "ძალიან მშვიდი და სასიამოვნო ცხენოსნობა იყო." },
+      { rating: 5, username: "Diego", review: "Una experiencia muy auténtica y tranquila." },
+      { rating: 5, username: "Alessandro", review: "Passeggiata a cavallo fantastica nella natura." },
+      { rating: 5, username: "Clara", review: "Wonderful horses and very friendly guides." },
+      { rating: 5, username: "Murat", review: "Harika bir doğa ve at binme deneyimi." },
+      { rating: 5, username: "Haruto", review: "とてもリラックスできる乗馬体験でした。" },
+      { rating: 5, username: "Jean", review: "Magnifique balade à cheval avec de super paysages." },
+      { rating: 5, username: "Tornike", review: "ძალიან ლამაზი მარშრუტი და კარგი ცხენები." },
+      { rating: 5, username: "Peter", review: "Perfect activity to enjoy nature and relax." },
+      { rating: 5, username: "Amina", review: "كانت تجربة جميلة ومريحة للغاية." },
+      { rating: 5, username: "Wang Lei", review: "非常安静和美好的骑马体验。" },
+      { rating: 5, username: "Alexandr", review: "Очень спокойная и приятная прогулка." },
+      { rating: 5, username: "Lucia", review: "Muy relajante y muy bien organizado." },
+      { rating: 5, username: "Giga", review: "ძალიან კარგი აქტივობა ბუნებაში." },
+      { rating: 5, username: "Daniel", review: "Amazing ride and great guide!" }
     ],
 
     detail: {
@@ -866,8 +992,26 @@ const AdventureCards = [
     ],
     rating: 5.0,
     reviews: [
-      { rating: 5, username: "Oliver", review: "Excellent instructors and equipment." },
-      { rating: 4.9, username: "Ava", review: "Amazing slopes and very safe." }
+      { rating: 5, username: "Ethan", review: "Amazing snowmobile adventure! Riding through the snowy mountains was unforgettable." },
+      { rating: 5, username: "Isabella", review: "So much fun and very well organized. The views were incredible." },
+      { rating: 5, username: "Fahad", review: "تجربة مذهلة في الثلوج، كانت ممتعة جداً." },
+      { rating: 5, username: "Zhang Rui", review: "非常刺激的雪地摩托体验，风景非常壮观。" },
+      { rating: 5, username: "Sergei", review: "Невероятное приключение на снегоходе!" },
+      { rating: 5, username: "Giorgi", review: "ძალიან მაგარი გამოცდილება იყო თოვლში." },
+      { rating: 5, username: "Javier", review: "Una aventura increíble en la nieve." },
+      { rating: 5, username: "Lorenzo", review: "Esperienza fantastica con le motoslitte!" },
+      { rating: 5, username: "Emily", review: "Great guide and powerful snowmobiles." },
+      { rating: 5, username: "Ahmet", review: "Kar üzerinde harika bir maceraydı." },
+      { rating: 5, username: "Takumi", review: "とても楽しいスノーモービル体験でした。" },
+      { rating: 5, username: "Pierre", review: "Une aventure incroyable dans la neige." },
+      { rating: 5, username: "Nika", review: "ძალიან საინტერესო და უსაფრთხო ტური." },
+      { rating: 5, username: "Jack", review: "One of the best winter adventures I’ve ever had." },
+      { rating: 5, username: "Layla", review: "كانت تجربة مليئة بالإثارة في الجبال." },
+      { rating: 5, username: "Wang Hao", review: "非常刺激，非常值得体验。" },
+      { rating: 5, username: "Alexei", review: "Очень весело и отлично организовано." },
+      { rating: 5, username: "Sofia", review: "Muy emocionante y bien organizado." },
+      { rating: 5, username: "Levan", review: "ძალიან კარგი ზამთრის აქტივობა." },
+      { rating: 5, username: "Thomas", review: "Pure adrenaline and amazing mountain scenery!" }
     ],
 
     detail: {
@@ -984,10 +1128,28 @@ const AdventureCards = [
       "🛡 Safety Briefing",
       "🚁 Drone Footage"
     ],
-    rating: 4.8,
+    rating: 5,
     reviews: [
-      { rating: 5, username: "Alice", review: "Amazing experience, highly recommend!" },
-      { rating: 4.5, username: "John", review: "Thrilling ride, good safety measures." }
+      { rating: 5, username: "Nathan", review: "Amazing ATV ride through the mountains. Pure adrenaline!" },
+      { rating: 5, username: "Olivia", review: "One of the most exciting adventures I’ve ever had." },
+      { rating: 5, username: "Abdullah", review: "تجربة رائعة ومليئة بالإثارة في الجبال." },
+      { rating: 5, username: "Li Qiang", review: "非常刺激的ATV体验，风景非常壮观。" },
+      { rating: 5, username: "Dmitri", review: "Отличное приключение на квадроциклах!" },
+      { rating: 5, username: "Giga", review: "ძალიან მაგარი ოფროუდ გამოცდილება იყო." },
+      { rating: 5, username: "Carlos", review: "Una aventura increíble en la montaña." },
+      { rating: 5, username: "Giovanni", review: "Esperienza fantastica con ATV tra le montagne." },
+      { rating: 5, username: "Hannah", review: "Great guide and amazing mountain trails." },
+      { rating: 5, username: "Emre", review: "Dağlarda ATV sürmek gerçekten harikaydı." },
+      { rating: 5, username: "Yuta", review: "とても楽しいATVアドベンチャーでした。" },
+      { rating: 5, username: "Lucas", review: "Fantastic off-road adventure and beautiful scenery." },
+      { rating: 5, username: "Levan", review: "ძალიან კარგი მარშრუტი და ძლიერი ATV-ები." },
+      { rating: 5, username: "Daniel", review: "Perfect adventure for adrenaline lovers." },
+      { rating: 5, username: "Aisha", review: "كانت تجربة ممتعة ومليئة بالحماس." },
+      { rating: 5, username: "Wang Jun", review: "非常好玩的越野体验。" },
+      { rating: 5, username: "Alexandr", review: "Очень захватывающая поездка!" },
+      { rating: 5, username: "Lucia", review: "Muy emocionante y muy bien organizado." },
+      { rating: 5, username: "Irakli", review: "ძალიან კარგი აქტივობა მეგობრებთან ერთად." },
+      { rating: 5, username: "Robert", review: "Awesome adventure with stunning mountain views." }
     ],
 
     detail: {
