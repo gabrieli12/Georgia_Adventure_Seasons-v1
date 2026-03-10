@@ -32,7 +32,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
               <i className="fa-solid fa-star text-[#fdc700] relative"></i>
 
               {evaluation}
-              ({reviews.length} review)
+              ({Math.floor(reviews.length * 2 / 1.5)} review)
             </p>
           </div>
 

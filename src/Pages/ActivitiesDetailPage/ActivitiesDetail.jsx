@@ -188,6 +188,7 @@ function ActivitiesDetail() {
         {/* black background for header */}
         <div className="bg-black py-16 w-full h-24 absolute top-0 left-0 max-xl:py-13 max-sm:py-21 "></div>
 
+        
         {/* Hero Section */}
         <Hero chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
 

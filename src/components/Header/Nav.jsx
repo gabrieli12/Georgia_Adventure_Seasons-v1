@@ -48,19 +48,19 @@ function Nav({ scrolled }) {
                     transition-all duration-300 border border-gray-100 z-50
                     ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2 '}
                 `}>
-                    <Link
-                        to="/aboutUs"
+                    <HashLink
+                        to="/aboutUs#"
                         className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium "
                     >
                         About Us
-                    </Link>
+                    </HashLink>
 
-                    <HashLink
+                    {/* <HashLink
                         to="/contact#"
                         className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium"
                     >
                         Contact
-                    </HashLink>
+                    </HashLink> */}
 
                     {/* ნაზი გამყოფი ხაზი */}
                     <div className="mx-6 my-1 border-t border-gray-100"></div>

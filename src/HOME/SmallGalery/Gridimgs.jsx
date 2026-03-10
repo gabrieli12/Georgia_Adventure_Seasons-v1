@@ -128,7 +128,7 @@ function Gridimgs() {
 
                 {/* 6 - mobile full */}
                 <div className="col-span-2 md:col-span-1 overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/jomardoba.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
+                    <img src="activities_images/rafting/rafting1.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
                 </div>
 
                 {/* 7 */}

@@ -26,7 +26,7 @@ function Transport() {
       
       <section className="relative  ">
         <video className='w-full  h-screen  object-cover z-0' src="car_images/transport_video.mp4" autoPlay loop muted ></video>
-        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-84 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
+        <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-1/2 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
           {/* ტექსტის ზომა მობილურზე შემცირებულია (text-4xl), დესკტოპზე იგივეა (md:text-8xl) */}
           <h1 className="text-white text-8xl w-full text-center font-bebas tracking-widest font-bold max-lg:text-6xl">
             PRIVATE TRANSFERS
@@ -69,10 +69,10 @@ function Transport() {
         <div className='w-full flex flex-wrap justify-center gap-10 md:ml-10'>
           {/* მობილურზე -top-30 უქმდება */}
           <div className='relative md:-top-30 w-full md:w-auto'>
-            <TransportCard img={'Rectangle 142.png'} heading={'SEDAN'} description={'Sedan (4 passengers) Perfect for couples.'} />
+            <TransportCard img={'car_images/sedan.png'} heading={'SEDAN'} description={'Sedan (4 passengers) Perfect for couples.'} />
           </div>
-          <TransportCard img={'image 110.png'} heading={'MINIVAN'} description={'Minivan (5–7 passengers) Ideal for families.'} tall={true} />
-          <TransportCard img={'Rectangle 148.png'} heading={'MINIBUS'} description={'Minibus (15–17 passengers) Ideal for groups.'} />
+          <TransportCard img={'car_images/minivan.png'} heading={'MINIVAN'} description={'Minivan (5–7 passengers) Ideal for families.'} tall={true} />
+          <TransportCard img={'car_images/image2.png'} heading={'MINIBUS'} description={'Minibus (15–17 passengers) Ideal for groups.'} />
         </div>
       </section>
 

@@ -244,8 +244,8 @@ function Faq() {
 
     return (
         <section className="w-full flex justify-center items-center bg-[#f2f1fde8] pt-30 pb-20 relative " id="faq-section">
-            <div className="w-[80%] overflow-hidden flex  justify-between pl-7.5 ">
-                <div className="w-full  flex flex-col pl-7.5 ">
+            <div className="w-[80%] overflow-hidden flex  justify-between pl-7.5 max-sm:pl-0 ">
+                <div className="w-full  flex flex-col pl-7.5 max-sm:pl-0 ">
                     <h2 className="border-b-2  border-green-700 w-37.5 text-[20px] h-12.5 text-[#193352] font-bold">FAQ</h2>
 
                     <div className="pt-3.75 relative">

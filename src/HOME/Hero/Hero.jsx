@@ -1,5 +1,6 @@
 
 // slider
+import { HashLink } from "react-router-hash-link";
 import Slider from "./Slider/Slider";
 
 // StringRunner
@@ -20,7 +21,7 @@ function Hero() {
             "url('src/assets/photo-1709506530108-4951e792208f 4.png')",
         }}
       >
-        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative -mt-18 max-sm:-mt-18">
+        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative -mt-18 max-sm:-mt-18 ">
 
           {/* ზედა სამი მნიშვნელოვანი სიტყვა */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-[12px] text-white  font-semibold  max-sm:hidden">
@@ -50,10 +51,10 @@ function Hero() {
 
           <h1 className="text-3xl md:text-4xl 2xl:text-5xl font- flex justify-center items-center flex-col max-sm:text-3xl">
             Embrace the <span className=" text-green-300 ">Adventure</span>
-            
+
           </h1>
           <p className=" max-w-3xl font-medium text-sm md:text-xl text-gray-200 ">
-            Four Seasons, Endless Adventures in <span className="text-[#ffc481]">Georgia Mountains</span> <br /> 
+            Four Seasons, Endless Adventures in <span className="text-[#ffc481]">Georgia Mountains</span> <br />
           </p>
           <p className="text-gray-200 flex justify-center items-center gap-1 relative bottom-4 text-lg">
             {" "}
@@ -64,15 +65,20 @@ function Hero() {
             />
             <span className="flex gap-2"><span className="text-[#ffc481] ">Mtiuleti</span>  Region, Georgia</span>
           </p>
-          
-          <div className="flex justify-center flex-wrap gap-7 mt-2 relative "> 
+
+          <div className="flex justify-center flex-wrap gap-7 mt-2 relative ">
             <span className="text-[#ff8a05] text-green-200  text-xl font-bold  text-shadow-[0_5px_15px_green] ">All-in-One / Full Service</span>
-            <button className="bg-[#ff8a05dd] px-6 py-1 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591] ">
-              Book Now
-            </button>
-            <button className="bg-[#0bff0b00] border border-green-400 text-green-200 px-6 py-1 shadow-2xl shadow-green-300 rounded-lg cursor-pointer duration-300 hover:bg-[#0bc15139]">
-              Explore Tours
-            </button>
+            <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." target="__blank">
+              <button className="bg-[#ff8a05dd] px-6 py-1 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591] ">
+                Book Now
+              </button>
+            </a>
+
+            <HashLink to="/#activities">
+              <button className="bg-[#0bff0b00] border border-green-400 text-green-200 px-6 py-1 shadow-2xl shadow-green-300 rounded-lg cursor-pointer duration-300 hover:bg-[#0bc15139]">
+                Explore Tours
+              </button>
+            </HashLink>
           </div>
         </div>
 
@@ -81,7 +87,7 @@ function Hero() {
 
       </section>
 
-        {/* two String Runner */}
+      {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
         <img className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" />
         <StringRunner animationName={'marquee'} />

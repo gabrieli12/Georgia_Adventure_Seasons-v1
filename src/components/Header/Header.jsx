@@ -152,9 +152,11 @@ function Header() {
 
                     </div>
 
-                    <button className="border shadow-2xl shadow-green-300  px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 bg-[#0B1220] max-sm:px-5 max-sm:py-2 ">
-                        Book Now
-                    </button>
+                    <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity.">
+                        <button className="border shadow-2xl shadow-green-300  px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 bg-[#0B1220] max-sm:px-5 max-sm:py-2 ">
+                            Book Now
+                        </button>
+                    </a>
 
 
                 </section>
@@ -222,9 +224,11 @@ function Header() {
 
 
 
-                        <button className="bg-transparent border shadow-2xl shadow-green-300 border-green-400 px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 max-sm:hidden ">
-                            Book Now
-                        </button>
+                        <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." target="__blank">
+                            <button className="bg-transparent border shadow-2xl shadow-green-300 border-green-400 px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 max-sm:hidden ">
+                                Book Now
+                            </button>
+                        </a>
 
                         {/* burger menu */}
                         <BurgerMenu />

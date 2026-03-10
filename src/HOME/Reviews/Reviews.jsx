@@ -2,9 +2,9 @@ import { useRef, useEffect } from 'react';
 import ReviewsComp from './ReviewsComp';
 
 function Reviews({ title }) {
-    const slider = useRef(null);
+  const slider = useRef(null);
 
-    const ReviewInfo = [
+  const ReviewInfo = [
     {
       text: "Incredible hiking experience! The trails were well-maintained and the views were absolutely spectacular. ",
       tag: "Mountain Hiking Adventure",
@@ -79,32 +79,32 @@ function Reviews({ title }) {
     }
   ]
   const scrollNext = () => {
-      if (!slider.current) return
-      // const cardWidth = slider.current.children[0].offsetWidth
-      // const gap = 35
-      // slider.current.scrollBy({ left: cardWidth + gap, behavior: "smooth"  } )
-    
-
-   
-  const sliderEl = slider.current
-  const cardWidth = sliderEl.children[0].offsetWidth
-  const gap = 35
-  const step = cardWidth + gap
-
-  sliderEl.scrollBy({ left: step, behavior: "smooth" })
-
-  const half = sliderEl.scrollWidth / 2
+    if (!slider.current) return
+    // const cardWidth = slider.current.children[0].offsetWidth
+    // const gap = 35
+    // slider.current.scrollBy({ left: cardWidth + gap, behavior: "smooth"  } )
 
 
-  if (sliderEl.scrollLeft >= half) {
-    
-    setTimeout(() => {
-      sliderEl.scrollLeft -= (half+200)
-    }, 1)
-    
+
+    const sliderEl = slider.current
+    const cardWidth = sliderEl.children[0].offsetWidth
+    const gap = 35
+    const step = cardWidth + gap
+
+    sliderEl.scrollBy({ left: step, behavior: "smooth" })
+
+    const half = sliderEl.scrollWidth / 2
+
+
+    if (sliderEl.scrollLeft >= half) {
+
+      setTimeout(() => {
+        sliderEl.scrollLeft -= (half + 200)
+      }, 1)
+
+    }
   }
-}
-  
+
 
   const scrollPrev = () => {
     if (!slider.current) return
@@ -115,27 +115,32 @@ function Reviews({ title }) {
 
 
   return (
-      <section id='reviews' className="py-32 bg-[#f1fdf5] flex items-center justify-center flex-col gap-[20px]">
-            <p className="bg-[#dbfce7] px-[15px] py-[5px] rounded-[15px] w-[max-content] text-[12px] text-[#4e6f30] font-[700]">Customer Reviews</p>
-            <h1 className='text-4xl md:text-5xl mb-6 text-gray-900 text-center'>What Our Adventurers Say</h1>
-            <p className='text-xl text-gray-600 max-w-3xl mx-auto text-center'>Don't just take our word for it. Here's what our guests have to say about their unforgettable Georgian adventure experiences.</p>
-            <div className="flex items-center justify-center gap-[50px] w-full ">
-                <div className="w-[30px] h-[30px] bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]"  
-                onClick={scrollPrev}>
-                    <i className="fa-solid fa-arrow-left"></i>
-                </div>
-                <div className={`${'w-[79%] flex justify-between overflow-hidden gap-[35px]'} max-md:w-full `} id='main-div' ref={slider}>
-                    {
-                      ReviewInfo.map((review, index) => (
-                        <ReviewsComp {...review} key={index}/>
-                      ))
-                    }
-                </div>
-                <div className="w-[30px] h-[30px] bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]" onClick={scrollNext}>
-                    <i className="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </section>
+    <section id='reviews' className="py-32 bg-[#f1fdf5] flex items-center justify-center flex-col gap-[20px]">
+      <p className="bg-[#dbfce7] px-[15px] py-[5px] rounded-[15px] w-[max-content] text-[12px] text-[#4e6f30] font-[700]">Customer Reviews</p>
+      <h1 className='text-4xl md:text-5xl mb-6 text-gray-900 text-center'>What Our Adventurers Say</h1>
+      <p className='text-xl text-gray-600 max-w-3xl mx-auto text-center'>Don't just take our word for it. Here's what our guests have to say about their unforgettable Georgian adventure experiences.</p>
+      <div className="flex items-center justify-center sm:gap-[50px] gap-[10px] px-3 w-full ">
+        <div className='flex gap-2'>
+          <div className="p-1.5 bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]"
+            onClick={scrollPrev}>
+            <i className="fa-solid fa-arrow-left"></i>
+          </div>
+
+          <div className="p-1.5 bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]" onClick={scrollNext}>
+            <i className="fa-solid fa-arrow-right"></i>
+          </div>
+
+        </div>
+
+        <div className={`${' flex justify-between overflow-hidden gap-[35px] '}  `} id='main-div' ref={slider}>
+          {
+            ReviewInfo.map((review, index) => (
+              <ReviewsComp {...review} key={index} />
+            ))
+          }
+        </div>
+      </div>
+    </section>
   );
 }
 

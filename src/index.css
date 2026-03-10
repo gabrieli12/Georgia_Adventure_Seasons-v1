@@ -54,6 +54,10 @@ header h2 {
 
 
 @theme {
+
+
+  --breakpoint-short: (max-height: 700px);
+
   /* აქ 'font-inter' იქნება კლასის სახელი */
   --font-poppins: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif;
@@ -67,6 +71,8 @@ header h2 {
   /* თუ გინდა, რომ მთელი საიტის მთავარი ფონტი (default) შეიცვალოს: */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
+
+
 
 
 .no-scrollbar::-webkit-scrollbar {

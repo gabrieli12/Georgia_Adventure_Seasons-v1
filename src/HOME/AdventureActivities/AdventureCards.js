@@ -11,7 +11,7 @@ const AdventureCards = [
       "Adrenaline-filled rafting adventure on fast mountain rivers.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 120 GEL",
+    price: "From 120 Usd",
     location: '📍Around Pasanauri',
     img: "activities_images/rafting/rafting1.png",
     buttonText: "Book Adventure",
@@ -43,7 +43,7 @@ const AdventureCards = [
       { rating: 5, username: "Elena", review: "Muy emocionante y seguro. Me encantó." },
       { rating: 5, username: "Giorgi", review: "საოცარი გამოცდილება და ძალიან მეგობრული გუნდი." },
       { rating: 5, username: "James", review: "Pure adrenaline and stunning scenery. Loved every minute!" }
-    ], 
+    ],
 
     detail: {
 
@@ -130,9 +130,9 @@ const AdventureCards = [
       "Join our Ski & Snowboard lessons and experience the best of Georgia’s winter.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 150 GEL",
+    price: "From 60 Usd",
     location: '📍Gudauri',
-    img: "https://www.mechanicsofsport.com/skiing/how_to_ski/graphics/parallel-turn-walkthrough.png",
+    img: "activities_images/skiSnowboard_lessons/ski1.png",
     buttonText: "Book Adventure",
     rightText: [
       "⛷️ Professional Instructor Support",
@@ -328,7 +328,7 @@ const AdventureCards = [
       "Everything you need for the perfect ride with premium gear.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 70 GEL",
+    price: "From 40 Usd",
     location: '📍Gudauri',
     img: "activities_images/skiSnowboard_rental/rent1.png",
     buttonText: "Book Adventure",
@@ -360,7 +360,7 @@ const AdventureCards = [
       { rating: 5, username: "Carlos", review: "Equipo de esquí perfecto y muy cómodo." },
       { rating: 5, username: "Levan", review: "ძალიან კმაყოფილი დავრჩი ინვენტარით და მომსახურებით." },
       { rating: 5, username: "Thomas", review: "Everything was clean, safe and ready to use. Excellent experience." }
-  ],
+    ],
 
 
     // დეტალისთვის საჭირო ინფორმაცია ერთ ობიექტში, რომელიც შემდეგ დეტალების გვერდზე გადაეცემა
@@ -422,7 +422,7 @@ const AdventureCards = [
       fullDescription: "Rent high-quality ski or snowboard equipment in Gudauri. Our full set includes skis or snowboard, boots, bindings, poles (for skiers), helmet and goggles. All equipment is professionally maintained and available in all sizes.",
 
       // მთავარი ვიდეო
-      video: "videos/2025-11-18-131947470.mp4",
+      // video: "videos/2025-11-18-131947470.mp4",
 
       // 
       features: [
@@ -460,11 +460,11 @@ const AdventureCards = [
     title: "Paragliding Experience",
     description:
       "Feel absolute freedom while flying above mountains with professional instructors.",
-    evaluation: "4.9",
+    evaluation: "5.0",
     difficulty: "Easy",
-    price: "From 350 GEL",
+    price: "From 150 Usd",
     location: '📍Gudauri • Ananuri',
-    img: "src/assets/Frame 1984077871 (2).png",
+    img: "activities_images/paragliding/paragliding1.png",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Tandem flight with certified instructor",
@@ -592,7 +592,7 @@ const AdventureCards = [
         "src/assets/Frame 1984077871 (2).png"
       ],
 
-      video: "videos/2025-11-18-131947470.mp4",
+      // video: "videos/2025-11-18-131947470.mp4",
 
 
 
@@ -622,7 +622,7 @@ const AdventureCards = [
       "Adrenaline-filled jetski adventure around Pasanauri with professional guides.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 120 GEL",
+    price: "From 35 Usd",
     location: '📍Around Pasanauri',
     img: "activities_images/jetski/jetski1.png",
     buttonText: "Book Adventure",
@@ -733,7 +733,7 @@ const AdventureCards = [
         "Experience high-speed excitement on a powerful jetski around Ananuri. Guided by professional instructors, this adventure combines adrenaline, safety and breathtaking river landscapes. Perfect for thrill-seekers looking for a fun summer escape.",
 
 
-      video: "videos/2025-11-18-131947470.mp4",
+      // video: "videos/2025-11-18-131947470.mp4",
 
       images: [
         "activities_images/jetski/jetski1.png",
@@ -773,9 +773,9 @@ const AdventureCards = [
       "Adrenaline-filled motorboat adventure around Pasanauri.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 120 GEL",
+    price: "From 60 Usd",
     location: '📍Around Pasanauri',
-    img: "activities_images/ნავით გასეირნება ანანურში_1.2.13.png",
+    img: "activities_images/motorBoat/motorboat1.png",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -843,7 +843,7 @@ const AdventureCards = [
       ],
 
       fullDescription:
-        "Enjoy a scenic and thrilling motorboat ride near Pasanauri. Guided by experienced professionals, this adventure combines speed, safety and breathtaking river landscapes. Perfect for families, friends and adrenaline lovers.",
+        "Enjoy a scenic and thrilling motorboat ride Ananuri. Guided by experienced professionals, this adventure combines speed, safety and breathtaking river landscapes. Perfect for families, friends and adrenaline lovers.",
 
       images: [
         "activities_images/motorBoat/motorboat1.png",
@@ -867,111 +867,117 @@ const AdventureCards = [
 
   },
 
-  {
-    id: 2,
-    season: ['Spring', 'Summer', 'Autumn'],
-    title: "Horse Riding Tour",
-    description:
-      "Peaceful horse riding experience across open fields and scenic nature routes.",
-    evaluation: "4.8",
-    difficulty: "Easy",
-    price: "From 80 GEL",
-    location: '📍Gudauri • Pasanauri • Ananuri',
-    img: "activities_images/ცხენოსნობა2-Recovered.png",
-    buttonText: "Book Adventure",
-    rightText: [
-      "⛰️ Mountain views",
-      "🐴 Experienced horses",
-      "⭐ Traditional Georgian style"
-    ],
-    rating: 4.7,
-    reviews: [
-      { rating: 5, username: "William", review: "Beautiful horse riding experience with stunning mountain views." },
-      { rating: 5, username: "Sofia", review: "Very calm and relaxing ride. The horses were well trained." },
-      { rating: 5, username: "Khalid", review: "تجربة ركوب خيل رائعة والطبيعة كانت جميلة جداً." },
-      { rating: 5, username: "Liang Chen", review: "骑马体验非常棒，风景非常美。" },
-      { rating: 5, username: "Viktor", review: "Отличная прогулка на лошадях и прекрасная природа." },
-      { rating: 5, username: "Nika", review: "ძალიან მშვიდი და სასიამოვნო ცხენოსნობა იყო." },
-      { rating: 5, username: "Diego", review: "Una experiencia muy auténtica y tranquila." },
-      { rating: 5, username: "Alessandro", review: "Passeggiata a cavallo fantastica nella natura." },
-      { rating: 5, username: "Clara", review: "Wonderful horses and very friendly guides." },
-      { rating: 5, username: "Murat", review: "Harika bir doğa ve at binme deneyimi." },
-      { rating: 5, username: "Haruto", review: "とてもリラックスできる乗馬体験でした。" },
-      { rating: 5, username: "Jean", review: "Magnifique balade à cheval avec de super paysages." },
-      { rating: 5, username: "Tornike", review: "ძალიან ლამაზი მარშრუტი და კარგი ცხენები." },
-      { rating: 5, username: "Peter", review: "Perfect activity to enjoy nature and relax." },
-      { rating: 5, username: "Amina", review: "كانت تجربة جميلة ومريحة للغاية." },
-      { rating: 5, username: "Wang Lei", review: "非常安静和美好的骑马体验。" },
-      { rating: 5, username: "Alexandr", review: "Очень спокойная и приятная прогулка." },
-      { rating: 5, username: "Lucia", review: "Muy relajante y muy bien organizado." },
-      { rating: 5, username: "Giga", review: "ძალიან კარგი აქტივობა ბუნებაში." },
-      { rating: 5, username: "Daniel", review: "Amazing ride and great guide!" }
-    ],
 
-    detail: {
+  // ================= Horse Riding Tour =================
+  // {
+  //   id: 2,
+  //   season: ['Spring', 'Summer', 'Autumn'],
+  //   title: "Horse Riding Tour",
+  //   description:
+  //     "Peaceful horse riding experience across open fields and scenic nature routes.",
+  //   evaluation: "5.0",
+  //   difficulty: "Easy",
+  //   price: "From 80 GEL",
+  //   location: '📍Gudauri • Pasanauri • Ananuri',
+  //   img: "activities_images/ცხენოსნობა2-Recovered.png",
+  //   buttonText: "Book Adventure",
+  //   rightText: [
+  //     "⛰️ Mountain views",
+  //     "🐴 Experienced horses",
+  //     "⭐ Traditional Georgian style"
+  //   ],
+  //   rating: 4.7,
+  //   reviews: [
+  //     { rating: 5, username: "William", review: "Beautiful horse riding experience with stunning mountain views." },
+  //     { rating: 5, username: "Sofia", review: "Very calm and relaxing ride. The horses were well trained." },
+  //     { rating: 5, username: "Khalid", review: "تجربة ركوب خيل رائعة والطبيعة كانت جميلة جداً." },
+  //     { rating: 5, username: "Liang Chen", review: "骑马体验非常棒，风景非常美。" },
+  //     { rating: 5, username: "Viktor", review: "Отличная прогулка на лошадях и прекрасная природа." },
+  //     { rating: 5, username: "Nika", review: "ძალიან მშვიდი და სასიამოვნო ცხენოსნობა იყო." },
+  //     { rating: 5, username: "Diego", review: "Una experiencia muy auténtica y tranquila." },
+  //     { rating: 5, username: "Alessandro", review: "Passeggiata a cavallo fantastica nella natura." },
+  //     { rating: 5, username: "Clara", review: "Wonderful horses and very friendly guides." },
+  //     { rating: 5, username: "Murat", review: "Harika bir doğa ve at binme deneyimi." },
+  //     { rating: 5, username: "Haruto", review: "とてもリラックスできる乗馬体験でした。" },
+  //     { rating: 5, username: "Jean", review: "Magnifique balade à cheval avec de super paysages." },
+  //     { rating: 5, username: "Tornike", review: "ძალიან ლამაზი მარშრუტი და კარგი ცხენები." },
+  //     { rating: 5, username: "Peter", review: "Perfect activity to enjoy nature and relax." },
+  //     { rating: 5, username: "Amina", review: "كانت تجربة جميلة ومريحة للغاية." },
+  //     { rating: 5, username: "Wang Lei", review: "非常安静和美好的骑马体验。" },
+  //     { rating: 5, username: "Alexandr", review: "Очень спокойная и приятная прогулка." },
+  //     { rating: 5, username: "Lucia", review: "Muy relajante y muy bien organizado." },
+  //     { rating: 5, username: "Giga", review: "ძალიან კარგი აქტივობა ბუნებაში." },
+  //     { rating: 5, username: "Daniel", review: "Amazing ride and great guide!" }
+  //   ],
 
-      additionalServices: [
-        { name: "Photo session", price: "20 GEL" },
-        { name: "Guided trail maps", price: "Free" },
-        { name: "Traditional snacks", price: "15 GEL" }
-      ],
+  //   detail: {
 
-      priceDetails: [
-        { name: "30-Minute Ride", price: "80 GEL" },
-        { name: "1-Hour Ride", price: "120 GEL" },
-        { name: "2-Hour Scenic Tour", price: "200 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" },
+  //     additionalServices: [
+  //       { name: "Photo session", price: "20 GEL" },
+  //       { name: "Guided trail maps", price: "Free" },
+  //       { name: "Traditional snacks", price: "15 GEL" }
+  //     ],
 
-        { name: "30-Minute Ride", price: "80 GEL" },
-        { name: "1-Hour Ride", price: "120 GEL" },
-        { name: "2-Hour Scenic Tour", price: "200 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" }
-      ],
+  //     priceDetails: [
+  //       { name: "30-Minute Ride", price: "80 GEL" },
+  //       { name: "1-Hour Ride", price: "120 GEL" },
+  //       { name: "2-Hour Scenic Tour", price: "200 GEL" },
+  //       { name: "Private Custom Tour", price: "Price on Request" },
 
-      importantInfo: [
-        {
-          label: "Note",
-          value: "Riders must follow <span class='font-bold text-red-800'>guide instructions</span> at all times."
-        },
-        {
-          label: "Safety",
-          value: "Wearing <span class='font-bold text-red-800'>closed shoes</span> is mandatory."
-        },
-        {
-          label: "Weather Policy",
-          value: "Tours may be <span class='font-bold text-red-800'>rescheduled or canceled</span> in severe weather conditions."
-        }
-      ],
+  //       { name: "30-Minute Ride", price: "80 GEL" },
+  //       { name: "1-Hour Ride", price: "120 GEL" },
+  //       { name: "2-Hour Scenic Tour", price: "200 GEL" },
+  //       { name: "Private Custom Tour", price: "Price on Request" }
+  //     ],
 
-      fullDescription:
-        "Enjoy a calm and authentic horse riding tour through the scenic valleys and open mountain landscapes of Gudauri, Pasanauri and Ananuri. Our experienced horses and professional guides ensure a safe, comfortable and memorable journey in traditional Georgian style.",
+  //     importantInfo: [
+  //       {
+  //         label: "Note",
+  //         value: "Riders must follow <span class='font-bold text-red-800'>guide instructions</span> at all times."
+  //       },
+  //       {
+  //         label: "Safety",
+  //         value: "Wearing <span class='font-bold text-red-800'>closed shoes</span> is mandatory."
+  //       },
+  //       {
+  //         label: "Weather Policy",
+  //         value: "Tours may be <span class='font-bold text-red-800'>rescheduled or canceled</span> in severe weather conditions."
+  //       }
+  //     ],
 
-      images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png"
-      ],
+  //     fullDescription:
+  //       "Enjoy a calm and authentic horse riding tour through the scenic valleys and open mountain landscapes of Gudauri, Pasanauri and Ananuri. Our experienced horses and professional guides ensure a safe, comfortable and memorable journey in traditional Georgian style.",
 
-      recommendations: [
-        "Listen carefully to the instructor before the ride",
-        "Wear comfortable clothing and closed shoes",
-        "Inform staff about allergies or medical conditions",
-        "Arrive 15 minutes before tour start time"
-      ],
+  //     images: [
+  //       "src/assets/Frame 1984077871.png",
+  //       "src/assets/Frame 1984077871 (1).png",
+  //       "src/assets/Frame 1984077871 (2).png",
+  //       "src/assets/Frame 1984077871 (2).png",
+  //       "src/assets/Frame 1984077871 (2).png",
+  //       "src/assets/Frame 1984077871 (2).png"
+  //     ],
 
-      features: [
-        "Mountain Views",
-        "Experienced Horses",
-        "Professional Guide",
-        "Traditional Georgian Style"
-      ]
+  //     recommendations: [
+  //       "Listen carefully to the instructor before the ride",
+  //       "Wear comfortable clothing and closed shoes",
+  //       "Inform staff about allergies or medical conditions",
+  //       "Arrive 15 minutes before tour start time"
+  //     ],
 
-    }
+  //     features: [
+  //       "Mountain Views",
+  //       "Experienced Horses",
+  //       "Professional Guide",
+  //       "Traditional Georgian Style"
+  //     ]
 
-  },
+  //   }
+
+  // },
+
+
+
+  // ================= Snowmobile Adventure =================
 
   {
     id: 7,
@@ -981,9 +987,9 @@ const AdventureCards = [
       "Explore hidden mountain trails with high-power snowmobiles.",
     evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 150 GEL",
+    price: "From 60 Usd",
     location: '📍Gudauri',
-    img: "https://staylapland.com/app/uploads/2025/04/StayLapland-Snowmobile-Customer-10-scaled.jpeg",
+    img: "activities_images/snowMobile/snowmobile1.png",
     buttonText: "Book Adventure",
     rightText: [
       "❄️ Deep Snow Experience",
@@ -1017,9 +1023,8 @@ const AdventureCards = [
     detail: {
 
       additionalServices: [
-        { name: "Equipment rental", price: "Free" },
-        { name: "Professional guide", price: "Included" },
-        { name: "Drone footage", price: "60 GEL" }
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "Drone footage", price: "60 Usd" },
       ],
 
       priceDetails: [
@@ -1027,57 +1032,49 @@ const AdventureCards = [
           name: "20-Minute Snowmobile Ride",
           price: "60 Usd",
           serviceDetails: [
-            "Duration: approximately 20–30 minutes",
-            "Passengers: max 20 per MotorBoat",
-            "High-performance motorboat",
-            "Professional guide/driver provided",
-            "Life jackets and safety briefing included",
-            "Exciting ride along the lake",
-            "Amazing views of the surrounding nature and mountains",
+            "Snowmobile ride through scenic mountain trails",
+            "Duration: approximately 20 minutes",
+            "Up to 2 passengers per snowmobile",
+            "Professional guide leading the route",
+            "Safety briefing before the ride",
+            "Helmet and safety equipment provided",
+            "Easy to ride – suitable for beginners",
+            "Amazing winter views of the mountains and nature",
           ],
           priceDetail: "Per Snowmobile (1-2 People)",
+          popular: true // ეს დაგვეხმარება ლოგიკაში, რომ ამ პაკეტს განსაკუთრებული სტილი მივანიჭოთ
+
         },
         {
-          name: "1-Hour Snowmobile Tour",
-          price: "250 GEL", serviceDetails: [
-            "Duration: approximately 20–30 minutes",
-            "Passengers: max 20 per MotorBoat",
-            "High-performance motorboat",
-            "Professional guide/driver provided",
-            "Life jackets and safety briefing included",
-            "Exciting ride along the lake",
-            "Amazing views of the surrounding nature and mountains",
-          ],
-          priceDetail: "Per Snowmobile (1-2 People)",
-        },
-        {
-          name: "2-Hour Mountain Adventure",
-          price: "400 GEL",
+          name: "1-Hour Snowmobile Ride",
+          price: "130 Usd",
           serviceDetails: [
-            "Duration: approximately 20–30 minutes",
-            "Passengers: max 20 per MotorBoat",
-            "High-performance motorboat",
-            "Professional guide/driver provided",
-            "Life jackets and safety briefing included",
-            "Exciting ride along the lake",
-            "Amazing views of the surrounding nature and mountains",
+            "Snowmobile ride through scenic mountain trails",
+            "Duration: approximately 20 minutes",
+            "Up to 2 passengers per snowmobile",
+            "Professional guide leading the route",
+            "Safety briefing before the ride",
+            "Helmet and safety equipment provided",
+            "Easy to ride – suitable for beginners",
+            "Amazing winter views of the mountains and nature",
           ],
           priceDetail: "Per Snowmobile (1-2 People)",
         },
+
       ],
 
       importantInfo: [
         {
-          label: "Note",
-          value: "Helmet use is <span class='font-bold text-red-800'>mandatory</span> during the entire ride."
+          label: "Passengers",
+          value: "Each snowmobile can carry <span class='font-bold text-red-800'>up to 2 people</span>."
         },
         {
-          label: "Safety",
-          value: "Not recommended for <span class='font-bold text-red-800'>pregnant women or people with back problems</span>."
+          label: "Driver Age",
+          value: "Recommended minimum age for driving is <span class='font-bold text-red-800'>14 years</span>."
         },
         {
-          label: "Weather Policy",
-          value: "Tours are <span class='font-bold text-red-800'>weather dependent</span> and may be rescheduled."
+          label: "license",
+          value: "No license required."
         }
       ],
 
@@ -1085,19 +1082,20 @@ const AdventureCards = [
         "Feel the winter adrenaline rush as you ride powerful snowmobiles across deep snow and hidden mountain trails in Gudauri. Guided by experts, this adventure offers breathtaking views and unforgettable winter memories.",
 
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/snowMobile/snowmobile1.png",
+        "activities_images/snowMobile/snowmobile2.png",
+        "activities_images/snowMobile/snowmobile3.png",
+        "activities_images/snowMobile/snowmobile4.png",
+        "activities_images/snowMobile/snowmobile5.png",
+        "activities_images/snowMobile/snowmobile.png"
       ],
 
       recommendations: [
         "Driver must strictly follow guide instructions",
         "Wear warm winter clothing",
         "Arrive 15 minutes before tour start time",
-        "Bring gloves and protective eyewear"
+        "Bring gloves and protective eyewear",
+        "Keep a safe distance between snowmobiles",
       ],
 
       features: [
@@ -1111,17 +1109,20 @@ const AdventureCards = [
 
   },
 
+
+
+  // ================= ATV Mountain Adventure =================
   {
     id: 1,
     season: ['Spring', 'Summer', 'Autumn', 'Winter'],
     title: "ATV Mountain Adventure",
     description:
       "An exciting off-road ATV experience through mountain trails and wild landscapes.",
-    evaluation: "4.8",
+    evaluation: "5.0",
     difficulty: "Medium",
-    price: "From 100 GEL",
+    price: "From 80 Usd",
     location: '📍Gudauri • Pasanauri • Ananuri',
-    img: "src/assets/Frame 1984077871.png",
+    img: "activities_images/atv/atv1.png",
     buttonText: "Book Adventure",
     rightText: [
       "🧑‍🏫 Professional Guide",
@@ -1155,32 +1156,30 @@ const AdventureCards = [
     detail: {
 
       additionalServices: [
-        { name: "Drone filming", price: "50 GEL" },
-        { name: "Professional photos", price: "30 GEL" },
-        { name: "Safety gear", price: "Free" }
+        { name: "Insta360 camera", price: "29 Usd" },
+        { name: "Drone footage", price: "60 Usd" },
       ],
 
       priceDetails: [
-        { name: "30-Minute ATV Ride", price: "100 GEL" },
-        { name: "1-Hour ATV Tour", price: "180 GEL" },
-        { name: "2-Hour Mountain Adventure", price: "320 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" },
+        {
+          name: "30-Minute ATV Ride",
+          price: "80 Usd",
+          serviceDetails: [
+            "Powerful quad bikes suitable for mountain terrain",
+            "Guided ride through scenic off-road trails",
+            "Duration: approximately 30 minutes",
+            "1–2 people per quad bike",
+            "Helmet and safety gear provided",
+            "Professional guide leading the route",
+            "Amazing views of mountains and nature"
+          ],
+          priceDetail: "Per Quad (1–2 People)"
 
-        { name: "30-Minute ATV Ride", price: "100 GEL" },
-        { name: "1-Hour ATV Tour", price: "180 GEL" },
-        { name: "2-Hour Mountain Adventure", price: "320 GEL" },
-        { name: "Private Custom Tour", price: "Price on Request" }
+        },
+
       ],
 
       importantInfo: [
-        {
-          label: "Note",
-          value: "Participants must attend the <span class='font-bold text-red-800'>mandatory safety briefing</span> before the ride."
-        },
-        {
-          label: "Safety",
-          value: "Not recommended for <span class='font-bold text-red-800'>people with serious back problems</span>."
-        },
         {
           label: "Weather Policy",
           value: "Tours may be <span class='font-bold text-red-800'>rescheduled</span> in extreme weather conditions."
@@ -1191,12 +1190,9 @@ const AdventureCards = [
         "Join us for an unforgettable ATV mountain adventure across the breathtaking landscapes of Gudauri, Pasanauri and Ananuri. Ride powerful quad bikes through rugged off-road trails, river crossings and panoramic mountain routes. This experience is perfect for adrenaline seekers who want to explore Georgia’s wild beauty in an active way.",
 
       images: [
-        "src/assets/Frame 1984077871.png",
-        "src/assets/Frame 1984077871 (1).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png",
-        "src/assets/Frame 1984077871 (2).png"
+        "activities_images/atv/atv1.png",
+        "activities_images/atv/atv2.png",
+        "activities_images/atv/atv3.png",
       ],
 
       recommendations: [
