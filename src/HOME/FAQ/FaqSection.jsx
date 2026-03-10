@@ -12,7 +12,7 @@ const FaqSection = ({ title, questions, defaultOpen = false }) => {
                     <div className="flex items-start absolute right-0  group-open/main:top-[10%]  peer-open:hidden!">
                         <img
                             className="w-30 duration-1000 hover:scale-110 max-md:hidden"
-                            src="src/assets/men.png"
+                            src="icons/men.png"
                             alt="person"
                         />
                     </div>

@@ -18,7 +18,7 @@ function Hero() {
         className=" h-[90vh] bg-cover flex justify-center items-center relative "
         style={{
           backgroundImage:
-            "url('src/assets/photo-1709506530108-4951e792208f 4.png')",
+            "url('photo-1709506530108-4951e792208f 4.png')",
         }}
       >
         <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative -mt-18 max-sm:-mt-18 ">
@@ -28,19 +28,19 @@ function Hero() {
             <p className="bg-[#a79e9ec5] px-3 py-0.5 rounded-lg flex justify-center items-center gap-0.5  bg-white/15 backdrop-blur-md ">
               <img
                 className="w-5"
-                src="src/assets/sheild.png"
+                src="icons/sheild.png"
                 alt="shild logo"
               />{" "}
               Safety Certified
             </p>
             <p className="bg-white/15 backdrop-blur-md px-3 py-0.5 rounded-lg flex justify-center items-center gap-0.5">
-              <img className="w-5" src="src/assets/star.png" alt="star logo" />
+              <img className="w-5" src="icons/star.png" alt="star logo" />
               5-Star Rated
             </p>
             <p className="bg-white/15 backdrop-blur-md px-3 py-0.5 rounded-lg flex justify-center items-center gap-0.5">
               <img
                 className="w-5"
-                src="src/assets/person logo.png"
+                src="icons/person logo.png"
                 alt="person logo"
               />
               10,000+ Adventures
@@ -59,7 +59,7 @@ function Hero() {
           <p className="text-gray-200 flex justify-center items-center gap-1 relative bottom-4 text-lg">
             {" "}
             <img
-              src="src/assets/location.png"
+              src="icons/location.png"
               alt="location logo"
               className="w-5 "
             />
