@@ -52,6 +52,11 @@ header h2 {
   animation-direction: reverse;
 }
 
+/* Nav.module.css */
+.dropdown-item {
+  @apply block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 text-[14px] font-medium transition-colors;
+}
+
 
 @theme {
 

@@ -167,8 +167,9 @@
 
 
 
-import { useContext, useRef, useState, useEffect } from "react";
+import { useContext, memo } from "react";
 import { ChosenActivity } from "../../App";
+
 import Rates_Services from "./comps/Rates_Services";
 import Reviews from "./comps/Reviews";
 import Reco from "./comps/Reco";
@@ -176,9 +177,13 @@ import Hero from "./comps/Hero";
 import PriceCard from "./main_info/PriceCard";
 import ImportantInfo from "./main_info/ImportantInfo";
 
+const PriceCardMemo = memo(PriceCard);
+
 function ActivitiesDetail() {
   const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
 
+  const skiPrices = useMemo(() => chosenActivity?.detail?.priceDetails?.slice(0, 4) || [], [chosenActivity]);
+  const snowboardPrices = useMemo(() => chosenActivity?.detail?.priceDetails?.slice(4, 8) || [], [chosenActivity]);
 
 
   return (
@@ -188,7 +193,7 @@ function ActivitiesDetail() {
         {/* black background for header */}
         <div className="bg-black py-16 w-full h-24 absolute top-0 left-0 max-xl:py-13 max-sm:py-21 "></div>
 
-        
+
         {/* Hero Section */}
         <Hero chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
 
@@ -216,34 +221,36 @@ function ActivitiesDetail() {
               <h2 className={`text-center text-5xl font-bebas tracking-widest ${chosenActivity?.id === 5 ? "block" : "hidden"}`}>ski</h2>
               <div className="grid grid-cols-2 max-md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2   gap-8">
 
-                {chosenActivity?.detail?.priceDetails?.slice(0, 4).map((service, i) => (
-                  <PriceCard className="bg-white p-6 rounded-xl shadow-md" key={i} chosenActivity={chosenActivity} service={service} i={i} />
+                {skiPrices.map((service, i) => (
+                  <PriceCardMemo className="bg-white p-6 rounded-xl shadow-md" key={i} chosenActivity={chosenActivity} service={service} i={i} />
                 ))}
               </div>
 
               <ImportantInfo chosenActivity={chosenActivity} setChosenActivity={setChosenActivity} />
 
-              <div className={`flex flex-col gap-2 border-l-0 pb-10 md:border-l md:pl-6 border-orange-200 ${chosenActivity?.id === 5 ? "block" : "hidden"}`}>
-                <span className="text-orange-600 font-bold text-xs uppercase tracking-widest">Multi-Day Offer</span>
-                <p className="text-gray-600 leading-relaxed">
-                  Plan ahead! Book for multiple days and enjoy <span className="font-bold text-red-900 text-base">exclusive lower rates</span> on consecutive sessions.
-                </p>
-              </div>
+              {chosenActivity?.id === 5 && (
+                <div className={`flex flex-col gap-2 border-l-0 pb-10 md:border-l md:pl-6 border-orange-200 `}>
+                  <span className="text-orange-600 font-bold text-xs uppercase tracking-widest">Multi-Day Offer</span>
+                  <p className="text-gray-600 leading-relaxed">
+                    Plan ahead! Book for multiple days and enjoy <span className="font-bold text-red-900 text-base">exclusive lower rates</span> on consecutive sessions.
+                  </p>
+                </div>
+              )}
 
 
+              {chosenActivity?.id === 5 && (
+                <div className={`flex flex-col gap-5 `}>
+                  <h2 className="text-center text-5xl font-bebas tracking-widest">snowboard</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                    {snowboardPrices.slice(4, 8).map((service, i) => (
+                      <PriceCardMemo className="bg-white p-6 rounded-xl shadow-md" key={i} chosenActivity={chosenActivity} service={service} i={i} />
+                    ))}
+                  </div>
 
-
-              <div className={`flex flex-col gap-5 ${chosenActivity?.id === 5 ? "block" : "hidden"}`}>
-                <h2 className="text-center text-5xl font-bebas tracking-widest">snowboard</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                  {chosenActivity?.detail?.priceDetails?.slice(4, 8).map((service, i) => (
-                    <PriceCard className="bg-white p-6 rounded-xl shadow-md"  key={i} chosenActivity={chosenActivity} service={service} i={i} />
-                  ))}
                 </div>
 
-              </div>
 
-
+              )}
 
             </div>
 

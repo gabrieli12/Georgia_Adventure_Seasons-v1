@@ -1,11 +1,7 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import { HashLink } from 'react-router-hash-link';
 
 function Nav({ scrolled }) {
-
-    const [isOpen, setIsOpen] = useState(false);
-
 
     return (
         <nav scrolled={scrolled} className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-poppins  max-2xl:gap-3 max-xl:text-[15px]   text-[14px] ">
@@ -27,13 +23,11 @@ function Nav({ scrolled }) {
             {/* Dropdown - Company Section */}
             <div
                 className="relative py-3 group"
-                onMouseEnter={() => setIsOpen(true)}
-                onMouseLeave={() => setIsOpen(false)}
             >
                 <button className="flex items-center gap-1.5 outline-none font-medium text-[14px] tracking-wide uppercase transition-all group-hover:opacity-70 ">
                     Company
                     <svg
-                        className={`w-3.5 h-3.5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                        className={`w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180   `}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -46,11 +40,11 @@ function Nav({ scrolled }) {
                 <div className={`
                     absolute right-0 mt-1 w-48 bg-white rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.15)] py-2 text-gray-800
                     transition-all duration-300 border border-gray-100 z-50
-                    ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2 '}
+                    opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
                 `}>
                     <HashLink
                         to="/aboutUs#"
-                        className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium "
+                        className="dropdown-item"
                     >
                         About Us
                     </HashLink>
@@ -67,14 +61,14 @@ function Nav({ scrolled }) {
 
                     <HashLink
                         to="/#reviews"
-                        className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium"
+                        className="dropdown-item"
                     >
                         Reviews
                     </HashLink>
 
                     <HashLink
                         to="/#faq-section"
-                        className="block px-6 py-2.5 hover:bg-gray-50 hover:text-blue-600 transition-colors text-[14px] font-medium"
+                        className="dropdown-item"
                     >
                         FAQ
                     </HashLink>
@@ -88,4 +82,4 @@ function Nav({ scrolled }) {
     )
 }
 
-export default Nav
+export default React.memo(Nav);

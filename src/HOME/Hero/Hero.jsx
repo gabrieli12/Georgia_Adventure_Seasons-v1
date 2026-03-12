@@ -1,7 +1,8 @@
+import { lazy, memo, Suspense } from "react";
+import { HashLink } from "react-router-hash-link";
 
 // slider
-import { HashLink } from "react-router-hash-link";
-import Slider from "./Slider/Slider";
+const Slider = lazy(() => import("./Slider/Slider"));
 
 // StringRunner
 import StringRunner from "./StringRunner/StringRunner";
@@ -15,13 +16,10 @@ function Hero() {
 
       {/* hero bg and text */}
       <section
-        className=" h-[90vh] bg-cover flex justify-center items-center relative "
-        style={{
-          backgroundImage:
-            "url('photo-1709506530108-4951e792208f 4.png')",
-        }}
+        className=" h-[90vh] flex justify-center items-center relative bg-black "
       >
-        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative -mt-18 max-sm:-mt-18 ">
+        <img className="absolute inset-0 w-full h-full object-cover " loading="eager" src="photo-1709506530108-4951e792208f 4.png"  />
+        <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative sm:-mt-18 ">
 
           {/* ზედა სამი მნიშვნელოვანი სიტყვა */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-[12px] text-white  font-semibold  max-sm:hidden">
@@ -68,22 +66,21 @@ function Hero() {
 
           <div className="flex justify-center flex-wrap gap-7 mt-2 relative ">
             <span className="text-[#ff8a05] text-green-200  text-xl font-bold  text-shadow-[0_5px_15px_green] ">All-in-One / Full Service</span>
-            <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." target="__blank">
-              <button className="bg-[#ff8a05dd] px-6 py-1 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591] ">
-                Book Now
-              </button>
+
+            <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." target="_blank" rel="noopener noreferrer" className="bg-[#ff8a05dd] px-6 py-1 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591] ">
+              Book Now
             </a>
 
-            <HashLink to="/#activities">
-              <button className="bg-[#0bff0b00] border border-green-400 text-green-200 px-6 py-1 shadow-2xl shadow-green-300 rounded-lg cursor-pointer duration-300 hover:bg-[#0bc15139]">
-                Explore Tours
-              </button>
+            <HashLink to="/#activities" className="bg-[#0bff0b00] border border-green-400 text-green-200 px-6 py-1 shadow-2xl shadow-green-300 rounded-lg cursor-pointer duration-300 hover:bg-[#0bc15139]">
+              Explore Tours
             </HashLink>
           </div>
         </div>
 
         {/*   Slider   */}
-        <Slider />
+        <Suspense fallback={<div className="text-center py-5">Loading Slider...</div>}>
+          <Slider />
+        </Suspense>
 
       </section>
 
@@ -99,4 +96,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default memo(Hero);

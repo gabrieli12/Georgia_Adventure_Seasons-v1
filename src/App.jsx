@@ -1,142 +1,82 @@
-import { useState, createContext } from 'react'
-
-// header
-import Header from './components/Header/Header'
-
-// Footer
-import Footer from './components/Footer/Footer'
+import { useState, createContext, useMemo, Suspense, lazy } from 'react'
 
 
-// contact page 
-import ContactPage from './HOME/contact us/ContactPage'
-
-import Transport from './Pages/Transport/Transport'
 
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './Layout'
 
-import ActivitiesDetail from './Pages/ActivitiesDetailPage/ActivitiesDetail'
-import FullPage from './FullPage'
-import Accommodation from './Pages/Accommodation/Accommodation'
-import AboutUs from './Pages/AboutUs/AboutUs'
-import PrivacyPolicy from './Pages/important/PrivacyPolicy'
-import Terms from './Pages/important/Terms'
-import Cancellation from './Pages/important/Cancellation'
-import Safety from './Pages/important/Safety'
-import LiabilityWaiver from './Pages/important/LiabilityWaiver'
+
+// pages
+
+const FullPage = lazy(() => import('./FullPage'))
+const ActivitiesDetail = lazy(() => import('./Pages/ActivitiesDetailPage/ActivitiesDetail'))
+const ContactPage = lazy(() => import('./HOME/contact us/ContactPage'))
+const Transport = lazy(() => import('./Pages/Transport/Transport'))
+const Accommodation = lazy(() => import('./Pages/Accommodation/Accommodation'))
+const AboutUs = lazy(() => import('./Pages/AboutUs/AboutUs'))
+const PrivacyPolicy = lazy(() => import('./Pages/important/PrivacyPolicy'))
+const Terms = lazy(() => import('./Pages/important/Terms'))
+const Cancellation = lazy(() => import('./Pages/important/Cancellation'))
+const Safety = lazy(() => import('./Pages/important/Safety'))
+const LiabilityWaiver = lazy(() => import('./Pages/important/LiabilityWaiver'))
+
+
 // import LegalConsent from './Pages/important/LegalConsent'
 
-export const ChosenActivity = createContext()
+export const ChosenActivity = createContext(null)
+
+
+
 
 function App() {
+
   const [chosenActivity, setChosenActivity] = useState([])
+
+  const value = useMemo(() => ({
+    chosenActivity,
+    setChosenActivity
+  }), [chosenActivity])
+
+
   return (
     <>
-      <ChosenActivity.Provider value={{ chosenActivity, setChosenActivity }}>
+      <ChosenActivity.Provider value={value}>
         <BrowserRouter>
-          <Routes>
-            {/* მთავარი გვერდი */}
-            <Route path="/" element={<FullPage />} />
 
-            {/* დეტალების გვერდი */}
-            <Route
-              path="/details"
-              element={
-                <>
-                  <Header />
-                  <ActivitiesDetail />
-                  <Footer />
-                  {/* ალბათ აქაც გინდა Footer? თუ არა, ასე დარჩეს */}
-                </>
-              }
-            />
+          <Suspense fallback={
+            <div className="flex flex-col gap-10 justify-center items-center h-screen bg-[#0B1220]">
 
-            {/* კონტაქტის გვერდი */}
-            <Route
-              path="/contact"
-              element={
-                <>
-                  <Header />
-                  <ContactPage />
-                  <Footer />
-                </>
-              }
-            />
+              <img src="main_logo/Georgia Adventure Logo for images.png" width="150" height="150" alt="" />
+              <div className='flex text-white'>
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
+                <span className="ml-3 text-xl font-merienda">Loading...</span>
+              </div>
 
-            <Route
-              path="/transport"
-              element={
-                <>
-                  <Header />
-                  <Transport />
-                  <Footer />
-                </>
-              }
-            />
+            </div>
 
-            <Route
-              path="/accommodation"
-              element={
-                <>
-                  <Header />
-                  <Accommodation />
-                  <Footer />
-                </>
-              }
-            />
+          }>
+            <Routes>
 
-            <Route
-              path="/aboutUs"
-              element={
-                <>
-                  <Header />
-                  <AboutUs />
-                  <Footer />
-                </>
-              }
-            />
+              <Route element={<Layout />}>
 
-            <Route path="/privacy-policy" element={
-              <>
-                <Header />
-                <PrivacyPolicy />
-                <Footer />
-              </>
-            }
-            />
-            <Route path="/terms" element={
-              <>
-                <Header />
-                <Terms />
-                <Footer />
-              </>
-            } />
-            <Route path="/cancellation" element={
-              <>
-                <Header />
-                <Cancellation />
-                <Footer />
-              </>
-            } />
-            <Route path="/safety" element={
-              <>
-                <Header />
-                <Safety />
-                <Footer />
-              </>
-            } />
+                <Route path="/" element={<FullPage />} />
+                <Route path="/details" element={<ActivitiesDetail />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/transport" element={<Transport />} />
+                <Route path="/accommodation" element={<Accommodation />} />
+                <Route path="/aboutUs" element={<AboutUs />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<Terms />} />
+                <Route path="/cancellation" element={<Cancellation />} />
+                <Route path="/safety" element={<Safety />} />
+                <Route path="/LiabilityWaiver" element={<LiabilityWaiver />} />
 
-            <Route path="/LiabilityWaiver" element={
-              <>
-                <Header />
-                <LiabilityWaiver />
-                <Footer />
-              </>
-            } />
+              </Route>
 
+            </Routes>
+          </Suspense>
 
-            
-          </Routes>
         </BrowserRouter>
       </ChosenActivity.Provider>
     </>
@@ -155,3 +95,4 @@ export default App
   price: 350,
   title: "დრონით გადაღება"
 }]} location={"გუდაური"} time={"10-20 წუთი"}/> */}
+

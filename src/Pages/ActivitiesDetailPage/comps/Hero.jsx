@@ -1,4 +1,14 @@
-import { useContext, useRef, useState, useEffect } from "react";
+import { useContext, useRef, useState, useEffect, memo } from "react";
+
+
+
+const LoadingSpinner = memo(() => (
+    <div className="flex justify-center items-center h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
+        <span className="ml-3 text-xl font-merienda">Loading...</span>
+    </div>
+));
+
 
 function Hero({ chosenActivity, setChosenActivity }) {
 
@@ -11,26 +21,18 @@ function Hero({ chosenActivity, setChosenActivity }) {
     });
 
     useEffect(() => {
-        // თუ Context ცარიელია (რეფრეშის შემთხვევა), ვამოწმებთ localStorage-ს
-        const savedData = localStorage.getItem('chosenActivity');
-
-        if (savedData) {
-            const parsedData = JSON.parse(savedData);
-
-            // თუ სთეითში ჯერ არ გვაქვს მონაცემები, ჩავწეროთ
-            if (!chosenActivity || Object.keys(chosenActivity).length === 0) {
+        if (!chosenActivity || Object.keys(chosenActivity).length === 0) {
+            const savedData = localStorage.getItem('chosenActivity');
+            if (savedData) {
+                const parsedData = JSON.parse(savedData);
                 setChosenActivity(parsedData);
-            }
-
-            // თუ მთავარი სურათი ჯერ არ ჩანს, გამოვაჩინოთ
-            if (!mainMedia.url) {
                 setMainMedia({
                     type: "image",
-                    url: parsedData.detail.images[0]
+                    url: parsedData.detail.images[0],
                 });
             }
         }
-    }, [chosenActivity, setChosenActivity, mainMedia.url]);
+    }, []); // dependency–ს ვთიშავთ, mount–ზე ერთხელ გაშვება საკმარისია
 
 
 
@@ -46,14 +48,7 @@ function Hero({ chosenActivity, setChosenActivity }) {
 
 
     // თუ მონაცემები ჯერ კიდევ იტვირთება
-    if (!chosenActivity || Object.keys(chosenActivity).length === 0) {
-        return (
-            <div className="flex justify-center items-center h-screen">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
-                <span className="ml-3 text-xl font-merienda">Loading...</span>
-            </div>
-        );
-    }
+    if (!chosenActivity || Object.keys(chosenActivity).length === 0) return <LoadingSpinner />;
 
 
 
@@ -113,6 +108,7 @@ function Hero({ chosenActivity, setChosenActivity }) {
                     {/* სურათების გალერეა */}
                     {chosenActivity?.detail?.images?.map((img, ind) => (
                         <img
+                            loading="lazy"
                             key={ind}
                             src={img}
                             alt="Preview"

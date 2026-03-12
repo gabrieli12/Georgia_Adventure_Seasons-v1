@@ -81,16 +81,18 @@ function Gridimgs() {
         <div className="relative py-40 px-4 md:px-20  bg-[#f2f1fd]">
 
             {/* 🪂 პარაპლანი */}
-            <div className='absolute -top-32 md:-top- flex flex-col justify-center items-center left-1/2 -translate-x-1/2 z-10 pointer-events-none'>
-                <img 
-                    src="paraglider/paraglider.png" 
-                    className='-rotate-12 w-32 md:w-64' 
-                    alt="paraglider" 
+            <div className='absolute -top-32 md:-top- flex flex-col justify-center items-center left-1/2 -translate-x-1/2 z-10 pointer-events-none hover:scale-110 '>
+                <img
+                    loading="lazy"
+                    src="paraglider/paraglider.png"
+                    className='-rotate-12 w-32 md:w-64'
+                    alt="paraglider"
                 />
-                <img 
-                    src="paraglider/paraglider-pilot.png" 
-                    className='relative -top-10 md:-top-16 left-6 md:left-12 -rotate-12 w-24 md:w-60 transition-transform duration-500 hover:scale-110' 
-                    alt="pilot" 
+                <img
+                    loading="lazy"
+                    src="paraglider/paraglider-pilot.png"
+                    className='relative -top-10 md:-top-16 left-6 md:left-12 -rotate-12 w-24 md:w-60 transition-transform duration-500 hover:scale-110'
+                    alt="pilot"
                 />
             </div>
 
@@ -103,42 +105,42 @@ function Gridimgs() {
 
                 {/* 1 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="activities_images/cuadro.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="cuadro" />
+                    <img decoding="async" loading="lazy" src="activities_images/cuadro.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="cuadro" />
                 </div>
 
                 {/* 2 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="activities_images/kater.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="kater" />
+                    <img decoding="async" loading="lazy" src="activities_images/kater.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="kater" />
                 </div>
 
                 {/* 3 - mobile full */}
                 <div className="col-span-2 md:col-span-2 overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/hiking.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="hiking" />
+                    <img decoding="async" loading="lazy" src="activities_images/hiking.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="hiking" />
                 </div>
 
                 {/* 4 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/skiing.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="skiing" />
+                    <img decoding="async" loading="lazy" src="activities_images/skiing.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="skiing" />
                 </div>
 
                 {/* 5 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg md:row-span-2">
-                    <img src="activities_images/parashuti.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="parashuti" />
+                    <img decoding="async" loading="lazy" src="activities_images/parashuti.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="parashuti" />
                 </div>
 
                 {/* 6 - mobile full */}
                 <div className="col-span-2 md:col-span-1 overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/rafting/rafting1.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
+                    <img decoding="async" loading="lazy" src="activities_images/rafting/rafting1.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="jomardoba" />
                 </div>
 
                 {/* 7 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/horse.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="horse" />
+                    <img decoding="async" loading="lazy" src="activities_images/horse.jpg" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="horse" />
                 </div>
 
                 {/* 8 */}
                 <div className="overflow-hidden rounded-2xl shadow-lg">
-                    <img src="activities_images/lakewalk.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="lakewalk" />
+                    <img decoding="async" loading="lazy" src="activities_images/lakewalk.png" className="w-full h-full object-cover transition duration-500 hover:scale-105" alt="lakewalk" />
                 </div>
 
             </div>

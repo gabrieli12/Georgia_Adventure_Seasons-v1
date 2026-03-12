@@ -1,11 +1,12 @@
+import React from "react"
 import { HashLink } from "react-router-hash-link"
 
-function Footer() {
+const Footer = React.memo(() => {
 
     return (
         <footer className="relative w-full bg-gray-900 text-white ">
 
-            <div className="container w-[85%] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="container w-[85%] mx-auto max-sm:mx-0 px-6 sm:px-6 lg:px-8 py-16">
 
                 <div className="footer-top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
@@ -25,7 +26,7 @@ function Footer() {
                             Experience the ultimate Georgian adventure with our year-round activities in the beautiful Mtiuleti region. Four seasons, endless adventures!
                         </p>
 
-                        <div className="flex flex-row md:flex-col md:space-y-2">
+                        <div className="flex flex-row md:flex-col md:space-y-2 gap-2">
                             <span className="w-fit inline-flex items-center rounded-lg bg-green-900 leading-none px-2 py-1 text-xs font-medium text-green-300 border border-solid border-green-700">
                                 <i className="fa-solid fa-shield text-[10px] mr-2 "></i> Safety Certified
                             </span>
@@ -148,6 +149,6 @@ function Footer() {
             </div>
         </footer>
     )
-}
+})
 
 export default Footer

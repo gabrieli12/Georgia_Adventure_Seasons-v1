@@ -1,7 +1,10 @@
+import React from "react"
 
-function StringRunner({ animationName }) {
+
+
+const StringRunner = React.memo(function StringRunner({ animationName }) {
     return (
-        <div className="w-full overflow-hidden  py-3 max-sm:py-1">
+        <div className="w-full overflow-hidden py-3 mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
             <div className={`${animationName} text-white font-semibold text-4xl flex gap-12 h-20 justify-center items-center max-sm:text-xl max-sm:gap-4`}>
                 {/* <span>🏔️ Four Seasons Adventures in Georgia</span> */}
                 <span>🚙 ATV & Quad Tours</span>
@@ -10,7 +13,7 @@ function StringRunner({ animationName }) {
                 <span>🚣 White Water Rafting</span>
                 <span>🎿 Ski & Snowboard lessons</span>
                 <span>🛥️ MotorBoat</span>
-                <span>🛏️ Hottels / Cottages</span>
+                <span>🛏️ Hotels / Cottages</span>
                 <span>🎿 Ski & Snowboard rentals</span>
                 <span>🛻 Transportation</span>
                 <span>❄️ Snowmobile tours</span>
@@ -27,7 +30,7 @@ function StringRunner({ animationName }) {
                 <span>🚣 White Water Rafting</span>
                 <span>🎿 Ski & Snowboard lessons</span>
                 <span>🛥️ MotorBoat</span>
-                <span>🛏️ Hottels / Cottages</span>
+                <span>🛏️ Hotels / Cottages</span>
                 <span>🎿 Ski & Snowboard rentals</span>
                 <span>🛻 Transportation</span>
                 <span>❄️ Snowmobile tours</span>
@@ -38,6 +41,7 @@ function StringRunner({ animationName }) {
         </div>
 
     )
-}
+})
+
 
 export default StringRunner
