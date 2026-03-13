@@ -30,8 +30,8 @@ function DropDownMenu({ isOpen, setIsOpen }) {
 
       {/* Mobile Number */}
       <a href="https://wa.me/995595706585?text=Hello" className="flex items-center gap-2 hover:text-[#106f3cb3]">
-        <img src="src/assets/number 3.png" alt="icon" className="w-6" />
-        <p>+995 592 43 66 51</p>
+        <img src="icons/number 3.png" alt="icon" className="w-6" />
+        <p>+995 595 706 585</p>
       </a>
 
       {/* Book Now */}

@@ -6,7 +6,7 @@ function Reco({ chosenActivity }) {
             <div className="space-y-4">
                 <h4 className="text-lg font-semibold flex items-center gap-2">📍 Contact</h4>
                 <div className="space-y-2 text-gray-700 text-sm">
-                    <p>📞 +995 592 70 65 85</p>
+                    <p>📞 +995 595 706 585</p>
                     <p>✉️ georgiaadventure1@gmail.com</p>
                 </div>
             </div>
