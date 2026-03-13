@@ -138,11 +138,11 @@ const Footer = React.memo(() => {
                     <span className="text-sm text-gray-400">© 2026 Georgia Adventure Seasons. All rights reserved.</span>
 
                     <ul className="flex flex-row flex-wrap gap-6 ">
-                        <li><a href="/privacy-policy" className="text-sm text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="/terms" className="text-sm text-gray-400 hover:text-white">Terms of Service</a></li>
-                        <li><a href="/cancellation" className="text-sm text-gray-400 hover:text-white">Cancellation Policy</a></li>
-                        <li><a href="/safety" className="text-sm text-gray-400 hover:text-white">Safety Guidelines</a></li>
-                        <li><a href="/LiabilityWaiver" className="text-sm text-gray-400 hover:text-white">Liability Waiver</a></li>
+                        <HashLink to="/privacy-policy#" className="text-sm text-gray-400 hover:text-white">Privacy Policy</HashLink>
+                        <HashLink to="/terms#" className="text-sm text-gray-400 hover:text-white">Terms of Service</HashLink>
+                        <HashLink to="/cancellation#" className="text-sm text-gray-400 hover:text-white">Cancellation Policy</HashLink>
+                        <HashLink to="/safety#" className="text-sm text-gray-400 hover:text-white">Safety Guidelines</HashLink>
+                        <HashLink to="/LiabilityWaiver#" className="text-sm text-gray-400 hover:text-white">Liability Waiver</HashLink>
 
                     </ul>
                 </div>

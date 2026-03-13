@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const LegalConsent = () => {
     const [accepted, setAccepted] = useState(false);
@@ -33,17 +34,11 @@ const LegalConsent = () => {
                     <a href="/terms" target="_blank" className="block underline text-blue-600">
                         Terms of Service
                     </a>
-                    <a href="/cancellation" target="_blank" className="block underline text-blue-600">
-                        Cancellation Policy
-                    </a>
-                    <a href="/liabilityWaiver" target="_blank" className="block underline text-blue-600">
-                        Liability Waiver
-                    </a>
-                    <a href="/safety" className="block underline text-blue-600">Safety Guidelines</a>
-
-                    <a href="/privacy-policy" target="_blank" className="block underline text-blue-600">
-                        Privacy Policy
-                    </a>
+                    <HashLink to="/privacy-policy#" className="block underline text-blue-600">Privacy Policy</HashLink>
+                    <HashLink to="/terms#" className="block underline text-blue-600">Terms of Service</HashLink>
+                    <HashLink to="/cancellation#" className="block underline text-blue-600">Cancellation Policy</HashLink>
+                    <HashLink to="/safety#" className="block underline text-blue-600">Safety Guidelines</HashLink>
+                    <HashLink to="/LiabilityWaiver#" className="block underline text-blue-600">Liability Waiver</HashLink>
                 </div>
 
                 <button
