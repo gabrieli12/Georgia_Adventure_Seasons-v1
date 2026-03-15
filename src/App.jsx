@@ -1,6 +1,6 @@
 import { useState, createContext, useMemo, Suspense, lazy } from 'react'
 
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -79,6 +79,8 @@ function App() {
 
         </BrowserRouter>
       </ChosenActivity.Provider>
+
+      <Analytics />
     </>
   )
 }
