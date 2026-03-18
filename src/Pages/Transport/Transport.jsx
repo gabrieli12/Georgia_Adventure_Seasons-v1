@@ -3,6 +3,13 @@ import StringRunner from '../../HOME/Hero/StringRunner/StringRunner'
 import LegalConsent from '../important/LegalConsent'
 
 function TransportCard({ img, heading, description, tall }) {
+
+  const handleWhatsAppClick = () => {
+    if (window.fbq) {
+      window.fbq('track', 'Contact');
+    }
+  };
+
   return (
     // მობილურზე w-full, დესკტოპზე w-81. მოხსნილია -top-15 მობილურზე რომ არ აიჭრას.
     <div className={`w-full md:w-81 relative flex flex-col justify-start bg-orange-50 pb-5 items-start gap-3 ${tall ? 'md:-top-15' : ''}`}>
@@ -11,7 +18,9 @@ function TransportCard({ img, heading, description, tall }) {
         <p className='text-2xl'>{heading}</p>
         <p>{description}</p>
         <div className='flex items-center justify-center gap-2 cursor-pointer mt-7 '>
-          <button className='text-[#08523e] font-medium cursor-pointer'>Book Now</button>
+          <a href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20a%20transport.`} target='_blank' rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+            <button className='text-[#08523e] font-medium cursor-pointer'>Book Now</button>
+          </a>
         </div>
       </div>
     </div>
@@ -20,13 +29,18 @@ function TransportCard({ img, heading, description, tall }) {
 
 function Transport() {
 
+  const handleWhatsAppClick = () => {
+    if (window.fbq) {
+      window.fbq('track', 'Contact');
+    }
+  };
 
-  
+
   return (
     <div className="overflow-x-hidden relative">
       <LegalConsent />
       <div className="bg-[#000000] py-15 w-full z-20 h-24 absolute top-0 left-0 max-xl:py-13 max-sm:py-21"></div>
-      
+
       <section className="relative  ">
         <video className='w-full  h-screen  object-cover z-0' src="car_images/transport_video.mp4" autoPlay loop muted ></video>
         <div className='w-full bg-[#0b1220e9] p-5 md:p-7 absolute top-1/2 left-0 -translate-y-3/4 flex flex-col items-center gap-4 md:gap-7'>
@@ -34,9 +48,11 @@ function Transport() {
           <h1 className="text-white text-8xl w-full text-center font-bebas tracking-widest font-bold max-lg:text-6xl">
             PRIVATE TRANSFERS
           </h1>
-          <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591]">
-            Book Now
-          </button>
+          <a href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20a%20transport.`} target='_blank' rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+            <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold cursor-pointer duration-300 hover:bg-[#ff8a0591]">
+              Book Now
+            </button>
+          </a>
         </div>
 
         <div className="relative bg-[#0B1220] py-7 overflow-hidden">
@@ -93,9 +109,11 @@ function Transport() {
           Use our transportation service and get <span className='text-yellow-500 font-bold'>special discounts</span>!
         </p>
         <div className='flex flex-col justify-center items-center gap-5 mt-5'>
-          <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold">
-            Book Now
-          </button>
+          <a href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20a%20transport.`} target='_blank' rel="noopener noreferrer" onClick={handleWhatsAppClick}>
+            <button className="bg-[#ff8a05dd] px-6 py-1.5 rounded-lg shadow-2xl shadow-yellow-300 font-semibold">
+              Book Now
+            </button>
+          </a>
         </div>
       </section>
 

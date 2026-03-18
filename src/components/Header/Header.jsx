@@ -32,6 +32,11 @@ function Header() {
     }, []);
 
 
+    const handleWhatsAppClick = () => {
+        if (window.fbq) {
+            window.fbq('track', 'Contact');
+        }
+    };
 
     const whatsappLink = "https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity.";
 
@@ -41,20 +46,20 @@ function Header() {
             <div id="scroll-anchor" className="absolute top-0 left-0 h-1 w-1 pointer-events-none opacity-0"></div>
 
             <header className={`flex justify-around fixed items-center text-[16px] w-full text-white  z-50 transition-all duration-500 ease-out flex-col ${scrolled ?
-                    "bg-[#0B1220]/80 backdrop-blur-lg shadow-lg "
-                    : "bg-transparent "}   
+                "bg-[#0B1220]/80 backdrop-blur-lg shadow-lg "
+                : "bg-transparent "}   
                 `}>
                 <section className="w-full bg-white py-3 flex  justify-around sm:hidden">
 
                     <div className="flex gap-10 relative">
-                        <a href={whatsappLink} className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer relative top-1.5" target="_blank" rel="noopener noreferrer">
+                        <a href={whatsappLink} onClick={handleWhatsAppClick} className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer relative top-1.5" target="_blank" rel="noopener noreferrer">
                             <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
                             <p className="max-2xl:text-sm text-black">+995 595 706 585</p>
                         </a>
 
                     </div>
 
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                    <a href={whatsappLink} onClick={handleWhatsAppClick} target="_blank" rel="noopener noreferrer">
                         <button className="border shadow-2xl shadow-green-300  px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 bg-[#0B1220] max-sm:px-5 max-sm:py-2 ">
                             Book Now
                         </button>
@@ -81,7 +86,7 @@ function Header() {
 
                     <Nav />
 
-                    <a href={whatsappLink} className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer max-sm:hidden" target="_blank" rel="noopener noreferrer">
+                    <a href={whatsappLink} onClick={handleWhatsAppClick} className="flex flex-row-reverse justify-center items-center gap-1 cursor-pointer max-sm:hidden" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-whatsapp text-green-400 text-2xl relative bottom-5 "></i>
                         <p className="max-2xl:text-sm ">+995 595 706 585</p>
                     </a>
@@ -90,7 +95,7 @@ function Header() {
                     <div className="flex justify-center items-center gap-2 max-xl:flex-col-reverse max-lg:flex-row  relative">
 
 
-                        <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." target="__blank">
+                        <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." onClick={handleWhatsAppClick} target="__blank">
                             <button className="bg-transparent border shadow-2xl shadow-green-300 border-green-400 px-5 py-2 rounded-lg text-sm font-semibold text-[#adffb4] cursor-pointer duration-300 hover:bg-[#ff8a05dd] hover:border-[#ff8a05dd] hover:shadow-orange-300 hover:text-white max-xl:px-3 max-xl:py-1 max-sm:hidden ">
                                 Book Now
                             </button>

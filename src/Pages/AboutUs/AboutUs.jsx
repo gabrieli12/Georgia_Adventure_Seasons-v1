@@ -7,6 +7,14 @@ import React from "react";
 import LegalConsent from "../important/LegalConsent";
 
 const About = React.memo(() => {
+
+
+    const handleWhatsAppClick = () => {
+        if (window.fbq) {
+            window.fbq('track', 'Contact');
+        }
+    };
+
     return (
         <div className="bg-white text-gray-800">
 
@@ -204,7 +212,9 @@ const About = React.memo(() => {
                         organized, exciting, and effortless.
                     </p>
                     <a
-                        href="https://wa.me/995XXXXXXXXX"
+                        href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity."
+                        onClick={handleWhatsAppClick}
+
                         className="inline-block bg-white text-black font-semibold px-10 py-4 rounded-2xl hover:bg-gray-200 transition"
                     >
                         Plan Your Adventure

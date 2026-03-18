@@ -1,6 +1,13 @@
 import React from 'react'
 
 function PriceCard({ chosenActivity, service, i }) {
+
+    const handleWhatsAppClick = () => {
+        if (window.fbq) {
+            window.fbq('track', 'Contact');
+        }
+    };
+
     return (
         <div
             key={i}
@@ -51,7 +58,7 @@ function PriceCard({ chosenActivity, service, i }) {
                 </li> */}
             </ul>
 
-            <a href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity.`} target='__blank'>
+            <a href={`https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity.`} onClick={handleWhatsAppClick} target='__blank' rel="noopener noreferrer">
                 <button className="w-full py-4 rounded-2xl bg-gray-900 text-white font-bold transition-all duration-300 group-hover:bg-orange-600 group-hover:shadow-lg active:scale-95 cursor-pointer">
                     Book This Package
                 </button>

@@ -6,6 +6,13 @@ function DropDownMenu({ isOpen, setIsOpen }) {
 
   if (!isOpen) return null; // avoid rendering DOM
 
+  const handleWhatsAppClick = () => {
+    if (window.fbq) {
+      window.fbq('track', 'Contact');
+    }
+  };
+
+
   return (
     <div className="absolute top-full right-0 mt-2 w-64 bg-white shadow-lg rounded-lg py-4 px-6 flex flex-col gap-6 text-[#707070] border border-gray-200 z-40 transition-transform duration-300 transform translate-y-0 opacity-100">
       <HashLink to="/#" className="hover:text-[#106f3cb3] hover:underline" onClick={closeMenu}>
@@ -29,15 +36,17 @@ function DropDownMenu({ isOpen, setIsOpen }) {
       </HashLink>
 
       {/* Mobile Number */}
-      <a href="https://wa.me/995595706585?text=Hello" className="flex items-center gap-2 hover:text-[#106f3cb3]">
+      <a href="https://wa.me/995595706585?text=Hello" onClick={handleWhatsAppClick} className="flex items-center gap-2 hover:text-[#106f3cb3]">
         <img src="icons/number 3.png" alt="icon" className="w-6" />
         <p>+995 595 706 585</p>
       </a>
 
       {/* Book Now */}
-      <button className="bg-[#FF6900] px-6 py-3 rounded-lg text-white font-semibold hover:bg-[#ff8a05dd] hover:text-black cursor-pointer duration-300">
-        Book Now
-      </button>
+      <a href="https://wa.me/995595706585?text=Hello,%20I%20would%20like%20to%20book%20an%20activity." onClick={handleWhatsAppClick} target="_blank" rel="noopener noreferrer">
+        <button className="bg-[#FF6900] px-6 py-3 rounded-lg text-white font-semibold hover:bg-[#ff8a05dd] hover:text-black cursor-pointer duration-300">
+          Book Now
+        </button>
+      </a>
     </div>
   );
 }
