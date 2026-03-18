@@ -1,6 +1,7 @@
 import { useState, createContext, useMemo, Suspense, lazy } from 'react'
 
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -81,6 +82,7 @@ function App() {
       </ChosenActivity.Provider>
 
       <Analytics />
+      <SpeedInsights />
     </>
   )
 }
