@@ -6,77 +6,57 @@ function Reviews({ title }) {
 
   const ReviewInfo = [
     {
-      text: "Incredible hiking experience! The trails were well-maintained and the views were absolutely spectacular. ",
-      tag: "Mountain Hiking Adventure",
+      text: "Everything was perfectly organized — from airport pickup to skiing and paragliding. Truly a full-service experience!",
+      tag: "Ski & Snowboard Lessons",
+      loc: "UK",
+      img: "unnamed.png",
+      name: "Emily",
+      rating: 5
+
+    },
+    {
+      text: "Best ski school in Georgia, Super friendly team, great communication, and really fun lessons. I improved a lot in just one day!",
+      tag: "Ski & Snowboard Lessons",
       loc: "Sydney, Australia",
-      time: "3 weeks ago",
       img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
       name: "James Wilson",
       rating: 5
     },
     {
-      text: "One of the best outdoor experiences I’ve ever had. The hike was challenging but rewarding, and the panoramic mountain views were unforgettable.",
-      tag: "Alpine Trail Experience",
+      text: "We booked quad tours and snowmobiles. Amazing team, very professional and friendly. Highly recommended!",
+      tag: "ATV & Snowmobile Tours",
       loc: "Zurich, Switzerland",
-      time: "1 month ago",
       img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
       name: "Emily Carter",
       rating: 5
     },
     {
-      text: "Perfect mix of adventure and relaxation. The guide made everyone feel safe, and the scenery looked straight out of a postcard.",
-      tag: "Nature & Adventure Hike",
+      text: "Perfect for tourists! They helped us plan everything and we just enjoyed our trip.",
+      tag: "Full Trip",
       loc: "Gudauri, Georgia",
       time: "2 months ago",
       img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-      name: "Luka Beridze",
+      name: "Sophie",
       rating: 4
     },
     {
-      text: "A must-do experience for nature lovers. Fresh mountain air, peaceful trails, and incredible photo opportunities throughout the hike.",
-      tag: "Scenic Mountain Walk",
-      loc: "Banff, Canada",
+      text: "We booked our entire Gudauri trip through this company — transportation, accommodation, ski lessons, and even paragliding. Everything was organized perfectly, and the team was always available to help. This is exactly what you want when traveling abroad",
+      tag: "Full Gudauri Trip",
+      loc: "France",
       time: "5 weeks ago",
       img: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face",
       name: "Daniel Thompson",
       rating: 5
     },
     {
-      text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
-      tag: "Guided Hiking Tour",
+      text: "Highly recommended for tourists visiting Georgia, If you don’t want to waste time searching and organizing everything yourself, this is the perfect solution. They offer everything in one place — activities, guides, transport, and support.",
+      tag: "Full Trip",
       loc: "Queenstown, New Zealand",
-      time: "4 days ago",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
       name: "Oliver Scott",
       rating: 5
     },
-    {
-      text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
-      tag: "Guided Hiking Tour",
-      loc: "Queenstown, New Zealand",
-      time: "4 days ago",
-      img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott",
-      rating: 5
-    },
-    {
-      text: "Absolutely worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
-      tag: "Guided Hiking Tour",
-      loc: "Queenstown, New Zealand",
-      time: "4 days ago",
-      img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott",
-      rating: 4
-    },
-    {
-      text: "Absolutely (ჰჰჰჰჰჰჰ) worth it! The hike was well-organized and the group atmosphere was amazing. I’d do it again in a heartbeat.",
-      tag: "Guided Hiking Tour",
-      loc: "Queenstown, New Zealand",
-      time: "4 days ago",
-      img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
-      name: "Oliver Scott",
-      rating: 5
-    }
+    
   ]
   const scrollNext = () => {
     if (!slider.current) return

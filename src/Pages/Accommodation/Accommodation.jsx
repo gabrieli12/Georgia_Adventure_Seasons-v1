@@ -9,8 +9,8 @@ function Accommodation() {
       <LegalConsent />
 
       <section className='w-full h-screen flex flex-col justify-center items-center bg-gray-900 text-white gap-10'>
-        <h1 className='text-6xl'>Accommodation</h1>
-        <p className='text-center text-lg'>
+        <h1 className='text-6xl max-sm:text-5xl'>Accommodation</h1>
+        <p className='text-center text-lg px-4 max-sm:text-base'>
           Accommodation is currently available upon request only. <br />
           Please contact us via WhatsApp for personalized hotel recommendations and booking assistance.
         </p>
