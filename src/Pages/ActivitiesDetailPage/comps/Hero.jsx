@@ -17,23 +17,21 @@ function Hero({ chosenActivity, setChosenActivity }) {
     // საწყისი მედია სთეითი
     const [mainMedia, setMainMedia] = useState({
         type: "image",
-        url: chosenActivity?.detail?.images[0] || "",
+        url: null,
     });
 
+    // როგორც კი chosenActivity შეიცვლება (URL-ის მიხედვით), განაახლე მთავარი მედია
+    // 2. ეს ეფექტი აუცილებელია! როცა chosenActivity შეივსება, ფოტოც მაშინ გამოჩნდება
     useEffect(() => {
-        if (!chosenActivity || Object.keys(chosenActivity).length === 0) {
-            const savedData = localStorage.getItem('chosenActivity');
-            if (savedData) {
-                const parsedData = JSON.parse(savedData);
-                setChosenActivity(parsedData);
-                setMainMedia({
-                    type: "image",
-                    url: parsedData.detail.images[0],
-                });
-            }
+        if (chosenActivity?.detail?.images?.length > 0) {
+            setMainMedia({
+                type: "image",
+                url: chosenActivity.detail.images[0],
+            });
         }
-    }, []); // dependency–ს ვთიშავთ, mount–ზე ერთხელ გაშვება საკმარისია
 
+        console.log(chosenActivity)
+    }, [chosenActivity]); // უსმენს chosenActivity-ს ცვლილებას
 
 
 
@@ -58,19 +56,27 @@ function Hero({ chosenActivity, setChosenActivity }) {
 
             {/* Main Display Area */}
             <div className="w-full h-80 md:h-137.5 overflow-hidden rounded-3xl shadow-2xl bg-gray-100 transition-all duration-500 mt-40 max-sm:mt-50">
-                {mainMedia.type === "video" ? (
-                    <video
-                        src={mainMedia.url}
-                        controls
-                        autoPlay
-                        className="w-full h-full object-contain bg-black"
-                    />
+                {mainMedia.url ? ( // 1. ჯერ ვამოწმებთ საერთოდ თუ არსებობს URL
+                    mainMedia.type === "video" ? (
+                        <video
+                            key={mainMedia.url}
+                            src={mainMedia.url}
+                            controls
+                            autoPlay
+                            className="w-full h-full object-contain bg-black"
+                        />
+                    ) : (
+                        <img
+                            src={mainMedia.url}
+                            alt="Main Preview"
+                            className="w-full h-full object-cover"
+                        />
+                    )
                 ) : (
-                    <img
-                        src={mainMedia.url}
-                        alt="Main Preview"
-                        className="w-full h-full object-cover"
-                    />
+                    // 2. თუ URL ჯერ არ არის, გამოაჩინე ცარიელი ნაცრისფერი ბლოკი (Placeholder)
+                    <div className="w-full h-full bg-gray-200 animate-pulse flex items-center justify-center">
+                        <span className="text-gray-400">Loading media...</span>
+                    </div>
                 )}
             </div>
 

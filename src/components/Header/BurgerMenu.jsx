@@ -18,7 +18,7 @@ function BurgerMenu() {
                 className="cursor-pointer z-50"
                 onClick={toggleMenu}
             >
-                <img className="w-8 bg-white rounded-full p-1" src="icons/burger.png" alt="menu" />
+                <img className="w-8 bg-white rounded-full p-1" src="/icons/burger.png" alt="menu" />
             </div>
 
             {/* Dropdown Menu */}

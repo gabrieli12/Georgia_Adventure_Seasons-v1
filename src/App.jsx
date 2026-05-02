@@ -32,7 +32,7 @@ export const ChosenActivity = createContext(null)
 
 function App() {
 
-  const [chosenActivity, setChosenActivity] = useState([])
+  const [chosenActivity, setChosenActivity] = useState(null)
 
   const value = useMemo(() => ({
     chosenActivity,
@@ -62,7 +62,7 @@ function App() {
               <Route element={<Layout />}>
 
                 <Route path="/" element={<FullPage />} />
-                <Route path="/details" element={<ActivitiesDetail />} />
+                <Route path="/details/:title" element={<ActivitiesDetail />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/transport" element={<Transport />} />
                 <Route path="/accommodation" element={<Accommodation />} />

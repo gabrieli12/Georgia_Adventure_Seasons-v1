@@ -1,8 +1,10 @@
 import React from 'react'
 import { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { ChosenActivity } from '../../App'
 import { HashLink } from 'react-router-hash-link';
+
+
 import AdventureCards from './AdventureCards';
 
 function Card({ index, img, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations, priceDetails }) {
@@ -32,7 +34,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
               <i className="fa-solid fa-star text-[#fdc700] relative"></i>
 
               {evaluation}
-              ({Math.floor(reviews.length * 2 / 1.5)} review)
+              {/* ({Math.floor(reviews.length * 2 / 1.5)} review) */}
             </p>
           </div>
 
@@ -51,7 +53,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
               <span className='opacity-60 text-black text-sm font-normal'>Price may vary</span>
             </p>
             <HashLink
-              to={'/details#'}
+              to={`/details/${title.toLowerCase().replace(/ /g, '-')}`}
               onClick={() => {
                 // const activityData = {
                 //   mainImage: img,
@@ -73,7 +75,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
 
                 console.log(AdventureCards.find(activity => activity.title === title))
                 // ვინახავთ ობიექტს ტექსტურ ფორმატში
-                localStorage.setItem('chosenActivity', JSON.stringify(AdventureCards.find(activity => activity.title === title)));
+                // localStorage.setItem('chosenActivity', JSON.stringify(AdventureCards.find(activity => activity.title === title)));
               }}
             >
               <button className="bg-[#FF6900] text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 cursor-pointer">

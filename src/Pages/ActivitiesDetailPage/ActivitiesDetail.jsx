@@ -167,8 +167,11 @@
 
 
 
-import { useContext, memo } from "react";
+import { useContext, memo, useEffect, useMemo } from "react";
 import { ChosenActivity } from "../../App";
+import { useParams } from 'react-router-dom';
+
+import AdventureCards from "../../HOME/AdventureActivities/AdventureCards";
 
 import Rates_Services from "./comps/Rates_Services";
 import Reviews from "./comps/Reviews";
@@ -180,10 +183,30 @@ import ImportantInfo from "./main_info/ImportantInfo";
 const PriceCardMemo = memo(PriceCard);
 
 function ActivitiesDetail() {
+  const { title } = useParams();
+
+  console.log(title)
   const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
+
+  // 1. თუ chosenActivity ცარიელია (მაგ: გვერდი დარეფრეშდა), ვიპოვოთ ის მასივში ID-ით
+  useEffect(() => {
+    if (!chosenActivity || chosenActivity.title.toString() !== title) {
+      const activityFromServer = AdventureCards.find(item => item.title.toLowerCase().replace(/ /g, '-') === title);
+      if (activityFromServer) {
+        setChosenActivity(activityFromServer);
+      }
+    }
+  }, [title]);
 
   const skiPrices = useMemo(() => chosenActivity?.detail?.priceDetails?.slice(0, 4) || [], [chosenActivity]);
   const snowboardPrices = useMemo(() => chosenActivity?.detail?.priceDetails?.slice(4, 8) || [], [chosenActivity]);
+
+
+
+  // თუ მონაცემები ჯერ არ გვაქვს
+  if (!chosenActivity) {
+    return <div className="pt-40 text-center">Loading activity details...</div>;
+  }
 
 
   return (

@@ -72,7 +72,7 @@ function Header() {
                 <section className={`w-full justify-around items-center flex max-lg:justify-between duration-500 ease-out max-2xl:px-5 px-10 ${scrolled ? 'py-1' : 'py-3'}`}>
                     <Link to="/">
                         <div className="flex justify-center items-center ">
-                            <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex ' src="main_logo/Georgia Adventure Logo for images.png" alt="logo" />
+                            <img className='flex w-24 relative top-2 max-2xl:w-20 max-xl:hidden max-lg:flex ' src="/main_logo/Georgia Adventure Logo for images.png" alt="logo" />
                             <div className="cursor-pointer p-2 flex justify-start items-start flex-col relative top-2">
                                 <h2 className="font-bebas text-[1.7rem] tracking-wider max-2xl:text-[1.5rem] max-xl:text-[1.3rem] ">
                                     Georgia <span className='text-green-200 '>Adventure</span>

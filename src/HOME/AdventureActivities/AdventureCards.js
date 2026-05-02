@@ -13,7 +13,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 120 Usd",
     location: '📍Around Pasanauri',
-    img: "activities_images/rafting/rafting1.png",
+    img: "/activities_images/rafting/rafting1.png",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -88,10 +88,10 @@ const AdventureCards = [
         "Take on the thrilling rapids of mountain rivers near Pasanauri. Guided by professional rafting experts, this adventure combines teamwork, adrenaline and stunning natural scenery. All safety equipment and transportation are included for a safe and exciting experience.",
 
       images: [
-        "activities_images/rafting/rafting1.png",
-        "activities_images/rafting/rafting2.png",
-        "activities_images/rafting/rafting3.png",
-        "activities_images/rafting/rafting4.png",
+        "/activities_images/rafting/rafting1.png",
+        "/activities_images/rafting/rafting2.png",
+        "/activities_images/rafting/rafting3.png",
+        "/activities_images/rafting/rafting4.png",
 
       ],
 
@@ -132,7 +132,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 60 Usd",
     location: '📍Gudauri',
-    img: "activities_images/skiSnowboard_lessons/ski1.png",
+    img: "/activities_images/skiSnowboard_lessons/ski1.png",
     buttonText: "Book Adventure",
     rightText: [
       "⛷️ Professional Instructor Support",
@@ -287,9 +287,9 @@ const AdventureCards = [
 
       // დეტალებისთვის საჭირო დამატებითი სურათები და რეკომენდაციები
       images: [
-        "activities_images/skiSnowboard_lessons/ski1.png",
-        "activities_images/skiSnowboard_lessons/ski2.png",
-        "activities_images/skiSnowboard_lessons/ski3.png",
+        "/activities_images/skiSnowboard_lessons/ski1.png",
+        "/activities_images/skiSnowboard_lessons/ski2.png",
+        "/activities_images/skiSnowboard_lessons/ski3.png",
       ],
 
       // მთავარი ვიდეო
