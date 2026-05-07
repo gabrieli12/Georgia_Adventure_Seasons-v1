@@ -18,7 +18,7 @@ function Hero() {
       <section
         className=" h-[90vh] flex justify-center items-center relative bg-black "
       >
-        <img className="absolute inset-0 w-full h-full object-cover " loading="eager" src="photo-1709506530108-4951e792208f 4.png"  />
+        <img className="absolute inset-0 w-full h-full object-cover " loading="eager" src="main-page-hero-bg-sm.webp"  />
         <div className=" flex flex-col items-center justify-start text-center text-white px-4 gap-6 relative sm:-mt-18 ">
 
           {/* ზედა სამი მნიშვნელოვანი სიტყვა */}

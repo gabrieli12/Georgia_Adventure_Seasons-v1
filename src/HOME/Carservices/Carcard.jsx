@@ -8,7 +8,7 @@ function Carcard({ img, heading, description, tall }) {
     <div className={`w-75 bg-white pb-5  flex flex-col justify-start items-start gap-3`}>
       <img src={img} alt={heading}
         loading="lazy"
-        decoding="async" className='w-full h-50 object-cover' />
+        decoding="async" className='w-full h-50 object-cover object-bottom' />
       <div className='w-full h-full flex flex-col justify-start items-start gap-3 px-5 py-3'>
         <p className='text-2xl'>{heading}</p>
         <p>{description}</p>

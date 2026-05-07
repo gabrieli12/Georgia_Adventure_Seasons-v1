@@ -40,19 +40,19 @@ function Cottagescard() {
       <div className="flex flex-col md:flex-row md:flex-wrap gap-10 md:gap-20 justify-center items-center p-6 md:p-12 lg:p-24">
 
         <div className="flex justify-center items-center w-full md:w-[45%] lg:w-[20%] pb-40 relative ">
-          {card("Accommodation_images/mount_hotel.jpg", "KAZBEGI")}
+          {card("Accommodation_images/mount_hotel.webp", "KAZBEGI")}
         </div>
 
         <div className="flex justify-center items-center w-full md:w-[45%] top-24 lg:w-[20%] pb-40 relative ">
-          {card("Accommodation_images/cotteg.jpg", "ANANURI")}
+          {card("Accommodation_images/cotteg.webp", "ANANURI")}
         </div>
 
         <div className="flex justify-center items-center w-full md:w-[45%] lg:w-[20%] pb-40 relative ">
-          {card("Accommodation_images/big_hotel.jpg", "GUDAURI")}
+          {card("Accommodation_images/big_hotel.webp", "GUDAURI")}
         </div>
 
         <div className="flex justify-center items-center w-full md:w-[45%] top-24 lg:w-[20%] pb-40 relative ">
-          {card("Accommodation_images/small_hotel.jpg", "PASANAURI")}
+          {card("Accommodation_images/small_hotel.webp", "PASANAURI")}
         </div>
 
       </div>

@@ -25,7 +25,7 @@ function FullPage() {
                     <Hero />
                     <AdventureActivities />
                     <Cottagescard />
-                    <Gridimgs />
+                    {/* <Gridimgs /> */}
                     <Reviews />
                     <Carservice />
                     <Faq />

@@ -13,7 +13,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 120 Usd",
     location: '📍Around Pasanauri',
-    img: "/activities_images/rafting/rafting1.png",
+    img: "/activities_images/rafting/Rafting-Pasanauri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -132,7 +132,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 60 Usd",
     location: '📍Gudauri',
-    img: "/activities_images/skiSnowboard_lessons/ski1.png",
+    img: "/activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "⛷️ Professional Instructor Support",
@@ -330,7 +330,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 40 Usd",
     location: '📍Gudauri',
-    img: "activities_images/skiSnowboard_rental/rent1.png",
+    img: "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "💎 Premium Gear",
@@ -464,7 +464,7 @@ const AdventureCards = [
     difficulty: "Easy",
     price: "From 150 Usd",
     location: '📍Gudauri • Ananuri',
-    img: "activities_images/paragliding/paragliding1.png",
+    img: "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Tandem flight with certified instructor",
@@ -624,7 +624,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 35 Usd",
     location: '📍Around Pasanauri',
-    img: "activities_images/jetski/jetski1.png",
+    img: "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -775,7 +775,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 60 Usd",
     location: '📍Around Pasanauri',
-    img: "activities_images/motorBoat/motorboat1.png",
+    img: "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "✅ Professional guide",
@@ -989,7 +989,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 60 Usd",
     location: '📍Gudauri',
-    img: "activities_images/snowMobile/snowmobile1.png",
+    img: "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "❄️ Deep Snow Experience",
@@ -1122,7 +1122,7 @@ const AdventureCards = [
     difficulty: "Medium",
     price: "From 80 Usd",
     location: '📍Gudauri • Pasanauri • Ananuri',
-    img: "activities_images/atv/atv1.png",
+    img: "activities_images/atv/ATV-mountain-adventure-pasanauri-sm.webp",
     buttonText: "Book Adventure",
     rightText: [
       "🧑‍🏫 Professional Guide",

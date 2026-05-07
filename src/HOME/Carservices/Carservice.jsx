@@ -19,21 +19,21 @@ function Carservice() {
 
 
                     <Carcard
-                        img={"car_images/sedan.png"}
+                        img={"car_images/sedan-for-georgia-transfers.webp"}
                         heading="SEDAN"
                         description="Experience a smooth and comfortable ride with our stylish sedans. Perfect for city driving and daily commutes, offering both economy and elegance." />
 
                     <Carcard
-                        img={"car_images/minivan.png"}
+                        img={"car_images/minivan-for-georgia-transfers.webp"}
                         heading="MINIVAN"
                         description="ravel together in our spacious and practical minivans. Ideal for family trips, group travel, or carrying extra luggage without compromising comfort. Equipped with modern features, these vehicles ensure a safe and convenient."
                         tall={true} />
 
 
                     <Carcard
-                        img={"Rectangle 148.png"}
-                        heading="4X4"
-                        description="Conquer any terrain with our powerful 4x4 vehicles. Perfect for off-road adventures, outdoor activities, and exploring nature with confidence." />
+                        img={"car_images/minibus-for-georgia-transfers.webp"}
+                        heading="MINIBUS"
+                        description="Minibus (15–17 passengers) Ideal for groups" />
                     {/* <Carcard 
                     img={"car_images/image.png"} 
                     heading="4X4" 

@@ -3,15 +3,15 @@ import React, { useState, useEffect, useRef } from "react";
 function Slider() {
 
   const images = [
-    "activities_images/skiSnowboard_lessons/ski1.png",
-    "activities_images/paragliding/paragliding1.png",
-    "activities_images/snowMobile/snowmobile.png",
-    "activities_images/atv/atv2.png",
-    "activities_images/skiSnowboard_rental/rent1.png",
-    "activities_images/rafting/rafting1.png",
-    "activities_images/jetski/jetski1.png",
-    "activities_images/ცხენოსნობა.png",
-    "activities_images/motorBoat/motorboat1.png",
+    "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
+    "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
+    "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
+    "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
+    "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
+    "activities_images/rafting/Rafting-Pasanauri-sm.webp",
+    "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
+    "activities_images/horseriding-adventure-gudamakari-sm.webp",
+    "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
   ];
 
   // infinite loop
