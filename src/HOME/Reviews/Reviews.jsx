@@ -56,7 +56,7 @@ function Reviews({ title }) {
       name: "Oliver Scott",
       rating: 5
     },
-    
+
   ]
   const scrollNext = () => {
     if (!slider.current) return
@@ -103,11 +103,11 @@ function Reviews({ title }) {
         <div className='flex gap-2'>
           <div className="p-1.5 bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]"
             onClick={scrollPrev}>
-            <i className="fa-solid fa-arrow-left"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
           </div>
 
           <div className="p-1.5 bg-white rounded-[50%] cursor-pointer flex items-center justify-center border-gray-300 border-[1px]" onClick={scrollNext}>
-            <i className="fa-solid fa-arrow-right"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </div>
 
         </div>

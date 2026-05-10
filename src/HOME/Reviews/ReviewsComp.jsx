@@ -12,13 +12,13 @@ function ReviewsComp({text, tag, loc, time, img, name, rating}) {
             {Array.from({ length: rating }).map((_, i) => <i  key={i} className="fa-solid fa-star text-[#fdc700]"></i>)}
 
           </div>
-          <h1 className='font-light mt-2.5 max-sm:text-[14px]'>{text}</h1>
+          <h2 className='font-light mt-2.5 max-sm:text-[14px]'>{text}</h2>
           <p className='border rounded-[100px] px-2.5 w-max border-gray-200 font-medium mt-2.5 text-[12px] max-sm:text-[10px]'>{tag}</p>
           <div className='flex items-center gap-5 mt-5'>
             <img src={img} className='w-12.5 h-12.5 rounded-[50%]' alt="name" loading="lazy" />
             <div className=''>
               <div className='flex items-center gap-2.5'>
-                <h1>{name}</h1>
+                <h2>{name}</h2>
                 <p className="bg-[#dbfce7] text-[#4e6f30] font-medium px-3 py-px max-sm:text-[12px]">
                   ✓ Verified
                 </p>
