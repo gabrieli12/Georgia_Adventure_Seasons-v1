@@ -19,7 +19,7 @@ function FullPage() {
         <>
 
 
-            <LegalConsent />
+            {/* <LegalConsent /> */}
             <main>
 
                     <Hero />
