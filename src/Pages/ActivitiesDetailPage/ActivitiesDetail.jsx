@@ -227,7 +227,7 @@ function ActivitiesDetail() {
           <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-4xl font-bold mb-4">{chosenActivity?.title}</h2>
-              <p className="text-gray-600 leading-relaxed text-lg font-poppins ">
+              <p className="text-gray-600 leading-relaxed text-xl font-sans ">
                 {chosenActivity?.detail?.fullDescription}
               </p>
             </div>

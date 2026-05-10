@@ -2,17 +2,56 @@ import React, { useState, useEffect, useRef } from "react";
 
 function Slider() {
 
+  // const images = [
+  //   "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
+  //   "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
+  //   "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
+  //   "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
+  //   "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
+  //   "activities_images/rafting/Rafting-Pasanauri-sm.webp",
+  //   "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
+  //   "activities_images/horseriding-adventure-gudamakari-sm.webp",
+  //   "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
+  // ];
+
   const images = [
-    "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
-    "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
-    "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
-    "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
-    "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
-    "activities_images/rafting/Rafting-Pasanauri-sm.webp",
-    "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
-    "activities_images/horseriding-adventure-gudamakari-sm.webp",
-    "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
-  ];
+  {
+    src: "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
+    alt: "Professional ski lessons in Gudauri with certified instructors",
+  },
+  {
+    src: "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
+    alt: "Tandem paragliding flight over Gudauri mountains in summer",
+  },
+  {
+    src: "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
+    alt: "Thrilling snowmobile adventure tour in the highlands of Gudauri",
+  },
+  {
+    src: "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
+    alt: "Off-road ATV mountain adventure tour in the Georgian Caucasus",
+  },
+  {
+    src: "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
+    alt: "Premium ski and snowboard equipment rental service in Gudauri",
+  },
+  {
+    src: "activities_images/rafting/Rafting-Pasanauri-sm.webp",
+    alt: "Whitewater rafting adventure on the Aragvi river in Pasanauri",
+  },
+  {
+    src: "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
+    alt: "Jet ski adventure on the turquoise waters of Ananuri (Zhinvali reservoir)",
+  },
+  {
+    src: "activities_images/horseriding-adventure-gudamakari-sm.webp",
+    alt: "Scenic horse riding tour through the Gudamakari valley",
+  },
+  {
+    src: "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
+    alt: "Sightseeing motor boat tour on Zhinvali reservoir near Ananuri",
+  },
+];
 
   // infinite loop
   const heroImages = [...images, ...images];
@@ -90,16 +129,18 @@ function Slider() {
           transform: `translate3d(-${currentIndex * (150 / visibleSlides)}%,0,0)`
         }}
       >
-        {heroImages.map((src, index) => (
+        {heroImages.map((item, index) => (
           <div
             key={index}
             className="shrink-0 px-2"
             style={{ width: `${130 / visibleSlides}%` }}
           >
             <img
-              src={src}
+              width={300}
+              height={180}
+              src={item.src}
               loading="lazy"
-              alt={`Hero slide ${index}`}
+              alt={`${item.alt}`}
               className="w-full h-28 md:h-44 object-cover rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
             />
           </div>

@@ -22,7 +22,7 @@ function Reviews({ chosenActivity }) {
                       ))}
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm italic">"{review.review}"</p>
+                  <p className="text-gray-600 text-sm ">"{review.review}"</p>
                 </div>
               ))}
             </div>

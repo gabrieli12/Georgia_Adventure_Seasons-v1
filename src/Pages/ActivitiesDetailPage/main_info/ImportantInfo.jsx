@@ -37,7 +37,7 @@ function ImportantInfo({ chosenActivity, setChosenActivity }) {
 
                             {/* ტექსტი, რომელიც შეიცავს გამუქებულ ნაწილებს */}
                             <p
-                                className={`text-gray-600 leading-relaxed font-roboto `}
+                                className={`text-gray-600 leading-relaxed font-sans `}
                                 onClick={item.isLink ? () => {
                                     // აქ შეგიძლია ჩაწერო გადამისამართების ლოგიკა
                                     console.log("Redirecting to Equipment Rental...");

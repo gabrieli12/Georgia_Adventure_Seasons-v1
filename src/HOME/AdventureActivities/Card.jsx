@@ -7,7 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import AdventureCards from './AdventureCards';
 
-function Card({ index, img, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations, priceDetails }) {
+function Card({ index, img, imgAlt, detaleImg, title, location, description, evaluation, rightText, price, rating, reviews, additionalServices, fullDescription, features, recommendations, priceDetails }) {
   const { chosenActivity, setChosenActivity } = useContext(ChosenActivity);
 
 
@@ -18,8 +18,10 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
         className="bg-white rounded-xl shadow hover:shadow-lg hover:shadow-[#ff6a0034] transition overflow-hidden "
       >
         <img
+          width={400}
+          height={200}
           src={img}
-          alt="activity"
+          alt={imgAlt}
           className="h-48 w-full object-cover"
         />
         <div className="p-5">
@@ -53,6 +55,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
               <span className='opacity-60 text-black text-sm font-normal'>Price may vary</span>
             </p>
             <HashLink
+              title={`Learn more about ${title}`}
               to={`/details/${title.toLowerCase().replace(/ /g, '-')}`}
               onClick={() => {
                 // const activityData = {
@@ -69,7 +72,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
                 //   recommendations: recommendations,
                 //   priceDetails: priceDetails,
                 // };
-                
+
 
                 setChosenActivity(AdventureCards.find(activity => activity.title === title));
 
@@ -78,7 +81,7 @@ function Card({ index, img, detaleImg, title, location, description, evaluation,
                 // localStorage.setItem('chosenActivity', JSON.stringify(AdventureCards.find(activity => activity.title === title)));
               }}
             >
-              <button className="bg-[#FF6900] text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 cursor-pointer">
+              <button title={`Learn more about ${title}`} className="bg-[#FF6900] text-white px-4 py-2 rounded-lg text-sm hover:bg-yellow-500 duration-300 cursor-pointer" aria-label={`View details about ${title}`}>
                 View Details
               </button>
             </HashLink>

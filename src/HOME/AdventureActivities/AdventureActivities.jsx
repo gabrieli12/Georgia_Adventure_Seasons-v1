@@ -7,7 +7,7 @@ import Card from "./Card";
 const seasons = ["All", "Spring", "Summer", "Autumn", "Winter"];
 
 function AdventureActivities() {
-  const [activeSeason, setActiveSeason] = useState("Winter");
+  const [activeSeason, setActiveSeason] = useState("Summer");
 
   // filter cards only when activeSeason changes
   const filteredCards = useMemo(() => {
@@ -21,6 +21,16 @@ function AdventureActivities() {
     <section id="activities" className="flex flex-col items-center p-6">
       <div className="flex flex-col items-center text-center gap-3 bg-gray-50 w-[50%] relative pt-3 max-md:w-full">
         <h2 className="text-4xl max-md:text-2xl">Adventure Activities</h2>
+        <div className="relative  flex  gap-0.5">
+          {Array.from({ length: 5 }).map((_, i) => (
+
+            <svg key={i} className="text-[#fdc700]" xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="#fdc700" stroke="currentColor" viewBox="0 0 24 24" > <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z" /></svg>
+
+
+
+          ))}
+        </div>
+
         <p className="text-gray-600 w-[80%] pb-9 max-md:text-1xl">
           Experience the thrill of Georgian mountains through our diverse
           range of seasonal adventures. From adrenaline-pumping quad rides to
@@ -34,27 +44,19 @@ function AdventureActivities() {
               <button
                 key={season}
                 onClick={() => setActiveSeason(season)}
-                className={`rounded-lg px-3 py-1 cursor-pointer ${
-                  activeSeason === season
-                    ? "bg-[#00a63e] text-white"
-                    : "text-gray-700"
-                }`}
+                className={`rounded-lg px-3 py-1 cursor-pointer ${activeSeason === season
+                  ? "bg-[#fdc700] text-white"
+                  : "text-gray-700"
+                  }`}
               >
                 {season}
+
               </button>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="relative top-7 flex gap-0.5">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <i
-            key={i}
-            className="fa-solid fa-star bg-linear-to-r from-[#FF6900] to-[#fdc700] bg-clip-text text-transparent"
-          ></i>
-        ))}
-      </div>
 
       {/* cards */}
       <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -72,7 +74,7 @@ function AdventureActivities() {
           </p>
         )}
       </div>
-    </section>
+    </section >
   );
 }
 

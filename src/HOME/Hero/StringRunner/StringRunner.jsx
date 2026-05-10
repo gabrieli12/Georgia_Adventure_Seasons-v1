@@ -3,39 +3,38 @@ import React from "react"
 
 
 const StringRunner = React.memo(function StringRunner({ animationName }) {
+    const activities = [
+        { icon: "🚙", text: "ATV & Quad Tours" },
+        { icon: "🐎", text: "Horse Riding Experiences" },
+        { icon: "🪂", text: "Paragliding Flights" },
+        { icon: "🚣", text: "White Water Rafting" },
+        { icon: "🎿", text: "Ski & Snowboard Lessons" },
+        { icon: "🛥️", text: "MotorBoat" },
+        { icon: "🛏️", text: "Hotels / Cottages" },
+        { icon: "🎿", text: "Ski & Snowboard Rentals" },
+        { icon: "🛻", text: "Transportation" },
+        { icon: "❄️", text: "Snowmobile Tours" },
+        { icon: "🌊", text: "Jetski" },
+    ];
     return (
         <div className="w-full overflow-hidden py-3 mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div className={`${animationName} text-white font-semibold text-4xl flex gap-12 h-20 justify-center items-center max-sm:text-xl max-sm:gap-4`}>
-                {/* <span>🏔️ Four Seasons Adventures in Georgia</span> */}
-                <span>🚙 ATV & Quad Tours</span>
-                <span>🐎 Horse Riding Experiences</span>
-                <span>🪂 Paragliding Flights</span>
-                <span>🚣 White Water Rafting</span>
-                <span>🎿 Ski & Snowboard lessons</span>
-                <span>🛥️ MotorBoat</span>
-                <span>🛏️ Hotels / Cottages</span>
-                <span>🎿 Ski & Snowboard rentals</span>
-                <span>🛻 Transportation</span>
-                <span>❄️ Snowmobile tours</span>
-                <span>🌊 Jetski</span>
+            <div className={`${animationName} text-white font-semibold text-4xl flex gap-12 h-20 justify-center items-center max-sm:text-xl max-sm:gap-4 whitespace-nowrap`}>
 
+                {/* ორიგინალი სია */}
+                {activities.map((item, index) => (
+                    <span key={index} className="flex items-center gap-3">
+                        <span role="img" aria-label={item.text}>{item.icon}</span>
+                        {item.text}
+                    </span>
+                ))}
 
-
-
-                {/* duplicate for smooth loop */}
-                {/* <span>🏔️ Four Seasons Adventures in Georgia</span> */}
-                <span>🚙 ATV & Quad Tours</span>
-                <span>🐎 Horse Riding Experiences</span>
-                <span>🪂 Paragliding Flights</span>
-                <span>🚣 White Water Rafting</span>
-                <span>🎿 Ski & Snowboard lessons</span>
-                <span>🛥️ MotorBoat</span>
-                <span>🛏️ Hotels / Cottages</span>
-                <span>🎿 Ski & Snowboard rentals</span>
-                <span>🛻 Transportation</span>
-                <span>❄️ Snowmobile tours</span>
-                <span>🌊 Jetski</span>
-
+                {/* დუბლიკატი ციკლისთვის (დაფარული მკითხველებისთვის) */}
+                {activities.map((item, index) => (
+                    <span key={`dup-${index}`} className="flex items-center gap-3" aria-hidden="true">
+                        <span role="img">{item.icon}</span>
+                        {item.text}
+                    </span>
+                ))}
 
             </div>
         </div>

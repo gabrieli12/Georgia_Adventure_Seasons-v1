@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 function Nav({ scrolled }) {
 
     return (
-        <nav scrolled={scrolled} className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-poppins  max-2xl:gap-3 max-xl:text-[15px]   text-[14px] ">
+        <nav scrolled={scrolled} className="flex gap-7 justify-between items-center text-white  max-lg:hidden font-sans  max-2xl:gap-3 max-xl:text-[15px]   text-[16px] ">
             <HashLink className="hover:underline " to="/#">
                 Home
             </HashLink>
