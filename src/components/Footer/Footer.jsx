@@ -17,7 +17,7 @@ const Footer = React.memo(() => {
                             </span>
 
                             <span className="flex flex-col">
-                                <h1 className="text-xl text-white leading-none">Georgia Adventure</h1>
+                                <h2 className="text-xl text-white leading-none">Georgia Adventure</h2>
                                 <h2 className="text-green-400 text-sm leading-none">Seasons</h2>
                             </span>
                         </div>
@@ -38,33 +38,41 @@ const Footer = React.memo(() => {
                     </div>
 
                     <div>
-                        <h1 className="text-lg mb-6">Quick Links</h1>
+                        <h2 className="text-lg mb-6">Quick Links</h2>
                         <ul className="space-y-3">
                             <li><a href="#" className="block text-gray-300 hover:text-white transition-colors text-sm">Home</a></li>
                             <li><a href="#activities" className="block text-gray-300 hover:text-white transition-colors text-sm">Tours & Activities</a></li>
                             {/* <li><a href="#" className="block text-gray-300 hover:text-white transition-colors text-sm">Photo Gallery</a></li> */}
-                            <HashLink to="/aboutUs#" className="block text-gray-300 hover:text-white transition-colors text-sm">
-                                <li>About Us</li>
-                            </HashLink>
+                            <li>
+                                <HashLink to="/aboutUs#" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                                    About Us
+                                </HashLink>
+                            </li>
 
-                            <HashLink to="/aboutUs#" className="block text-gray-300 hover:text-white transition-colors text-sm">
-                                <li>Contact Us</li>
-                            </HashLink>
+                            <li>
+                                <HashLink to="/aboutUs#" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                                    Contact Us
+                                </HashLink>
+                            </li>
 
-                            <HashLink to="/accommodation#" className="block text-gray-300 hover:text-white transition-colors text-sm">
-                                <li>Accommodation</li>
-                            </HashLink>
+                            <li>
+                                <HashLink to="/accommodation#" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                                    Accommodation
+                                </HashLink>
+                            </li>
 
-                            <HashLink to="/transport#" className="block text-gray-300 hover:text-white transition-colors text-sm">
-                                <li>Transportation</li>
-                            </HashLink>
+                            <li>
+                                <HashLink to="/transport#" className="block text-gray-300 hover:text-white transition-colors text-sm">
+                                    Transportation
+                                </HashLink>
+                            </li>
 
 
                         </ul>
                     </div>
 
                     <div>
-                        <h1 className="text-lg mb-6">Adventures</h1>
+                        <h2 className="text-lg mb-6">Adventures</h2>
                         <ul className="space-y-3">
                             <li><a href="#activities" className="block text-gray-300 hover:text-white transition-colors text-sm">Quad Bike Tours</a></li>
                             <li><a href="#activities" className="block text-gray-300 hover:text-white transition-colors text-sm">Horse Riding</a></li>
@@ -76,7 +84,7 @@ const Footer = React.memo(() => {
                     </div>
 
                     <div>
-                        <h1 className="text-lg mb-6">Get In Touch</h1>
+                        <h2 className="text-lg mb-6">Get In Touch</h2>
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3"><i className="fa-solid fa-location-dot text-[14px] text-green-400 mt-1.5"></i> <span className="block text-gray-300 hover:text-white transition-colors text-sm">Mtiuleti Region <br /> Georgia, Caucasus</span></li>
                             <li className="flex items-start gap-3"><i className="fa-solid fa-phone text-[14px] text-green-400 mt-0.5"></i> <span className="block text-gray-300 hover:text-white transition-colors text-sm">+995 595 706 585</span></li>
@@ -86,7 +94,7 @@ const Footer = React.memo(() => {
 
                         <div className="flex flex-col gap-3 mt-5">
 
-                            <h1 className="text-sm">Stay Updated</h1>
+                            <h2 className="text-sm">Stay Updated</h2>
 
                             <div className="flex flex-row gap-2">
                                 <input className="rounded-lg outline-none text-sm px-2 py-2 bg-gray-800 border border-solid border-gray-700" type="email" name="email" placeholder="Your email" />
@@ -138,11 +146,21 @@ const Footer = React.memo(() => {
                     <span className="text-sm text-gray-400">© 2026 Georgia Adventure Seasons. All rights reserved.</span>
 
                     <ul className="flex flex-row flex-wrap gap-6 ">
-                        <HashLink to="/privacy-policy#" className="text-sm text-gray-400 hover:text-white">Privacy Policy</HashLink>
-                        <HashLink to="/terms#" className="text-sm text-gray-400 hover:text-white">Terms of Service</HashLink>
-                        <HashLink to="/cancellation#" className="text-sm text-gray-400 hover:text-white">Cancellation Policy</HashLink>
-                        <HashLink to="/safety#" className="text-sm text-gray-400 hover:text-white">Safety Guidelines</HashLink>
-                        <HashLink to="/LiabilityWaiver#" className="text-sm text-gray-400 hover:text-white">Liability Waiver</HashLink>
+                        <li>
+                            <HashLink to="/privacy-policy#" className="text-sm text-gray-400 hover:text-white">Privacy Policy</HashLink>
+                        </li>
+                        <li>
+                            <HashLink to="/terms#" className="text-sm text-gray-400 hover:text-white">Terms of Service</HashLink>
+                        </li>
+                        <li>
+                            <HashLink to="/cancellation#" className="text-sm text-gray-400 hover:text-white">Cancellation Policy</HashLink>
+                        </li>
+                        <li>
+                            <HashLink to="/safety#" className="text-sm text-gray-400 hover:text-white">Safety Guidelines</HashLink>
+                        </li>
+                        <li>
+                            <HashLink to="/LiabilityWaiver#" className="text-sm text-gray-400 hover:text-white">Liability Waiver</HashLink>
+                        </li>
 
                     </ul>
                 </div>

@@ -93,7 +93,7 @@ function Hero() {
 
       {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
-        <img width={250} height={200} className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" />
+        <img width={250} height={200} className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] object-cover left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" />
         <StringRunner animationName={'marquee'} />
         <StringRunner animationName={'marquee2'} />
       </div>
