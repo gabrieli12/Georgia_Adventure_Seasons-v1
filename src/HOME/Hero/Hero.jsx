@@ -34,7 +34,7 @@ function Hero() {
                 main-page-hero-bg-sm.webp 600w,
                 main-page-hero-bg-md.webp 1200w
           "
-          sizes="(max-width: 640px) 40vw, 1200px"
+          sizes="(max-width: 640px) 100vw, 1200px"  // შეცვალე 40vw
           alt="Hero Background"
           width="1000"
           height="600"
