@@ -28,6 +28,7 @@ function Hero() {
         <img
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
+          fetchpriority="high"  //ეს დავამმტე 
           src="main-page-hero-bg-md.webp"
           srcSet="
                 main-page-hero-bg-sm.webp 600w,
@@ -37,6 +38,7 @@ function Hero() {
           alt="Hero Background"
           width="1000"
           height="600"
+          decoding="async"  //ეს დავამმტე 
         />
 
 
@@ -93,7 +95,10 @@ function Hero() {
 
       {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
-        <img width={250} height={200} className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] object-cover left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" />
+        <img width={250} height={200} className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] object-cover left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" 
+        loading="lazy"      // ეს დავამატება
+        decoding="async"    // ეს დავამატება
+      />
         <StringRunner animationName={'marquee'} />
         <StringRunner animationName={'marquee2'} />
       </div>

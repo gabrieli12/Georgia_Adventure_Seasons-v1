@@ -1,19 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 
-function Slider() {
-
-  // const images = [
-  //   "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
-  //   "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
-  //   "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
-  //   "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
-  //   "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
-  //   "activities_images/rafting/Rafting-Pasanauri-sm.webp",
-  //   "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
-  //   "activities_images/horseriding-adventure-gudamakari-sm.webp",
-  //   "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
-  // ];
-
   const images = [
   {
     src: "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
@@ -54,7 +40,24 @@ function Slider() {
 ];
 
   // infinite loop
-  const heroImages = [...images, ...images];
+  const heroImages = [...images, ...images];   //ეს და ზემოთ ობიექტი გავიტანე ფუნქციის გარეთ რადგან ბევრ რენდერებს აკეთებდა
+
+
+function Slider() {
+
+  // const images = [
+  //   "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
+  //   "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
+  //   "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
+  //   "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
+  //   "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
+  //   "activities_images/rafting/Rafting-Pasanauri-sm.webp",
+  //   "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
+  //   "activities_images/horseriding-adventure-gudamakari-sm.webp",
+  //   "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
+  // ];
+
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleSlides, setVisibleSlides] = useState(6);
