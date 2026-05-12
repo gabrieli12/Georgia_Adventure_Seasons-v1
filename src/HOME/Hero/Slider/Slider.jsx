@@ -103,14 +103,14 @@ function Slider() {
   }, [currentIndex]);
 
   // touch swipe
-  let startX = 0;
+  let startX = useRef(0); //useref ად გადავაკეთე ეხლა რჩება render-ებს შორის
 
   const handleTouchStart = (e) => {
-    startX = e.touches[0].clientX;
+    startX.current = e.touches[0].clientX //current ჩავუმატე
   };
 
   const handleTouchEnd = (e) => {
-    const diff = startX - e.changedTouches[0].clientX;
+    const diff = startX.current - e.changedTouches[0].clientX; //current ჩავუმატე
 
     if (diff > 50) setCurrentIndex((prev) => prev + 1);
     if (diff < -50) setCurrentIndex((prev) => Math.max(prev - 1, 0));
@@ -142,7 +142,8 @@ function Slider() {
               width={300}
               height={180}
               src={item.src}
-              loading="lazy"
+              loading={index < visibleSlides ? "eager" : "lazy"} // შევცვალე
+              decoding="async"  // დავამატე
               alt={`${item.alt}`}
               className="w-full h-28 md:h-44 object-cover rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
             />
