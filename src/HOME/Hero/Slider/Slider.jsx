@@ -103,14 +103,17 @@ function Slider() {
   }, [currentIndex]);
 
   // touch swipe
-  let startX = useRef(0); //useref ად გადავაკეთე ეხლა რჩება render-ებს შორის
+  //useref ად გადავაკეთე ეხლა რჩება render-ებს შორის
+  let startX = useRef(0); 
 
   const handleTouchStart = (e) => {
-    startX.current = e.touches[0].clientX //current ჩავუმატე
+    //current ჩავუმატე
+    startX.current = e.touches[0].clientX 
   };
 
   const handleTouchEnd = (e) => {
-    const diff = startX.current - e.changedTouches[0].clientX; //current ჩავუმატე
+    //current ჩავუმატე
+    const diff = startX.current - e.changedTouches[0].clientX; 
 
     if (diff > 50) setCurrentIndex((prev) => prev + 1);
     if (diff < -50) setCurrentIndex((prev) => Math.max(prev - 1, 0));
@@ -142,8 +145,10 @@ function Slider() {
               width={300}
               height={180}
               src={item.src}
-              loading={index < visibleSlides ? "eager" : "lazy"} // შევცვალე
-              decoding="async"  // დავამატე
+              // შევცვალე
+              loading={index < visibleSlides ? "eager" : "lazy"} 
+              // დავამატე
+              decoding="async"  
               alt={`${item.alt}`}
               className="w-full h-28 md:h-44 object-cover rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
             />

@@ -28,17 +28,20 @@ function Hero() {
         <img
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
-          fetchpriority="high"  //ეს დავამმტე 
+           //ეს დავამმტე 
+          fetchPriority="high" 
           src="main-page-hero-bg-md.webp"
           srcSet="
                 main-page-hero-bg-sm.webp 600w,
                 main-page-hero-bg-md.webp 1200w
           "
-          sizes="(max-width: 640px) 100vw, 1200px"  // შეცვალე 40vw
+          // შეცვალე 40vw
+          sizes="(max-width: 640px) 100vw, 1200px"  
           alt="Hero Background"
           width="1000"
           height="600"
-          decoding="async"  //ეს დავამმტე 
+          //ეს დავამმტე 
+          decoding="async"  
         />
 
 
@@ -47,7 +50,7 @@ function Hero() {
           {/* ზედა სამი მნიშვნელოვანი სიტყვა */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-[12px] text-white  font-semibold  max-sm:hidden">
 
-            <p className="bg-[#a79e9ec5] px-3 py-0.5 rounded-lg flex justify-center items-center gap-1  bg-white/15 backdrop-blur-md ">
+            <p className="px-3 py-0.5 rounded-lg flex justify-center items-center gap-1  bg-white/15 backdrop-blur-md ">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>              Safety Certified
             </p>
 
@@ -96,8 +99,9 @@ function Hero() {
       {/* two String Runner */}
       <div className="relative bg-[#0B1220] py-7">
         <img width={250} height={200} className="absolute w-48 z-10 -rotate-20 top-[50%] -translate-y-[50%] object-cover left-20 rounded-2xl max-sm:hidden max-md:hidden" src="https://flyingmag1.b-cdn.net/wp-content/uploads/sites/2/2025/05/dji-avata-featured.jpg" alt="A drone that films all activities" 
-        loading="lazy"      // ეს დავამატება
-        decoding="async"    // ეს დავამატება
+        // ეს დავამატება
+        loading="lazy"      
+        decoding="async"    
       />
         <StringRunner animationName={'marquee'} />
         <StringRunner animationName={'marquee2'} />
