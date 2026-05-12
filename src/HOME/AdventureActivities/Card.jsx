@@ -22,6 +22,8 @@ function Card({ index, img, imgAlt, detaleImg, title, location, description, eva
           height={200}
           src={img}
           alt={imgAlt}
+          loading="lazy"  // დავამატე
+          decoding="async"  // დავამატე
           className="h-48 w-full object-cover"
         />
         <div className="p-5">
