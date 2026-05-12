@@ -63,7 +63,7 @@ function AdventureActivities() {
         {filteredCards.length > 0 ? (
           filteredCards.map((item, index) => (
             <Card
-              key={index}
+              key={item.id}  // ახლა — id უნიკალურია, React სწორად track-ავს
               {...item} // spreading props to keep it clean
               index={index}
             />
