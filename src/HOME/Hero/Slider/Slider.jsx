@@ -1,19 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 
-function Slider() {
-
-  // const images = [
-  //   "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
-  //   "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
-  //   "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
-  //   "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
-  //   "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
-  //   "activities_images/rafting/Rafting-Pasanauri-sm.webp",
-  //   "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
-  //   "activities_images/horseriding-adventure-gudamakari-sm.webp",
-  //   "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
-  // ];
-
   const images = [
   {
     src: "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
@@ -54,7 +40,24 @@ function Slider() {
 ];
 
   // infinite loop
-  const heroImages = [...images, ...images];
+  const heroImages = [...images, ...images];   //ეს და ზემოთ ობიექტი გავიტანე ფუნქციის გარეთ რადგან ბევრ რენდერებს აკეთებდა
+
+
+function Slider() {
+
+  // const images = [
+  //   "activities_images/skiSnowboard_lessons/ski-lessons-gudauri-sm.webp",
+  //   "activities_images/paragliding/Paragliding-Gudauri-summer-sm.webp",
+  //   "activities_images/snowMobile/Snowmobile-adventure-gudauri-sm.webp",
+  //   "activities_images/atv/ATV-mountain-adventure-georgia-sm.webp",
+  //   "activities_images/skiSnowboard_rental/ski&snowboard-rental-gudauri-sm.webp",
+  //   "activities_images/rafting/Rafting-Pasanauri-sm.webp",
+  //   "activities_images/jetski/Jetski-adventure-ananuri-sm.webp",
+  //   "activities_images/horseriding-adventure-gudamakari-sm.webp",
+  //   "activities_images/motorBoat/MotorBoat-adventure-ananuri-sm.webp",
+  // ];
+
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleSlides, setVisibleSlides] = useState(6);
@@ -100,14 +103,17 @@ function Slider() {
   }, [currentIndex]);
 
   // touch swipe
-  let startX = 0;
+  //useref ად გადავაკეთე ეხლა რჩება render-ებს შორის
+  let startX = useRef(0); 
 
   const handleTouchStart = (e) => {
-    startX = e.touches[0].clientX;
+    //current ჩავუმატე
+    startX.current = e.touches[0].clientX 
   };
 
   const handleTouchEnd = (e) => {
-    const diff = startX - e.changedTouches[0].clientX;
+    //current ჩავუმატე
+    const diff = startX.current - e.changedTouches[0].clientX; 
 
     if (diff > 50) setCurrentIndex((prev) => prev + 1);
     if (diff < -50) setCurrentIndex((prev) => Math.max(prev - 1, 0));
@@ -139,7 +145,10 @@ function Slider() {
               width={300}
               height={180}
               src={item.src}
-              loading="lazy"
+              // შევცვალე
+              loading={index < visibleSlides ? "eager" : "lazy"} 
+              // დავამატე
+              decoding="async"  
               alt={`${item.alt}`}
               className="w-full h-28 md:h-44 object-cover rounded-t-lg shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300"
             />
