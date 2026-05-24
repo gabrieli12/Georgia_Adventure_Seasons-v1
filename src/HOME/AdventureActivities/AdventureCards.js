@@ -591,9 +591,8 @@ const AdventureCards = [
 
 
       images: [
-        "activities_images/paragliding/paragliding1.png",
-        "activities_images/paragliding/paragliding2.png",
-        "src/assets/Frame 1984077871 (2).png"
+        "/activities_images/paragliding/paragliding1.png",
+        "/activities_images/paragliding/paragliding2.png",
       ],
 
       // video: "videos/2025-11-18-131947470.mp4",
@@ -741,10 +740,10 @@ const AdventureCards = [
       // video: "videos/2025-11-18-131947470.mp4",
 
       images: [
-        "activities_images/jetski/jetski1.png",
-        "activities_images/jetski/jetski2.png",
-        "activities_images/jetski/jetski3.png",
-        "activities_images/jetski/jetski4.png",
+        "/activities_images/jetski/jetski1.png",
+        "/activities_images/jetski/jetski2.png",
+        "/activities_images/jetski/jetski3.png",
+        "/activities_images/jetski/jetski4.png",
       ],
 
       recommendations: [
@@ -852,7 +851,7 @@ const AdventureCards = [
         "Enjoy a scenic and thrilling motorboat ride Ananuri. Guided by experienced professionals, this adventure combines speed, safety and breathtaking river landscapes. Perfect for families, friends and adrenaline lovers.",
 
       images: [
-        "activities_images/motorBoat/motorboat1.png",
+        "/activities_images/motorBoat/motorboat1.png",
       ],
 
       recommendations: [
@@ -1089,12 +1088,12 @@ const AdventureCards = [
         "Feel the winter adrenaline rush as you ride powerful snowmobiles across deep snow and hidden mountain trails in Gudauri. Guided by experts, this adventure offers breathtaking views and unforgettable winter memories.",
 
       images: [
-        "activities_images/snowMobile/snowmobile1.png",
-        "activities_images/snowMobile/snowmobile2.png",
-        "activities_images/snowMobile/snowmobile3.png",
-        "activities_images/snowMobile/snowmobile4.png",
-        "activities_images/snowMobile/snowmobile5.png",
-        "activities_images/snowMobile/snowmobile.png"
+        "/activities_images/snowMobile/snowmobile1.png",
+        "/activities_images/snowMobile/snowmobile2.png",
+        "/activities_images/snowMobile/snowmobile3.png",
+        "/activities_images/snowMobile/snowmobile4.png",
+        "/activities_images/snowMobile/snowmobile5.png",
+        "/activities_images/snowMobile/snowmobile.png"
       ],
 
       recommendations: [
@@ -1198,9 +1197,9 @@ const AdventureCards = [
         "Join us for an unforgettable ATV mountain adventure across the breathtaking landscapes of Gudauri, Pasanauri and Ananuri. Ride powerful quad bikes through rugged off-road trails, river crossings and panoramic mountain routes. This experience is perfect for adrenaline seekers who want to explore Georgia’s wild beauty in an active way.",
 
       images: [
-        "activities_images/atv/atv1.png",
-        "activities_images/atv/atv2.png",
-        "activities_images/atv/atv3.png",
+        "/activities_images/atv/atv1.png",
+        "/activities_images/atv/atv2.png",
+        "/activities_images/atv/atv3.png",
       ],
 
       recommendations: [
